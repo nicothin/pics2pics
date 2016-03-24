@@ -1,43 +1,71 @@
-/*
-  Поиск ближайшего родителя по селектору
-  https://github.com/oneuijs/You-Dont-Need-jQuery/blob/master/README-ru.md#1.6
-*/
-
-function closest(el, selector) {
-  const matchesSelector = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector || el.msMatchesSelector;
-
-  while (el) {
-    if (matchesSelector.call(el, selector)) {
-      return el;
-    } else {
-      el = el.parentElement;
-    }
-  }
-  return null;
-}
+$( document ).ready(function() {
 
 
 
-/*
-  Запуск по готовности DOM
-  http://youmightnotneedjquery.com/#ready
-  Применение: ready(function(){ console.log('ddd'); });
-*/
+  // Инициализация JS_плагина, реализующего «слайды на полный экран»
+  $('#fullpage').fullpage({
+    anchors:['main', 'calculator'],
+    // autoScrolling: false,
+    scrollOverflow: true,
+    sectionSelector: '.slide',
 
-function ready(fn) {
-  if (document.readyState != 'loading'){
-    fn();
-  } else {
-    document.addEventListener('DOMContentLoaded', fn);
-  }
-}
+    // //Navigation
+    // menu: '#menu',
+    // lockAnchors: false,
+    // navigation: false,
+    // navigationPosition: 'right',
+    // navigationTooltips: ['firstSlide', 'secondSlide'],
+    // showActiveTooltip: false,
+    // slidesNavigation: true,
+    // slidesNavPosition: 'bottom',
+
+    // //Scrolling
+    // css3: true,
+    // scrollingSpeed: 700,
+    // autoScrolling: true,
+    // fitToSection: true,
+    // fitToSectionDelay: 1000,
+    // scrollBar: false,
+    // easing: 'easeInOutCubic',
+    // easingcss3: 'ease',
+    // loopBottom: false,
+    // loopTop: false,
+    // loopHorizontal: true,
+    // continuousVertical: false,
+    // normalScrollElements: '#element1, .element2',
+    // scrollOverflow: false,
+    // touchSensitivity: 15,
+    // normalScrollElementTouchThreshold: 5,
+
+    // //Accessibility
+    // keyboardScrolling: true,
+    // animateAnchor: true,
+    // recordHistory: true,
+
+    // //Design
+    // controlArrows: true,
+    // verticalCentered: true,
+    // resize : false,
+    // sectionsColor : ['#ccc', '#fff'],
+    // paddingTop: '3em',
+    // paddingBottom: '10px',
+    // fixedElements: '#header, .footer',
+    // responsiveWidth: 0,
+    // responsiveHeight: 0,
+
+    // //Custom selectors
+    // sectionSelector: '.section',
+    // slideSelector: '.slide',
+
+    // //events
+    // onLeave: function(index, nextIndex, direction){},
+    // afterLoad: function(anchorLink, index){},
+    // afterRender: function(){},
+    // afterResize: function(){},
+    // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+    // onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+  });
 
 
 
-
-
-// Свой код с jQuery
-
-// $( document ).ready(function() {
-
-// });
+});

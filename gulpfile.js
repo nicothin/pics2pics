@@ -253,8 +253,7 @@ gulp.task('serve', function () {
   gulp.series('build');
   browserSync.init({
     server: dirs.build,
-    port: port,
-    startPath: 'blocks_library.html'
+    port: port
   });
   browserSync.watch([
     dirs.build + '/**/*.*',
