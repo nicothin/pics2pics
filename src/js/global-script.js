@@ -8,6 +8,7 @@ $( document ).ready(function() {
     // autoScrolling: false,
     scrollOverflow: true,
     sectionSelector: '.slide',
+    fitToSection: false,
 
     // //Navigation
     // menu: '#menu',
