@@ -60,7 +60,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 ::placeholder {
-  color: @text-color--muted;
+  color: @color-secondary;
   opacity: 1;
 }
 
@@ -109,13 +109,14 @@ input[type='color'],
 input[type='tel'] {
   background-color: #fff;
   border: 1px solid @border-color;
-  border-radius: @border-radius;
+  border-radius: 1.286em;
   display: inline-block;
   vertical-align: middle;
   width: 100%;
   line-height: @line-height;
-  height: 2.125em;
+  height: 2.571em;
   padding: @field-padding-top @field-padding-horizontal @field-padding-bottom;
+  text-align: center;
 }
 
 textarea,

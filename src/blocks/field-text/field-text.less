@@ -1,0 +1,28 @@
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.field-text {
+  display: block;
+  margin-bottom: (@line-height / 2);
+  text-align: center;
+
+  &__name {
+    font-weight: 700;
+    display: block;
+    margin-bottom: round(@line-height / 4, 2);
+    line-height: @line-height;
+  }
+
+  &__input-wrap {}
+
+  &__input {
+
+    textarea& {
+      min-height: (@line-height * 2) + @field-padding-top + @field-padding-bottom + .2; // .2 — поправка на бордюр
+    }
+  }
+
+  &__help-text {
+    .help-text();
+  }
+}
