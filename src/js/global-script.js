@@ -13,4 +13,11 @@ $( document ).ready(function() {
         }
       }, 100);
   });
+
+  // Карусель с демками картин
+  $('#carousel-demo').owlCarousel({
+    items: 5,
+    loop: true,
+  });
+
 });
