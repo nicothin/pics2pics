@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <title>Заголовок</title>
 <meta name="description" content="">
-<meta name="viewport" content="width=1200">
+<meta name="viewport" content="width=1000, initial-scale=1">
 
 <link href="css/style.min.css" rel="stylesheet" media="screen">
 
@@ -13,6 +13,8 @@
   // Маркер работающего javascript
   document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
 </script>
+
+<script type="text/javascript">!function(){"use strict";function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))c(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(c(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var a=document.createElement("link");a.href=o,a.rel="stylesheet",a.type="text/css",document.getElementsByTagName("head")[0].appendChild(a),document.cookie="font_css_cache"}}function c(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="css/localstorage-fonts.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script><noscript><link rel="stylesheet" href="css/localstorage-fonts.css"></noscript>
 
 </head>
 
@@ -22,33 +24,40 @@
 
     <section class="first-screen">
 
-      <div class="first-screen__video">видео</div>
+      <div class="first-screen__video">
+        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+        </video>
+      </div>
 
       <div class="first-screen__texts">
 
         <div class="first-screen__synopsis">
-          <div class="first-screen__work-time">с 10:00 до 20:00</div>
-          <div class="first-screen__phone">8 800 333 51 16</div>
-          <h1 class="first-screen__message">
-            C&nbsp;вас <br>
-            картинки <br>
-            с&nbsp;нас картины
-          </h1>
-          <p class="first-screen__descriotion">
-            Уникальная авторская иллюстрация<br>
-            по вашему фото — на холсте :)
-          </p>
+          <div class="first-screen__contact-phone">
+            <div class="first-screen__work-time">с 10:00 до 20:00</div>
+            <div class="first-screen__phone">8 800 333 51 16</div>
+          </div>
+          <div class="first-screen__main-text">
+            <h1 class="first-screen__message">
+              C&nbsp;вас<br>картинки<br>с&nbsp;нас картины
+            </h1>
+            <p class="first-screen__description">
+              Уникальная авторская иллюстрация<br>
+              по вашему фото — на холсте :)
+            </p>
+          </div>
         </div>
 
         <form class="first-screen__fast-upload">
-          <h2>Присылайте ваше фото</h2>
-          <label class="field-text">
+          <h2 class="main-header">Присылайте ваше фото</h2>
+          <label class="field-text  field-text--md">
             <div class="field-text__name">Куда отправить Вам портрет</div>
             <div class="field-text__input-wrap">
               <input type="text" class="field-text__input" placeholder="Введите Ваш e-mail">
             </div>
           </label>
-          <label class="field-text">
+          <label class="field-text  field-text--sm">
             <div class="field-text__name">Для оперативной связи с Вами</div>
             <div class="field-text__input-wrap">
               <input type="text" class="field-text__input" placeholder="Введите номер телефона">
@@ -56,21 +65,41 @@
           </label>
           <div class="field-file">
             <label class="field-file__input-wrap">
-              <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" multiple>
-              <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+              <input class="field-file__input" type="file" >
+              <div class="field-file__name-text  btn">Загрузить фото</div>
             </label>
           </div>
         </form>
 
       </div>
 
-      <a class="first-screen__to-bottom" href="">вниз</a>
+      <span class="first-screen__to-bottom"></span>
 
     </section>
 
     <section class="sliders">
-      <div class="sliders__top">слайдеры: верхний слайдер</div>
+
+      <div class="sliders__top">
+        <div id="carousel-demo" class="owl-carousel  owl-carousel--demo">
+          <div><a href=""><img src="img/TEMP-01.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-02.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-01.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-02.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-01.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-02.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-01.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-02.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-01.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-02.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-01.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-02.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-01.jpg" alt=""></a></div>
+          <div><a href=""><img src="img/TEMP-02.jpg" alt=""></a></div>
+        </div>
+      </div>
+
       <div class="sliders__bottom">слайдеры: нижний слайдер</div>
+
     </section>
 
     <section class="promo">
