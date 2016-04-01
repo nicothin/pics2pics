@@ -14,11 +14,11 @@
 
 // Make viewport responsive
 // see http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
-@at-root {
-  @-ms-viewport {
-    width: device-width;
-  }
-}
+// @at-root {
+//   @-ms-viewport {
+//     width: device-width;
+//   }
+// }
 
 // Suppress the focus outline on elements that cannot be accessed via keyboard.
 // see: https://github.com/suitcss/base
@@ -61,16 +61,12 @@ textarea {
 
 html {
   box-sizing: border-box;
-  font-size: 8px;
+  font-size: 10px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -ms-overflow-style: scrollbar;
   -ms-text-size-adjust: 100%;
-  min-width: 320px;
+  min-width: 1000px;
   site: be cool; // :)
-
-  @media (min-width: @screen-sm) {
-    font-size: 10px;
-  }
 }
 
 body {
@@ -80,6 +76,10 @@ body {
   color: @text-color;
   background-color: @body-bg;
   margin: 0;
+  min-width: 1000px;
+}
+
+.main {
   min-width: 1000px;
 }
 
@@ -135,7 +135,7 @@ h6 {
 // .h1, .h2, .h3, .h4, .h5, .h6,
 h1, h2, h3, h4, h5, h6 {
   font-family: @font-family--headings;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.4;
   color: currentColor;
 

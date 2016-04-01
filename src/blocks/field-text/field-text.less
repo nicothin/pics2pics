@@ -3,11 +3,20 @@
 
 .field-text {
   display: block;
-  margin-bottom: (@line-height / 2);
+  margin: auto;
+  margin-bottom: 1.6em;
   text-align: center;
+  text-transform: uppercase;
+
+  &--md {
+    max-width: 330px;
+  }
+
+  &--sm {
+    max-width: 260px;
+  }
 
   &__name {
-    font-weight: 700;
     display: block;
     margin-bottom: round(@line-height / 4, 2);
     line-height: @line-height;
@@ -16,6 +25,7 @@
   &__input-wrap {}
 
   &__input {
+    text-transform: uppercase;
 
     textarea& {
       min-height: (@line-height * 2) + @field-padding-top + @field-padding-bottom + .2; // .2 — поправка на бордюр

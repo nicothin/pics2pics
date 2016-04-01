@@ -79,17 +79,19 @@ gulp.task('copy:css', function(callback) {
           mqpacker
       ]))
       .pipe(cleanss())
-      .pipe(rename(function (path) {
-        path.basename = 'additional-styles',
-        path.extname = '.min.css'
-      }))
-      .pipe(debug({title: "RENAME:"}))
       .pipe(gulp.dest(dirs.build + '/css'));
   }
   else {
     console.log('---------- Копирование CSS: нет дополнительного CSS');
     callback();
   }
+});
+
+// Копирование видео
+gulp.task('copy:video', function(callback) {
+  console.log('---------- копирование видео');
+  return gulp.src('src/video/*.*', {since: gulp.lastRun('copy:video')})
+    .pipe(gulp.dest(dirs.build + '/video'));
 });
 
 // Копирование и оптимизация изображений
@@ -220,6 +222,7 @@ gulp.task('clean', function () {
 gulp.task('build', gulp.series(
   'clean',
   'svgstore',
+  'copy:video',
   gulp.parallel('less', 'copy:css', 'img', 'js', 'js:copy'),
   'html'
 ));

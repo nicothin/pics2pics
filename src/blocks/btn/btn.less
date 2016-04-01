@@ -3,36 +3,11 @@
 
 .btn {
   .btn();
-  .btn-color(@text-color; @gray-lighter; @gray-light);
-  .btn-size();
-
-  &--main {
-    .btn-color(#fff; @color-main; @color-main);
-  }
-
-  &--danger {
-    .btn-color(#fff; @color-danger; @color-danger);
-  }
-
-  &--success {
-    .btn-color(#fff; @color-success; @color-success);
-  }
-
-  &--lg {
-    .btn-size(lg);
-  }
-
-  &--sm {
-    .btn-size(sm);
-  }
-
-  &--block {
-    width: 100%;
-    text-align: center;
-    justify-content: center;
-
-    & + & {
-      margin-top: (@line-height / 2);
-    }
-  }
+  background-color: @color-success;
+  border: 1px solid #FBC5FF;
+  border-radius: 17px;
+  padding: @field-padding-top 28px @field-padding-bottom;
+  min-height: 36px;
+  color: #fff;
 }
+

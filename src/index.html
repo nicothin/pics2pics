@@ -14,33 +14,40 @@
 
     <section class="first-screen">
 
-      <div class="first-screen__video">видео</div>
+      <div class="first-screen__video">
+        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+        </video>
+      </div>
 
       <div class="first-screen__texts">
 
         <div class="first-screen__synopsis">
-          <div class="first-screen__work-time">с 10:00 до 20:00</div>
-          <div class="first-screen__phone">8 800 333 51 16</div>
-          <h1 class="first-screen__message">
-            C&nbsp;вас <br>
-            картинки <br>
-            с&nbsp;нас картины
-          </h1>
-          <p class="first-screen__descriotion">
-            Уникальная авторская иллюстрация<br>
-            по вашему фото — на холсте :)
-          </p>
+          <div class="first-screen__contact-phone">
+            <div class="first-screen__work-time">с 10:00 до 20:00</div>
+            <div class="first-screen__phone">8 800 333 51 16</div>
+          </div>
+          <div class="first-screen__main-text">
+            <h1 class="first-screen__message">
+              C&nbsp;вас<br>картинки<br>с&nbsp;нас картины
+            </h1>
+            <p class="first-screen__description">
+              Уникальная авторская иллюстрация<br>
+              по вашему фото — на холсте :)
+            </p>
+          </div>
         </div>
 
         <form class="first-screen__fast-upload">
-          <h2>Присылайте ваше фото</h2>
-          <label class="field-text">
+          <h2 class="main-header">Присылайте ваше фото</h2>
+          <label class="field-text  field-text--md">
             <div class="field-text__name">Куда отправить Вам портрет</div>
             <div class="field-text__input-wrap">
               <input type="text" class="field-text__input" placeholder="Введите Ваш e-mail">
             </div>
           </label>
-          <label class="field-text">
+          <label class="field-text  field-text--sm">
             <div class="field-text__name">Для оперативной связи с Вами</div>
             <div class="field-text__input-wrap">
               <input type="text" class="field-text__input" placeholder="Введите номер телефона">
@@ -48,8 +55,8 @@
           </label>
           <div class="field-file">
             <label class="field-file__input-wrap">
-              <input class="field-file__input" type="file" data-multiple-caption="файлов выбрано: {count}" multiple>
-              <div class="field-file__name-text" data-button-text="Выбрать файл(ы)">Ничего не выбрано</div>
+              <input class="field-file__input" type="file" >
+              <div class="field-file__name-text  btn">Загрузить фото</div>
             </label>
           </div>
         </form>
