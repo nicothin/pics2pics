@@ -21,4 +21,9 @@ $( document ).ready(function() {
     nav: true,
   });
 
+  // Клик по «ссылке» для промотки к галерее
+  $('#to-gallery').on('click', function(){
+    $('body').animate({scrollTop: $('#carousel-demo').offset().top }, 350);
+  });
+
 });

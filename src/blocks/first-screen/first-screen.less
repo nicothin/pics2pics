@@ -119,6 +119,7 @@
     width: 40px;
     height: 80px;
     background-color: #fff;
+    cursor: pointer;
 
     &:before {
       content: '';
@@ -126,8 +127,15 @@
       bottom: 5px;
       left: 50%;
       transform: translateX(-50%);
-      width: 48px;
-      height: 32px;
+      width: 53px;
+      height: 36px;
+      background-image: url(../img/icon-arr-down.svg);
+    }
+
+    &:hover, &:focus {
+      &:before {
+        background-image: url(../img/icon-arr-down--hover.svg);
+      }
     }
   }
 }
