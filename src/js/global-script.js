@@ -18,6 +18,7 @@ $( document ).ready(function() {
   $('#carousel-demo').owlCarousel({
     items: 5,
     loop: true,
+    nav: true,
   });
 
 });
