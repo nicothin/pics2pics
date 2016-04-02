@@ -1,0 +1,95 @@
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.reviews {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #90a4ae;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+
+  .owl-carousel--reviews & {
+    margin: auto;
+
+    @media (min-width: @screen-xl) {
+      transform: translateX(47px); // УПРТ для соответствия макету
+    }
+  }
+
+  &__item {
+    display: flex;
+    line-height: 125%;
+
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__item-author {
+    width: 162px;
+    min-width: 162px;
+    padding: 43px 10px 0;
+    text-align: center;
+    transition: all 0.3s;
+
+    b {
+      font-weight: 400;
+    }
+  }
+
+  &__item-avatar {
+    width: 127px;
+    min-width: 127px;
+    height: 127px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__item-text {
+    flex-grow: 1;
+    padding: 43px 0 10px 39px;
+    transition: all 0.3s;
+
+    // Защита высоты от переполнения
+    // .owl-carousel--reviews & {
+    //   max-height: 127px;
+    //   overflow: hidden;
+    // }
+  }
+
+}
+
+
+
+// УПРТ смещение элементов в слайдере
+.owl-carousel {
+  // слайд по умолчанию (до активного)
+  .owl-item {
+
+    .reviews__item-author,
+    .reviews__item-text {
+      opacity: 0;
+    }
+
+    .reviews__item-avatar {}
+  }
+
+  // слайд, который активен
+  .owl-item.active {
+
+    .reviews__item-author,
+    .reviews__item-text {
+      opacity: 1;
+    }
+  }
+
+  // слайд, идущий после активного
+  .owl-item.active + .owl-item {
+
+    .reviews__item-author,
+    .reviews__item-text {
+      opacity: 0;
+    }
+  }
+}

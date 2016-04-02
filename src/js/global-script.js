@@ -40,4 +40,11 @@ $( document ).ready(function() {
     closeEffect : 'none'
   });
 
+  // Карусель с отзывами
+  $('#carousel-reviews').owlCarousel({
+    items: 1,
+    loop: true,
+    stagePadding: 110,
+  });
+
 });
