@@ -19,11 +19,25 @@ $( document ).ready(function() {
     items: 5,
     loop: true,
     nav: true,
+    responsive : {
+      1400 : {
+        items: 6
+      },
+      1920 : {
+        items: 7
+      },
+    }
   });
 
   // Клик по «ссылке» для промотки к галерее
   $('#to-gallery').on('click', function(){
     $('body').animate({scrollTop: $('#carousel-demo').offset().top }, 350);
+  });
+
+  // Галерея «второго экрана», инициализация лайтбокса
+  $('[rel="gallery-demo"]').fancybox({
+    openEffect  : 'none',
+    closeEffect : 'none'
   });
 
 });
