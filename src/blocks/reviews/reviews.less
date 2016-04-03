@@ -9,17 +9,10 @@
   text-transform: uppercase;
   letter-spacing: 0.105em;
 
-  .owl-carousel--reviews & {
-    margin: auto;
-
-    @media (min-width: @screen-xl) {
-      transform: translateX(47px); // УПРТ для соответствия макету
-    }
-  }
-
   &__item {
     display: flex;
     line-height: 125%;
+    position: relative;
 
     &:not(:last-child) {
       margin-bottom: 25px;
@@ -32,6 +25,8 @@
     padding: 43px 10px 0;
     text-align: center;
     transition: all 0.3s;
+    margin-right: 127px; // ширина блока с аватарой
+    height: 127px;       // высота блока с аватарой
 
     b {
       font-weight: 400;
@@ -44,12 +39,34 @@
     height: 127px;
     border-radius: 50%;
     overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 323px;
+    transition: all 0.5s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #304ffe;
+      opacity: 0.67;
+      transition: all 0.3s ease-out;
+    }
+
+    &:hover {
+      &:before {
+        opacity: 0;
+      }
+    }
   }
 
   &__item-text {
     flex-grow: 1;
     padding: 43px 0 10px 39px;
-    transition: all 0.3s;
 
     // Защита высоты от переполнения
     // .owl-carousel--reviews & {
@@ -62,55 +79,111 @@
 
 
 
-// УПРТ смещение элементов в слайдере
+
+
+// Изменения элементов этого  блока, если они находятся в слайдере
 .owl-carousel {
-  .reviews__item-avatar {
-    transition: transform 1s;
-    position: relative;
-    z-index: 1;
-    transform: translate3d(0,0,0);
+
+  .reviews__item {
+    padding-left: 162px;
+    padding-right: 117px;
+
+    @media (max-width: 1279px) {
+      padding-left: 80px;
+      padding-right: 50px;
+    }
+
+    @media (min-width: 1440px) {
+      padding-left: 220px;
+      padding-right: 220px;
+    }
+
+    @media (min-width: 1600px) {
+      padding-left: 300px;
+      padding-right: 300px;
+    }
+
+    @media (min-width: 1920px) {
+      padding-left: 430px;
+      padding-right: 430px;
+    }
   }
 
-
-  // слайд по умолчанию (до активного)
-  .owl-item {
-
+  // слайд до активного
+  .owl-item.prev {
     .reviews__item-author,
     .reviews__item-text {
       opacity: 0;
+      transition: all 0.3s;
     }
 
     .reviews__item-avatar {
-      transform: translateX(47vw);
+      left: e('calc(100% - 8px)');
+      transform: translateX(-100%);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
   // слайд, который активен
   .owl-item.active {
-    position: relative;
-    z-index: 10;
-    background-color: #fff;
-
     .reviews__item-author,
     .reviews__item-text {
       opacity: 1;
+      transition: all 1s 0.3s;
     }
 
     .reviews__item-avatar {
+      left: 323px;
       transform: translateX(0);
+
+      @media (max-width: 1279px) {
+        left: 247px;
+      }
+
+      @media (min-width: 1440px) {
+        left: 380px;
+      }
+
+      @media (min-width: 1600px) {
+        left: 460px;
+      }
+
+      @media (min-width: 1920px) {
+        left: 590px;
+      }
+
+      &:before {
+        opacity: 0;
+      }
     }
   }
 
-  // слайд, идущий после активного
-  .owl-item.active + .owl-item {
-
+  // слайд после активного
+  .owl-item.next {
     .reviews__item-author,
     .reviews__item-text {
       opacity: 0;
+      transition: all 0.3s;
     }
 
     .reviews__item-avatar {
-      transform: translateX(-26vw);
+      left: 10px;
+      transform: translateX(0);
+
+      &:hover {
+        cursor: pointer;
+      }
     }
+  }
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .owl-item {
+    backface-visibility: hidden;
+    perspective: 1000px;
+    // transform: translateZ(0);
   }
 }

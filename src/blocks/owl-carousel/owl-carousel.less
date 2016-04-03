@@ -1,5 +1,66 @@
 @import '../../less/variables.less';     // только для удобства обращения к переменным
 
+.owl-carousel {
+
+  &--reviews {
+
+    .owl-prev,
+    .owl-next {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      font-size: 0;
+      color: transparent;
+
+      &:not(.disabled) {
+        cursor: pointer;
+      }
+    }
+
+    .owl-prev {
+      left: 0;
+    }
+
+    .owl-next {
+      right: 0;
+    }
+
+    .owl-dots {
+      padding-top: 54px;
+    }
+
+  }
+
+  &--nav-dots {
+    .owl-dots {
+      display: flex;
+      justify-content: center;
+    }
+
+    .owl-dot {
+      display: block;
+      cursor: pointer;
+      height: 24px;
+      width: 24px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #FBC5FF;
+      margin: 0 11px;
+      box-shadow: 0 3px 5px rgba(0,0,0,0.35);
+      transition: all 0.3s;
+
+      &.active,
+      &:hover {
+        border-color: #4156FF;
+        background-color: #FBC5FF;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
 
 /*
  *  Owl Carousel - Animate Plugin
