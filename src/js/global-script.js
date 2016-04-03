@@ -45,6 +45,10 @@ $( document ).ready(function() {
     items: 1,
     loop: true,
     stagePadding: 110,
+    nav: true,
+    mouseDrag: false,
+    touchDrag: false,
+    smartSpeed: 2000
   });
 
 });

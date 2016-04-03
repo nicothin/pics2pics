@@ -64,6 +64,11 @@
 
 // УПРТ смещение элементов в слайдере
 .owl-carousel {
+  .reviews__item-avatar {
+    transition: transform 2s;
+  }
+
+
   // слайд по умолчанию (до активного)
   .owl-item {
 
@@ -72,15 +77,24 @@
       opacity: 0;
     }
 
-    .reviews__item-avatar {}
+    .reviews__item-avatar {
+      transform: translateX(47vw);
+    }
   }
 
   // слайд, который активен
   .owl-item.active {
+    position: relative;
+    z-index: 10;
+    background-color: #fff;
 
     .reviews__item-author,
     .reviews__item-text {
       opacity: 1;
+    }
+
+    .reviews__item-avatar {
+      transform: translateX(0);
     }
   }
 
@@ -90,6 +104,10 @@
     .reviews__item-author,
     .reviews__item-text {
       opacity: 0;
+    }
+
+    .reviews__item-avatar {
+      transform: translateX(-26vw);
     }
   }
 }
