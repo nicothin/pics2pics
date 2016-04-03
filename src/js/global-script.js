@@ -48,7 +48,15 @@ $( document ).ready(function() {
     nav: true,
     mouseDrag: false,
     touchDrag: false,
-    smartSpeed: 2000
+    smartSpeed: 1000,
+    // Функция, срабатывающая после окончания смены слайда
+    onTranslate: function(){
+      console.log('onTranslate');
+    },
+    // Функция, срабатывающая при начале смены слайда
+    onTranslated: function(){
+      console.log('onTranslated');
+    }
   });
 
 });
