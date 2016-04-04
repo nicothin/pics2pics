@@ -73,6 +73,16 @@ $( document ).ready(function() {
     carouselReviews.trigger('prev.owl.carousel');
   });
 
+  // Карусель с «фишками»
+  $('#carousel-features').owlCarousel({
+    items: 3,
+    // loop: true,
+    nav: true,
+    mouseDrag: false,
+    touchDrag: false,
+    smartSpeed: 500,
+  });
+
 
 
 });

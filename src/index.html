@@ -16,8 +16,8 @@
 
       <div class="first-screen__video">
         <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
-        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
-        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+          <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+          <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
         </video>
       </div>
 
@@ -127,6 +127,34 @@
                   <div>Суздаль</div>
                 </div>
                 <div class="reviews__item-avatar">
+                  <img src="img/avatar_02.png" height="127" width="127" alt="">
+                </div>
+                <div class="reviews__item-text">
+                  «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+                </div>
+              </li>
+              <li class="reviews__item">
+                <div class="reviews__item-author">
+                  <b>Гоша</b>
+                  <div>Москва</div>
+                </div>
+                <div class="reviews__item-avatar">
+                  <img src="img/avatar_04.png" height="127" width="127" alt="">
+                </div>
+                <div class="reviews__item-text">
+                  «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="reviews">
+              <li class="reviews__item">
+                <div class="reviews__item-author">
+                  <b>Екатерина</b>
+                  <div>Суздаль</div>
+                </div>
+                <div class="reviews__item-avatar">
                   <img src="img/avatar_01.png" height="127" width="127" alt="">
                 </div>
                 <div class="reviews__item-text">
@@ -181,8 +209,41 @@
     </section>
 
     <section class="promo">
-      <div class="promo__slider">промо: слайдер</div>
-      <div class="promo__action">промо: просто выберите</div>
+      <div class="promo__video-bg">
+        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+          <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+          <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="promo__slider">
+        <h2 class="main-header">Холст прост</h2>
+        <div id="carousel-features" class="owl-carousel  owl-carousel--features  owl-carousel--nav-dots">
+          <div>
+            <div class="promo__slider-item-pict  promo__slider-item-pict--auto">@@include('img/icons/icon-auto.svg')</div>
+            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+          </div>
+          <div>
+            <div class="promo__slider-item-pict  promo__slider-item-pict--love">@@include('img/icons/icon-love.svg')</div>
+            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+          </div>
+          <div>
+            <div class="promo__slider-item-pict  promo__slider-item-pict--money">@@include('img/icons/icon-like-money.svg')</div>
+            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+          </div>
+          <div>
+            <div class="promo__slider-item-pict  promo__slider-item-pict--flower">@@include('img/icons/icon-flower.svg')</div>
+            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+          </div>
+        </div>
+      </div>
+      <div class="promo__action">
+        <h3 class="main-header">Просто выберите свой стиль</h3>
+        <img class="promo__action-smile" src="img/smile.png" height="136" width="135" alt="">
+      </div>
     </section>
 
   </div>

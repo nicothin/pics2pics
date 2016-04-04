@@ -3,9 +3,98 @@
 
 .promo {
   min-height: 765px;
-  background-color: #DFB2B8;
+  position: relative;
+
+  &__video-bg {
+    min-height: 100%;
+    background-color: #ddd;
+    flex-grow: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
 
   &__slider {
-    min-height: 320px;
+    text-align: center;
+
+    .main-header {
+      margin: 0;
+      padding: 60px 0 2px;
+      letter-spacing: 0.035em;
+      font-weight: 400;
+    }
+  }
+
+  &__slider-item-pict {
+    min-height: 157px;
+
+    &--auto {
+      svg {
+        height: 112px;
+      }
+    }
+
+    &--love {
+      svg {
+        height: 100px;
+        transform: rotate(5deg) translateY(6px);
+      }
+    }
+
+    &--money {
+      transform: translateY(-6px);
+
+      svg {
+        height: 118px;
+      }
+    }
+
+    &--flower {
+      transform: translateY(-30px);
+
+      svg {
+        height: 150px;
+      }
+    }
+  }
+
+  &__slider-item-title {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    margin-bottom: 5px;
+  }
+
+  &__slider-item-decription {
+    letter-spacing: 0.08em;
+  }
+
+  &__action {
+    text-align: center;
+    padding-top: 80px;
+
+    .main-header {
+      margin: 0;
+    }
+  }
+
+  &__action-smile {
+    display: inline-block;
+    padding: 61px 0 33px;
   }
 }
