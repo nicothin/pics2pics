@@ -23,12 +23,14 @@
       transform: translateY(-50%);
       background-color: #fff;
       color: #fff;
+      cursor: pointer;
     }
 
     .owl-prev {
       left: 0;
 
-      &:before {
+      &:before,
+      &:after {
         content: '';
         position: absolute;
         top: 50%;
@@ -37,6 +39,12 @@
         height: 80px;
         transform: translate(-50%, -47%);
         background-image: url(../img/icon-arr-left.svg);
+      }
+
+      &:after {
+        background-image: url(../img/icon-arr-left--hover.svg);
+        opacity: 0;
+        position: absolute;
       }
 
       &:hover, &:focus {
@@ -58,6 +66,12 @@
         height: 80px;
         transform: translate(-50%, -47%);
         background-image: url(../img/icon-arr-right.svg);
+      }
+
+      &:after {
+        background-image: url(../img/icon-arr-right--hover.svg);
+        opacity: 0;
+        position: absolute;
       }
 
       &:hover, &:focus {
