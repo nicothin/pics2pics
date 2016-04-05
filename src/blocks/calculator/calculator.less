@@ -4,4 +4,26 @@
 .calculator {
   min-height: 100vh;
   background: #FCE3D0;
+
+  &__slider-vertical {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &__slider-vertical-wrapper {
+    overflow-y: scroll;
+    width: e('calc(100% + 30px)');
+    height: 100vh;
+  }
+
+  &__slider-vertical-inner {
+    // width: e('calc(100% + 30px)');
+    // padding-right: 30px;
+  }
+
+  &__slider-vertical-item {
+    width: 100%;
+    height: 100vh;
+  }
 }
