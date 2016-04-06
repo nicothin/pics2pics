@@ -12,8 +12,8 @@
 
         // Scroll Variables (tweakable)
         var framerate = 150; // [Hz]    150
-        var animtime  = 600; // [px]    400
-        var stepsize  = 150; // [px]    120
+        var animtime  = 800; // [px]    400
+        var stepsize  = 100; // [px]    120
 
         // Pulse (less tweakable)
         // ratio of "tail" to "acceleration"
@@ -477,7 +477,7 @@
 
 $( document ).ready(function() {
 
-  // показ/сокрытие белой херовины со стрелкой на «первом экране»
+  // показ/сокрытие стрелки на «первом экране»
   var t0;
   $(window).on('scroll', function(){
     clearTimeout(t0);
@@ -560,6 +560,98 @@ $( document ).ready(function() {
     smartSpeed: 500,
   });
 
+  // Отлавливаем скролл над слайдером стилей и перемещаем класс активности слайда в зависимости от направления кручения колеса мыши
+  var t1,
+      calculatorSlideInnerTransformY,
+      windowHeight,
+      calculator = $('#style-slider'),
+      calculatorActiveSlide,
+      calculatorNextActiveSlideIndex,
+      calculatorNextActiveSlide;
+  calculator.on('wheel', function(event){
+    clearTimeout(t1);
+    t1 = setTimeout(function () {
+      // получаем активный слайд
+      calculatorActiveSlide = calculator.find('.calculator__slider-vertical-item--active');
+      // если промотка вниз
+      if(event.originalEvent.wheelDelta < 0) {
+        calculatorNextActiveSlide = calculatorActiveSlide.next();
+        if(calculatorNextActiveSlide.length) {
+          calculatorActiveSlide.removeClass('calculator__slider-vertical-item--active');
+          calculatorNextActiveSlide.addClass('calculator__slider-vertical-item--active');
+        }
+      }
+      // если промотка вверх
+      else {
+        calculatorNextActiveSlide = calculatorActiveSlide.prev();
+        if(calculatorNextActiveSlide.length) {
+          calculatorActiveSlide.removeClass('calculator__slider-vertical-item--active');
+          calculatorNextActiveSlide.addClass('calculator__slider-vertical-item--active');
+        }
+      }
+      showCurrentStyleSlider();
+    }, 100);
+  });
 
+  // Сразу после загрущки прокручиваем слайдер стилей к нужной позиции
+  showCurrentStyleSlider();
+
+  // Функция прокрутки слайдера стилей к нужной позиции
+  function showCurrentStyleSlider(){
+    // Получим высоту вьюпорта сейчас
+    windowHeight = parseInt($(window).height(), 10);
+    // получим номер активного слайда
+    calculatorNextActiveSlideIndex = parseInt(calculator.find('.calculator__slider-vertical-item--active').index(), 10);
+    // перемещаем вложенный элемент слайдера так, чтобы видеть активный слайд
+    calculator.find('.calculator__slider-vertical-inner').css('transform','translateY(-'+ (calculatorNextActiveSlideIndex * windowHeight) +'px)')
+  }
+
+  // Начинаем следить за скроллом страницы, дабы в некоторый момент (показ блока калькулятора) его блокировать и разблокировать
+  var lastScrollTop = 0;
+  $(window).on('scroll', function(event){
+    var calculatorTop = calculator.offset().top + 1;
+    var st = $(this).scrollTop();
+    // если это скролл вниз
+    if (st > lastScrollTop){
+      console.log('down');
+    }
+    // если это скролл вверх
+    else {
+      console.log('up');
+    }
+    lastScrollTop = st;
+
+    // if($(document).scrollTop() >= (calculatorTop - 100) && !($('#style-slider .calculator__slider-vertical-item:last').hasClass('calculator__slider-vertical-item--active'))) { // поправка, ранняя проверка
+    //   $(document).on('wheel', function(e){
+    //     e.preventDefault();
+    //   });
+    //   $('body').animate({'scrollTop': calculatorTop}, 200, function(){
+    //     $(document).off('wheel');
+    //   });
+    //   disableScroll();
+    // }
+  });
+
+  // функции блокирования и разблокирования скролла страницы с сохранением скроллбара
+  function preventDefault(e) {
+    e = e || window.event;
+    if (e.preventDefault)
+        e.preventDefault();
+    e.returnValue = false;
+  }
+  function disableScroll() {
+    if (window.addEventListener) // older FF
+        window.addEventListener('DOMMouseScroll', preventDefault, false);
+    window.onwheel = preventDefault; // modern standard
+    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+    window.ontouchmove  = preventDefault; // mobile
+  }
+  function enableScroll() {
+      if (window.removeEventListener)
+          window.removeEventListener('DOMMouseScroll', preventDefault, false);
+      window.onmousewheel = document.onmousewheel = null;
+      window.onwheel = null;
+      window.ontouchmove = null;
+  }
 
 });

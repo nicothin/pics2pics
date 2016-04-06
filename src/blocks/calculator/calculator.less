@@ -11,15 +11,10 @@
     overflow: hidden;
   }
 
-  &__slider-vertical-wrapper {
-    overflow-y: scroll;
-    width: e('calc(100% + 30px)');
-    height: 100vh;
-  }
-
   &__slider-vertical-inner {
-    // width: e('calc(100% + 30px)');
-    // padding-right: 30px;
+    position: relative;
+    transform: translateY(0);
+    transition: transform 0.5s;
   }
 
   &__slider-vertical-item {
