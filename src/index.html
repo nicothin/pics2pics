@@ -10,12 +10,20 @@
 
 <body>
 
-  <div class="main">
+<section id="info" style="position: fixed;top: 0;right: 30px; background-color: #fff; padding: 1em;z-index: 1000;">
+  <p>
+    <span>Content position (<code>this.mcs.top</code>): <span id="mcs-top"></span></span><br>
+  </p>
+</section>
+
+<div class="container" id="container">
+
+  <div class="main" id="main">
 
     <section class="first-screen">
 
       <div class="first-screen__video">
-        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidtop" loop>
           <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
           <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
         </video>
@@ -210,7 +218,7 @@
 
     <section class="promo">
       <div class="promo__video-bg">
-        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" loop>
+        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidcalc" loop>
           <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
           <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
         </video>
@@ -251,15 +259,17 @@
   <div class="calculator">
     <div class="calculator__slider-vertical" id="style-slider">
       <div class="calculator__slider-vertical-inner">
-        <div class="calculator__slider-vertical-item">11112</div>
+        <div class="calculator__slider-vertical-item  calculator__slider-vertical-item--active">1111</div>
         <div class="calculator__slider-vertical-item">2222</div>
         <div class="calculator__slider-vertical-item">3333</div>
-        <div class="calculator__slider-vertical-item  calculator__slider-vertical-item--active">4444</div>
+        <div class="calculator__slider-vertical-item">4444</div>
       </div>
     </div>
   </div>
 
   <div style="background-color: #ff0;min-height:350px">некий блок, название которого еще не определено</div>
+
+</div>
 
 @@include('_include/page_bottom.html')
 </body>
