@@ -9,10 +9,12 @@ $(window).load(function(){
   var styleSliderPos = 0;
   var styleSliderCurrentPos;
   var toDown;
+  var mainHeight;
 
   $('#container').mCustomScrollbar({
     theme: 'dark-thick',
     autoHideScrollbar: true,
+    documentTouchScroll: true,
     mouseWheel:{ deltaFactor: 120 },
     callbacks:{
 
@@ -30,7 +32,7 @@ $(window).load(function(){
         }
 
         // быстро получим высоту контента до калькулятора в этот момент
-        var mainHeight = document.getElementById('main').offsetHeight;
+        mainHeight = document.getElementById('main').offsetHeight;
 
         // если «крутили» вниз
         if(toDown) {
@@ -57,11 +59,17 @@ $(window).load(function(){
 
         // если нужно «застопорить скролл»
         function showCalculator() {
+
           // отключаем прокрутку
           container.mCustomScrollbar('disable');
+
           // выравниваем калькулятор, чтобы занимал весь экран (он 100vh в высоту)
           $('#mCSB_1_container').css('top',(mainHeight * -1));
 
+          // повесим на html класс-флаг показанности калькулятора
+          $('html').addClass('js-calculator-show');
+
+          // повесим (с некоторой задержкой) отслеживание движения колеса мыши
           setTimeout(styleSliderFunctions, 800);
           function styleSliderFunctions() {
             styleSlider.on('wheel', function(event){
@@ -84,6 +92,7 @@ $(window).load(function(){
                   else {
                     $('#container').mCustomScrollbar("update");
                     $('#style-slider').off('wheel');
+                    $('html').removeClass('js-calculator-show');
                   }
                 }
 
@@ -100,6 +109,7 @@ $(window).load(function(){
                   else {
                     $('#container').mCustomScrollbar("update");
                     $('#style-slider').off('wheel');
+                    $('html').removeClass('js-calculator-show');
                   }
                 }
 
@@ -143,6 +153,21 @@ $(window).load(function(){
     styleSlider.css('background-color', styleSlider.find('.calculator__slider-vertical-item--active').data('bg-color'));
   }
 
+  // при любом ресайзе окна проверяем — а не показан ли в этот момент калькулятор
+  var t2;
+  $(window).on('resize', function(){
+    clearTimeout(t2);
+    t2 = setTimeout(function () {
+
+      if($('html').hasClass('js-calculator-show')) {
+        mainHeight = document.getElementById('main').offsetHeight;
+        console.log(mainHeight);
+        $('#mCSB_1_container').css('top',(mainHeight * -1));
+      }
+
+    }, 100);
+  });
+
 });
 
 
@@ -155,13 +180,13 @@ $( document ).ready(function() {
   $(window).on('scroll', function(){
     clearTimeout(t0);
     t0 = setTimeout(function () {
-        if($(document).scrollTop() > 100) {
-          $('.first-screen__to-bottom').fadeOut(150);
-        }
-        else {
-          $('.first-screen__to-bottom').fadeIn(150);
-        }
-      }, 100);
+      if($(document).scrollTop() > 100) {
+        $('.first-screen__to-bottom').fadeOut(150);
+      }
+      else {
+        $('.first-screen__to-bottom').fadeIn(150);
+      }
+    }, 100);
   });
 
   // Карусель с демками картин
