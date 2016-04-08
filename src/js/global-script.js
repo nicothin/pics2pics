@@ -233,4 +233,14 @@ $( document ).ready(function() {
     smartSpeed: 500,
   });
 
+  // Карусель с «фишками»
+  $('#style-variant-1').owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    mouseDrag: false,
+    touchDrag: false,
+    smartSpeed: 500,
+  });
+
 });
