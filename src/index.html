@@ -11,9 +11,8 @@
 <body>
 
 <section id="info" style="position: fixed;top: 0;right: 30px; background-color: #fff; padding: 1em;z-index: 1000;">
-  <p>
-    <span>Content position (<code>this.mcs.top</code>): <span id="mcs-top"></span></span><br>
-  </p>
+  <button onClick="$('#container').mCustomScrollbar('disable');">disable</button>
+  <button onClick="$('#container').mCustomScrollbar('update');">enable</button>
 </section>
 
 <div class="container" id="container">
