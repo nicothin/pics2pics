@@ -10,11 +10,6 @@
 
 <body>
 
-<section id="info" style="position: fixed;top: 0;right: 30px; background-color: #fff; padding: 1em;z-index: 1000;">
-  <button onClick="$('#container').mCustomScrollbar('disable');">disable</button>
-  <button onClick="$('#container').mCustomScrollbar('update');">enable</button>
-</section>
-
 <div class="container" id="container">
 
   <div class="main" id="main">
@@ -256,12 +251,12 @@
   </div>
 
   <div class="calculator">
-    <div class="calculator__slider-vertical" id="style-slider">
+    <div class="calculator__slider-vertical" id="style-slider" style="background-color:#FCE3D0;">
       <div class="calculator__slider-vertical-inner">
-        <div class="calculator__slider-vertical-item  calculator__slider-vertical-item--active">1111</div>
-        <div class="calculator__slider-vertical-item">2222</div>
-        <div class="calculator__slider-vertical-item">3333</div>
-        <div class="calculator__slider-vertical-item">4444</div>
+        <div class="calculator__slider-vertical-item  calculator__slider-vertical-item--active" data-bg-color="#FCE3D0">1111</div>
+        <div class="calculator__slider-vertical-item" data-bg-color="#F9B838">2222</div>
+        <div class="calculator__slider-vertical-item" data-bg-color="#00E676">3333</div>
+        <div class="calculator__slider-vertical-item" data-bg-color="#3D5AFE">4444</div>
       </div>
     </div>
   </div>

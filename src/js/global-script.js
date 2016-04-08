@@ -18,7 +18,7 @@ $(window).load(function(){
 
       // при любом «скролле»
       whileScrolling: function(){
-        // проверим направление
+        // проверим направление, поставим/снимем флаг
         styleSliderCurrentPos = this.mcs.top * -1;
         if(styleSliderPos < styleSliderCurrentPos) {
           // console.log('down');
@@ -34,19 +34,26 @@ $(window).load(function(){
 
         // если «крутили» вниз
         if(toDown) {
-          // смещение сейчас уже больше или равно высоте контента до калькулятора
-          if((this.mcs.top * -1) >= mainHeight) {
+          if(
+           ((this.mcs.top * -1) >= mainHeight) // смещение сейчас уже больше или равно высоте контента до калькулятора
+           &&
+           styleSlider.find('.calculator__slider-vertical-item--active').next().length // показан не последний «слайд» калькулятора
+          ) {
             showCalculator();
           }
         }
 
         // если «крутили» вверх
-        // else {
-        //   // смещение сейчас уже меньше или равно высоте контента до калькулятора
-        //   if((this.mcs.top * -1) <= mainHeight) {
-        //     showCalculator();
-        //   }
-        // }
+        else {
+
+          if(
+            ((this.mcs.top * -1) <= mainHeight) // смещение сейчас уже меньше или равно высоте контента до калькулятора
+            &&
+            styleSlider.find('.calculator__slider-vertical-item--active').prev().length // показан не первый «слайд» калькулятора
+          ) {
+            showCalculator();
+          }
+        }
 
         // если нужно «застопорить скролл»
         function showCalculator() {
@@ -60,8 +67,10 @@ $(window).load(function(){
             styleSlider.on('wheel', function(event){
               clearTimeout(t1);
               t1 = setTimeout(function () {
+
                 // найдем активный слайд
                 styleSliderActiveSlide = styleSlider.find('.calculator__slider-vertical-item--active');
+
                 // если колесом мотали вниз
                 if(event.originalEvent.wheelDelta < 0 || event.originalEvent.deltaY > 0) {
                   // console.log('down');
@@ -71,12 +80,13 @@ $(window).load(function(){
                     styleSliderActiveSlide.removeClass('calculator__slider-vertical-item--active');
                     styleSliderActiveSlideNew.addClass('calculator__slider-vertical-item--active');
                   }
-                  // активен последний, нужн обратно включить кастомный скролл
+                  // активен последний, нужно обратно включить кастомный скролл
                   else {
                     $('#container').mCustomScrollbar("update");
                     $('#style-slider').off('wheel');
                   }
                 }
+
                 // если колесом мотали вверх
                 else {
                   // console.log('up');
@@ -86,33 +96,21 @@ $(window).load(function(){
                     styleSliderActiveSlide.removeClass('calculator__slider-vertical-item--active');
                     styleSliderActiveSlideNew.addClass('calculator__slider-vertical-item--active');
                   }
+                  // активен первый, нужно обратно включить кастомный скролл
+                  else {
+                    $('#container').mCustomScrollbar("update");
+                    $('#style-slider').off('wheel');
+                  }
                 }
+
                 // «промотаем» слайдер
                 showCurrentStyleSlider();
+
               }, 100);
             });
           }
 
         }
-
-        // смещение сейчас уже больше или равно высоте контента до калькулятора и активен не последний слайд
-        // if(
-        //   (this.mcs.top * -1) >= mainHeight &&
-        //   styleSlider.find('.calculator__slider-vertical-item--active').next().length
-        // ) {
-        //   $('#container')
-        //     .mCustomScrollbar('disable'); // отключаем прокрутку
-
-        //   // точно фиксируем положение прокручиваемого блока
-        //   $('#mCSB_1_container').css('top',(mainHeight * -1));
-
-        // Отлавливаем скролл колесом мыши над слайдером стилей, но после паузы
-
-
-        // Сразу после загрузки прокручиваем слайдер стилей к нужной позиции
-        // showCurrentStyleSlider();
-
-        // }
 
       },
 
@@ -130,6 +128,9 @@ $(window).load(function(){
     $(this).trigger('play');
   });
 
+  // Сразу после загрузки прокручиваем слайдер стилей к нужной позиции
+  showCurrentStyleSlider();
+
   // Функция прокрутки слайдера стилей к нужной позиции
   function showCurrentStyleSlider(){
     // Получим высоту вьюпорта сейчас
@@ -137,7 +138,9 @@ $(window).load(function(){
     // получим номер активного слайда
     var styleSliderNextActiveSlideIndex = parseInt(styleSlider.find('.calculator__slider-vertical-item--active').index(), 10);
     // перемещаем вложенный элемент слайдера так, чтобы видеть активный слайд
-    styleSlider.find('.calculator__slider-vertical-inner').css('transform','translateY(-'+ (styleSliderNextActiveSlideIndex * windowHeight) +'px)')
+    styleSlider.find('.calculator__slider-vertical-inner').css('transform','translateY(-'+ (styleSliderNextActiveSlideIndex * windowHeight) +'px)');
+    // меняем фоновый цвет
+    styleSlider.css('background-color', styleSlider.find('.calculator__slider-vertical-item--active').data('bg-color'));
   }
 
 });
