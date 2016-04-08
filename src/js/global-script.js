@@ -236,7 +236,7 @@ $( document ).ready(function() {
   // Карусель с «фишками»
   $('#style-variant-1').owlCarousel({
     items: 1,
-    loop: true,
+    // loop: true,
     nav: true,
     mouseDrag: false,
     touchDrag: false,
