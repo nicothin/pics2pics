@@ -10,294 +10,290 @@
 
 <body>
 
-<div class="container" id="container">
+<div class="main" id="main">
 
-  <div class="main" id="main">
+  <section class="first-screen">
 
-    <section class="first-screen">
+    <div class="first-screen__video">
+      <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidtop" loop>
+        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+      </video>
+    </div>
 
-      <div class="first-screen__video">
-        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidtop" loop>
-          <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
-          <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
-        </video>
+    <div class="first-screen__texts">
+
+      <div class="first-screen__synopsis">
+        <div class="first-screen__contact-phone">
+          <div class="first-screen__work-time">с 10:00 до 20:00</div>
+          <div class="first-screen__phone">8 800 333 51 16</div>
+        </div>
+        <div class="first-screen__main-text">
+          <h1 class="first-screen__message">
+            C&nbsp;вас<br>картинки<br>с&nbsp;нас картины
+          </h1>
+          <p class="first-screen__description">
+            Уникальная авторская иллюстрация<br>
+            по вашему фото — на холсте :)
+          </p>
+        </div>
       </div>
 
-      <div class="first-screen__texts">
-
-        <div class="first-screen__synopsis">
-          <div class="first-screen__contact-phone">
-            <div class="first-screen__work-time">с 10:00 до 20:00</div>
-            <div class="first-screen__phone">8 800 333 51 16</div>
+      <form class="first-screen__fast-upload">
+        <h2 class="main-header">Присылайте ваше фото</h2>
+        <label class="field-text  field-text--md">
+          <div class="field-text__name">Куда отправить Вам портрет</div>
+          <div class="field-text__input-wrap">
+            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
           </div>
-          <div class="first-screen__main-text">
-            <h1 class="first-screen__message">
-              C&nbsp;вас<br>картинки<br>с&nbsp;нас картины
-            </h1>
-            <p class="first-screen__description">
-              Уникальная авторская иллюстрация<br>
-              по вашему фото — на холсте :)
-            </p>
+        </label>
+        <label class="field-text  field-text--sm">
+          <div class="field-text__name">Для оперативной связи с Вами</div>
+          <div class="field-text__input-wrap">
+            <input type="text" class="field-text__input" placeholder="Введите номер телефона">
           </div>
-        </div>
-
-        <form class="first-screen__fast-upload">
-          <h2 class="main-header">Присылайте ваше фото</h2>
-          <label class="field-text  field-text--md">
-            <div class="field-text__name">Куда отправить Вам портрет</div>
-            <div class="field-text__input-wrap">
-              <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
-            </div>
+        </label>
+        <div class="field-file">
+          <label class="field-file__input-wrap">
+            <input class="field-file__input" type="file" >
+            <div class="field-file__name-text  btn">Загрузить фото</div>
           </label>
-          <label class="field-text  field-text--sm">
-            <div class="field-text__name">Для оперативной связи с Вами</div>
-            <div class="field-text__input-wrap">
-              <input type="text" class="field-text__input" placeholder="Введите номер телефона">
-            </div>
-          </label>
-          <div class="field-file">
-            <label class="field-file__input-wrap">
-              <input class="field-file__input" type="file" >
-              <div class="field-file__name-text  btn">Загрузить фото</div>
-            </label>
-          </div>
-        </form>
-
-      </div>
-
-      <span class="first-screen__to-bottom" id="to-gallery"></span>
-
-    </section>
-
-    <section class="sliders">
-
-      <div class="sliders__top">
-        <div id="carousel-demo" class="owl-carousel  owl-carousel--demo">
-          <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
-          <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
         </div>
-      </div>
+      </form>
 
-      <div class="sliders__bottom">
-        <h2 class="main-header">Приносим радость</h2>
-        <div id="carousel-reviews" class="owl-carousel  owl-carousel--reviews  owl-carousel--nav-dots">
-          <div>
-            <ul class="reviews">
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Екатерина</b>
-                  <div>Суздаль</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_02.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-                </div>
-              </li>
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Гоша</b>
-                  <div>Москва</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_04.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="reviews">
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Екатерина</b>
-                  <div>Суздаль</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_02.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-                </div>
-              </li>
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Гоша</b>
-                  <div>Москва</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_04.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="reviews">
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Екатерина</b>
-                  <div>Суздаль</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_01.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-                </div>
-              </li>
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Гоша</b>
-                  <div>Москва</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_05.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <ul class="reviews">
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Екатерина</b>
-                  <div>Суздаль</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_04.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-                </div>
-              </li>
-              <li class="reviews__item">
-                <div class="reviews__item-author">
-                  <b>Гоша</b>
-                  <div>Москва</div>
-                </div>
-                <div class="reviews__item-avatar">
-                  <img src="img/avatar_02.png" height="127" width="127" alt="">
-                </div>
-                <div class="reviews__item-text">
-                  «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    </div>
 
-    </section>
+    <span class="first-screen__to-bottom" id="to-gallery"></span>
 
-    <section class="promo">
-      <div class="promo__video-bg">
-        <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidcalc" loop>
-          <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
-          <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="promo__slider">
-        <h2 class="main-header">Холст прост</h2>
-        <div id="carousel-features" class="owl-carousel  owl-carousel--features  owl-carousel--nav-dots">
-          <div>
-            <div class="promo__slider-item-pict  promo__slider-item-pict--auto">@@include('img/icons/icon-auto.svg')</div>
-            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
-            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
-          </div>
-          <div>
-            <div class="promo__slider-item-pict  promo__slider-item-pict--love">@@include('img/icons/icon-love.svg')</div>
-            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
-            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
-          </div>
-          <div>
-            <div class="promo__slider-item-pict  promo__slider-item-pict--money">@@include('img/icons/icon-like-money.svg')</div>
-            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
-            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
-          </div>
-          <div>
-            <div class="promo__slider-item-pict  promo__slider-item-pict--flower">@@include('img/icons/icon-flower.svg')</div>
-            <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
-            <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
-          </div>
-        </div>
-      </div>
-      <div class="promo__action">
-        <h3 class="main-header">Просто выберите свой стиль</h3>
-        <img class="promo__action-smile" src="img/smile.png" height="136" width="135" alt="">
-      </div>
-    </section>
+  </section>
 
-  </div>
+  <section class="sliders">
 
-  <div class="calculator">
-    <div class="calculator__slider-vertical" id="style-slider" style="background-color:#FCE3D0;">
-      <div class="calculator__slider-vertical-inner">
-        <div class="calculator__slider-vertical-item  calculator__slider-vertical-item--active" data-bg-color="#FCE3D0">
-
-          <div class="calculator__slider-item-style-variants">
-            <div id="style-variant-1" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-              <div>
-                <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-              </div>
-              <div>
-                <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-              </div>
-              <div>
-                <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-              </div>
-              <div>
-                <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-              </div>
-            </div>
-          </div>
-
-          <div class="calculator__slider-style-text">
-            <p class="calculator__slider-style-price">
-              <s class="calculator__slider-style-old-price">3270</s>
-              <span class="calculator__slider-style-new-price">2260</span>
-              <span class="calculator__slider-style-price-r">Р*</span>
-              <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-            </p>
-            <div class="calculator__slider-style-descr-wrapper">
-              <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-              <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-            </div>
-          </div>
-
-        </div>
-        <div class="calculator__slider-vertical-item" data-bg-color="#F9B838">2222</div>
-        <div class="calculator__slider-vertical-item" data-bg-color="#00E676">3333</div>
-        <div class="calculator__slider-vertical-item" data-bg-color="#3D5AFE">4444</div>
+    <div class="sliders__top">
+      <div id="carousel-demo" class="owl-carousel  owl-carousel--demo">
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
       </div>
     </div>
-    <div class="calculator__style-selector" id="style-selector">style-selector</div>
-    <form class="calculator__style-form" id="style-form">style-form</form>
-  </div>
 
-  <div style="background-color: #ff0;min-height:350px">некий блок, название которого еще не определено</div>
+    <div class="sliders__bottom">
+      <h2 class="main-header">Приносим радость</h2>
+      <div id="carousel-reviews" class="owl-carousel  owl-carousel--reviews  owl-carousel--nav-dots">
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_02.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_04.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_02.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_04.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_01.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_05.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_04.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_02.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="promo">
+    <div class="promo__video-bg">
+      <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidcalc" loop>
+        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="promo__slider">
+      <h2 class="main-header">Холст прост</h2>
+      <div id="carousel-features" class="owl-carousel  owl-carousel--features  owl-carousel--nav-dots">
+        <div>
+          <div class="promo__slider-item-pict  promo__slider-item-pict--auto">@@include('img/icons/icon-auto.svg')</div>
+          <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+          <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+        </div>
+        <div>
+          <div class="promo__slider-item-pict  promo__slider-item-pict--love">@@include('img/icons/icon-love.svg')</div>
+          <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+          <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+        </div>
+        <div>
+          <div class="promo__slider-item-pict  promo__slider-item-pict--money">@@include('img/icons/icon-like-money.svg')</div>
+          <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+          <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+        </div>
+        <div>
+          <div class="promo__slider-item-pict  promo__slider-item-pict--flower">@@include('img/icons/icon-flower.svg')</div>
+          <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
+          <div class="promo__slider-item-decription">(или другим удобным для вас способом)</div>
+        </div>
+      </div>
+    </div>
+    <div class="promo__action">
+      <h3 class="main-header">Просто выберите свой стиль</h3>
+      <img class="promo__action-smile" src="img/smile.png" height="136" width="135" alt="">
+    </div>
+  </section>
 
 </div>
+
+<div class="calculator">
+  <div class="calculator__slider-vertical" id="style-slider">
+    <div class="calculator__slider-vertical-inner">
+      <div class="calculator__slider-vertical-item  calculator__slider-vertical-item--active" data-bg-color="#FCE3D0">
+
+        <div class="calculator__slider-item-style-variants">
+          <div id="style-variant-1" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
+            <div>
+              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
+            </div>
+            <div>
+              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
+            </div>
+            <div>
+              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
+            </div>
+            <div>
+              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
+            </div>
+          </div>
+        </div>
+
+        <div class="calculator__slider-style-text">
+          <p class="calculator__slider-style-price">
+            <s class="calculator__slider-style-old-price">3270</s>
+            <span class="calculator__slider-style-new-price">2260</span>
+            <span class="calculator__slider-style-price-r">Р*</span>
+            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
+          </p>
+          <div class="calculator__slider-style-descr-wrapper">
+            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
+            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
+          </div>
+        </div>
+
+      </div>
+      <div class="calculator__slider-vertical-item" data-bg-color="#F9B838">2222</div>
+      <div class="calculator__slider-vertical-item" data-bg-color="#00E676">3333</div>
+      <div class="calculator__slider-vertical-item" data-bg-color="#3D5AFE">4444</div>
+    </div>
+  </div>
+  <div class="calculator__style-selector" id="style-selector">style-selector</div>
+  <form class="calculator__style-form" id="style-form">style-form</form>
+</div>
+
+<div style="background-color: #ff0;min-height:350px">некий блок, название которого еще не определено</div>
 
 @@include('_include/page_bottom.html')
 </body>

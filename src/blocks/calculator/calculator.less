@@ -6,25 +6,16 @@
   position: relative;
 
   &__slider-vertical {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100vh;
-    overflow: hidden;
-    transition: background-color 0.5s;
+    min-height: 100vh;
   }
 
   &__slider-vertical-inner {
     position: relative;
-    transform: translateY(0);
-    transition: transform 0.5s;
   }
 
   &__slider-vertical-item {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
   }
 
@@ -135,5 +126,14 @@
   &__slider-style-descr-text {
     color: #3d5afe;
     display: block;
+  }
+
+
+
+  &__style-selector,
+  &__style-form {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
