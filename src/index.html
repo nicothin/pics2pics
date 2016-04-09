@@ -248,10 +248,59 @@
 
 </div>
 
-<div class="calculator">
+<section class="calculator">
+
+  <div class="style-selector  calculator__style-selector" id="style-selector">
+
+    <div class="style-selector__header">
+      <h1 class="style-selector__title">Калькулятор стиля</h1>
+      <p class="style-selector__message">Выберите стиль, размер и загрузите фото</p>
+    </div>
+
+    <div class="style-selector__selector">
+      <b class="style-selector__subtitle">Стиль</b>
+      <ul class="style-selector__style-list">
+        <li class="style-selector__style-item  style-selector__style-item--active"><a href="#style_1">1</a></li>
+        <li class="style-selector__style-item"><a href="#style_2">2</a></li>
+        <li class="style-selector__style-item"><a href="#style_3">3</a></li>
+        <li class="style-selector__style-item"><a href="#style_4">4</a></li>
+      </ul>
+    </div>
+
+    <div class="style-selector__sizes">
+      <b class="style-selector__subtitle">Размер</b>
+      <ul class="style-selector__sizes-list">
+        <li class="style-selector__sizes-item" data-x="70" data-y="105">70 × 105</li>
+        <li class="style-selector__sizes-item" data-x="60" data-y="90">60 × 90</li>
+        <li class="style-selector__sizes-item" data-x="50" data-y="70">50 × 70</li>
+        <li class="style-selector__sizes-item" data-x="40" data-y="60">40 × 60</li>
+        <li class="style-selector__sizes-item" data-x="80" data-y="80">80 × 80</li>
+        <li class="style-selector__sizes-item" data-x="60" data-y="60">60 × 60</li>
+        <li class="style-selector__sizes-item  style-selector__sizes-item--active" data-x="50" data-y="50">50 × 50</li>
+        <li class="style-selector__sizes-item" data-x="30" data-y="30">30 × 30</li>
+      </ul>
+      <div class="style-selector__sizes-preview-wrapper">
+        <span class="style-selector__sizes-preview"></span>
+      </div>
+    </div>
+
+    <div class="style-selector__upload">
+      <div class="field-file  style-selector__upload-btn">
+        <label class="field-file__input-wrap">
+          <input class="field-file__input" type="file" >
+          <div class="field-file__name-text  btn  btn--large">Загрузите фото</div>
+        </label>
+      </div>
+      <p class="style-selector__upload-descr">И бесплатно получите эскизы на почту</p>
+    </div>
+
+  </div>
+
+  <form class="calculator__style-form" id="style-form">style-form</form>
+
   <div class="calculator__slider-vertical" id="style-slider">
     <div class="calculator__slider-vertical-inner">
-      <div class="calculator__slider-vertical-item" data-bg-color="#D4EAFF">
+      <div class="calculator__slider-vertical-item" id="style_1" data-bg-color="#D4EAFF">
 
         <div class="calculator__slider-item-style-variants">
           <div id="style-variant-1" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
@@ -284,7 +333,7 @@
         </div>
 
       </div>
-      <div class="calculator__slider-vertical-item" data-bg-color="#FCE3D0">
+      <div class="calculator__slider-vertical-item" id="style_2" data-bg-color="#FCE3D0">
 
         <div class="calculator__slider-item-style-variants">
           <div id="style-variant-2" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
@@ -323,7 +372,7 @@
         </div>
 
       </div>
-      <div class="calculator__slider-vertical-item" data-bg-color="#00E676">
+      <div class="calculator__slider-vertical-item" id="style_3" data-bg-color="#00E676">
 
         <div class="calculator__slider-item-style-variants">
           <div id="style-variant-3" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
@@ -359,7 +408,7 @@
         </div>
 
       </div>
-      <div class="calculator__slider-vertical-item" data-bg-color="#3D5AFE">
+      <div class="calculator__slider-vertical-item" id="style_4" data-bg-color="#3D5AFE">
 
         <div class="calculator__slider-item-style-variants">
           <div id="style-variant-4" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
@@ -391,11 +440,10 @@
       </div>
     </div>
   </div>
-  <div class="calculator__style-selector" id="style-selector">style-selector</div>
-  <form class="calculator__style-form" id="style-form">style-form</form>
-</div>
 
-<div style="background-color: #ff0;min-height:350px">некий блок, название которого еще не определено</div>
+</section>
+
+<div class="subcalendar" style="background-color: #FDF6AA;min-height:800px">некий блок, название которого еще не определено</div>
 
 @@include('_include/page_bottom.html')
 </body>

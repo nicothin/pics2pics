@@ -41,9 +41,9 @@ $( document ).ready(function() {
   });
 
   // Клик по «ссылке» для промотки к галерее
-  $('#to-gallery').on('click', function(){
-    $('body').animate({scrollTop: $('#carousel-demo').offset().top }, 350);
-  });
+  // $('#to-gallery').on('click', function(){
+  //   $('body').animate({scrollTop: $('#carousel-demo').offset().top }, 350);
+  // });
 
   // Галерея «второго экрана», инициализация лайтбокса
   $('[rel="gallery-demo"]').fancybox({
