@@ -151,13 +151,14 @@
     left: 0;
     width: 515px;
     background-color: rgba(187, 221, 236, 0.85);
+    transition: transform 0.3s;
 
     .js & {
       transform: translateX(-515px);
 
       &--show {
         transform: translateX(0);
-        transition: transform 0.3s;
+
       }
     }
   }

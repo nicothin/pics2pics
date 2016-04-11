@@ -165,4 +165,13 @@ $( document ).ready(function() {
     $('#canvas-sizes-preview').height( $(this).data('y') ).width( $(this).data('x') );
   });
 
+  //
+  $('#style-form-show').on('click', function(){
+    $('#style-form').addClass('calculator__style-form--show');
+  });
+  //
+  $('#style-form-hide').on('click', function(){
+    $('#style-form').removeClass('calculator__style-form--show');
+  });
+
 });

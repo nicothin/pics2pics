@@ -287,18 +287,19 @@
     <div class="style-selector__upload">
       <div class="field-file  style-selector__upload-btn">
         <label class="field-file__input-wrap">
-          <input class="field-file__input" type="file" >
+          <input class="field-file__input" type="file">
           <div class="field-file__name-text  btn  btn--large">Загрузите фото</div>
         </label>
       </div>
       <p class="style-selector__upload-descr">И бесплатно получите эскизы на почту</p>
+      <button class="btn" id="style-form-show">показать форму</button> (временная кнопка)
     </div>
 
   </div>
 
   <form class="calculator__style-form  style-form" id="style-form">
     <div class="style-form__narrow">
-      <span class="style-form__btn-back">Скрыть форму</span>
+      <span class="style-form__btn-back" id="style-form-hide">Скрыть форму</span>
       <span class="style-form__btn-plus">Добавить фото</span>
       <div class="style-form__upload-photo-list">
         <!-- Предполагается вставка JS-ом, сделано фоновой картинкой для центрирования и неискажения пропорций внутри квадратного блока -->
