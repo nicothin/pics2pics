@@ -113,6 +113,6 @@ src/            # Исходные файлы
 
 
 ```bash
-npm start build    # собрать проект без карт кода
+NODE_ENV=production npm start build    # собрать проект без карт кода
 npm start deploy   # отправить в gh-pages
 ```

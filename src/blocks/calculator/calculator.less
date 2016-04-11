@@ -27,7 +27,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 100vh;
+    bottom: 0;
   }
 
   &__slider-style-picture {
@@ -136,9 +136,9 @@
     left: 0;
     z-index: 9;
 
-    // .js & {
-    //   display: none;
-    // }
+    .js & {
+      display: none;
+    }
   }
 
 
@@ -151,5 +151,14 @@
     left: 0;
     width: 515px;
     background-color: rgba(187, 221, 236, 0.85);
+
+    .js & {
+      transform: translateX(-515px);
+
+      &--show {
+        transform: translateX(0);
+        transition: transform 0.3s;
+      }
+    }
   }
 }

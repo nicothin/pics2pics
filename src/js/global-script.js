@@ -40,11 +40,6 @@ $( document ).ready(function() {
     }
   });
 
-  // Клик по «ссылке» для промотки к галерее
-  // $('#to-gallery').on('click', function(){
-  //   $('body').animate({scrollTop: $('#carousel-demo').offset().top }, 350);
-  // });
-
   // Галерея «второго экрана», инициализация лайтбокса
   $('[rel="gallery-demo"]').fancybox({
     openEffect  : 'none',
@@ -104,8 +99,8 @@ $( document ).ready(function() {
     smartSpeed: 500,
   });
 
+  // Используем плагин для семны цвета фона страницы при прокрутке к определенным блокам
   var wHeight = $(window).height();
-
   $('.calculator__slider-vertical-item')
     .height(wHeight)
     .scrollie({
@@ -115,5 +110,58 @@ $( document ).ready(function() {
         $('body').css('background-color', bgColor);
       }
     });
+
+  // Следим за кликами на локальных ссылках и мотаем скролл плавно
+  $('a[href^="#"]').on('click', function(){
+    var targetPosition = $(this.hash).offset().top;            // целевая позиция скролла
+    $('body,html').animate({'scrollTop':targetPosition},300);  // анимируем прокрутку
+  });
+
+  // Показываем или скрываем блок текста калькулятора
+  function showHideCalculator() {
+    var scrollPosition = $(document).scrollTop();
+    var calcPosition = $('#calculator').offset().top;
+    if(scrollPosition >= (calcPosition - 50)) {
+      $('#style-selector').fadeIn();
+    }
+    else {
+      $('#style-selector').fadeOut(50);
+    }
+  }
+
+  // Следим за скроллом для показа и сокрытия текста калькулятора
+  var t1;
+  $(window).on('scroll', function(){
+    clearTimeout(t1);
+    t1 = setTimeout(function () {
+      showHideCalculator();
+    }, 100);
+  });
+  showHideCalculator();
+
+  // Определим какую ссылку стиля подсвечивать
+  var hash = window.location.hash;
+  var styleLink = $('#calculator a[href="'+hash+'"]');
+  console.log(styleLink);
+  if(styleLink.length) {
+    styleLink.closest('li').addClass('style-selector__style-item--active');
+  }
+  else {
+    $('#styles li:first').addClass('style-selector__style-item--active');
+  }
+
+  // Следим за кликами на ссылках выбора стиля
+  $('#styles a').on('click', function(){
+    $('#styles a').closest('li').removeClass('style-selector__style-item--active');
+    $(this).closest('li').addClass('style-selector__style-item--active');
+    // промотка поисзойдет сама, выше есть слежение за локальными ссылками
+  });
+
+  // Следим за кликами на размерах холста
+  $('#canvas-sizes li').on('click', function(){
+    $('#canvas-sizes li').removeClass('style-selector__sizes-item--active');
+    $(this).addClass('style-selector__sizes-item--active');
+    $('#canvas-sizes-preview').height( $(this).data('y') ).width( $(this).data('x') );
+  });
 
 });

@@ -63,7 +63,7 @@
 
     </div>
 
-    <span class="first-screen__to-bottom" id="to-gallery"></span>
+    <a href="#carousel-demo" class="first-screen__to-bottom"></a>
 
   </section>
 
@@ -248,7 +248,7 @@
 
 </div>
 
-<section class="calculator">
+<section class="calculator" id="calculator">
 
   <div class="style-selector  calculator__style-selector" id="style-selector">
 
@@ -259,8 +259,8 @@
 
     <div class="style-selector__selector">
       <b class="style-selector__subtitle">Стиль</b>
-      <ul class="style-selector__style-list">
-        <li class="style-selector__style-item  style-selector__style-item--active"><a href="#style_1">1</a></li>
+      <ul class="style-selector__style-list" id="styles">
+        <li class="style-selector__style-item"><a href="#style_1">1</a></li>
         <li class="style-selector__style-item"><a href="#style_2">2</a></li>
         <li class="style-selector__style-item"><a href="#style_3">3</a></li>
         <li class="style-selector__style-item"><a href="#style_4">4</a></li>
@@ -269,7 +269,7 @@
 
     <div class="style-selector__sizes">
       <b class="style-selector__subtitle">Размер</b>
-      <ul class="style-selector__sizes-list">
+      <ul class="style-selector__sizes-list" id="canvas-sizes">
         <li class="style-selector__sizes-item" data-x="70" data-y="105">70 × 105</li>
         <li class="style-selector__sizes-item" data-x="60" data-y="90">60 × 90</li>
         <li class="style-selector__sizes-item" data-x="50" data-y="70">50 × 70</li>
@@ -280,7 +280,7 @@
         <li class="style-selector__sizes-item" data-x="30" data-y="30">30 × 30</li>
       </ul>
       <div class="style-selector__sizes-preview-wrapper">
-        <span class="style-selector__sizes-preview"></span>
+        <span class="style-selector__sizes-preview" id="canvas-sizes-preview"></span>
       </div>
     </div>
 
