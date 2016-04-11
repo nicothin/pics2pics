@@ -108,6 +108,8 @@ $( document ).ready(function() {
       scrollingInView : function(elem) {
         var bgColor = elem.data('bg-color');
         $('body').css('background-color', bgColor);
+        $('#styles li').removeClass('style-selector__style-item--active');
+        $('#styles a[href$="'+elem.attr('id')+'"]').closest('li').addClass('style-selector__style-item--active');
       }
     });
 
@@ -130,19 +132,18 @@ $( document ).ready(function() {
   }
 
   // Следим за скроллом для показа и сокрытия текста калькулятора
-  var t1;
+  // var t1;
   $(window).on('scroll', function(){
-    clearTimeout(t1);
-    t1 = setTimeout(function () {
+    // clearTimeout(t1);
+    // t1 = setTimeout(function () {
       showHideCalculator();
-    }, 100);
+    // }, 50);
   });
   showHideCalculator();
 
   // Определим какую ссылку стиля подсвечивать
   var hash = window.location.hash;
   var styleLink = $('#calculator a[href="'+hash+'"]');
-  console.log(styleLink);
   if(styleLink.length) {
     styleLink.closest('li').addClass('style-selector__style-item--active');
   }
@@ -152,7 +153,7 @@ $( document ).ready(function() {
 
   // Следим за кликами на ссылках выбора стиля
   $('#styles a').on('click', function(){
-    $('#styles a').closest('li').removeClass('style-selector__style-item--active');
+    $('#styles li').removeClass('style-selector__style-item--active');
     $(this).closest('li').addClass('style-selector__style-item--active');
     // промотка поисзойдет сама, выше есть слежение за локальными ссылками
   });
