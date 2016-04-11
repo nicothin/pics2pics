@@ -9,11 +9,26 @@
   text-transform: uppercase;
 
   &--md {
-    max-width: 325px;
+    width: 325px;
   }
 
   &--sm {
-    max-width: 260px;
+    width: 260px;
+  }
+
+  &--black {
+    .field-text__name {
+      color: #212121;
+    }
+
+    .field-text__input {
+      border-color: #FBC5FF;
+      .focus();
+    }
+
+    ::placeholder {
+      color: #212121;
+    }
   }
 
   &__name {

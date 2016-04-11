@@ -50,7 +50,7 @@
         <label class="field-text  field-text--sm">
           <div class="field-text__name">Для оперативной связи с Вами</div>
           <div class="field-text__input-wrap">
-            <input type="text" class="field-text__input" placeholder="Введите номер телефона">
+            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
           </div>
         </label>
         <div class="field-file">
@@ -296,7 +296,37 @@
 
   </div>
 
-  <form class="calculator__style-form" id="style-form">style-form</form>
+  <form class="calculator__style-form  style-form" id="style-form">
+    <div class="style-form__narrow">
+      <span class="style-form__btn-back">Скрыть форму</span>
+      <span class="style-form__btn-plus">Добавить фото</span>
+      <div class="style-form__upload-photo-list">
+        <!-- Предполагается вставка JS-ом, сделано фоновой картинкой для центрирования и неискажения пропорций внутри квадратного блока -->
+        <span class="style-form__upload-photo" style="background: url('data:image/jpeg;base64,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');"></span>
+        <!-- Если вдруг захочется вставлять тегами IMG (блок будет пропорционален размерам изображения!) -->
+        <img class="style-form__upload-photo" src="data:image/jpeg;base64,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" alt="">
+      </div>
+    </div>
+    <div class="style-form__fields-wrapper">
+      <div class="style-form__fields">
+        <label class="field-text  field-text--md  field-text--black">
+          <div class="field-text__name">Куда отправить Вам портрет</div>
+          <div class="field-text__input-wrap">
+            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
+          </div>
+        </label>
+        <label class="field-text  field-text--sm  field-text--black">
+          <div class="field-text__name">Для оперативной связи с Вами</div>
+          <div class="field-text__input-wrap">
+            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
+          </div>
+        </label>
+        <div class="field-actions">
+          <button class="btn  btn--rect">Прокачать фото</button>
+        </div>
+      </div>
+    </div>
+  </form>
 
   <div class="calculator__slider-vertical" id="style-slider">
     <div class="calculator__slider-vertical-inner">
