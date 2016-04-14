@@ -5,6 +5,18 @@
   min-height: 765px;
   position: relative;
 
+  &__features {
+    min-height: 800px;
+    position: relative;
+    text-align: center;
+    padding: 64px 0;
+
+    .main-header {
+      margin: 0;
+      margin-bottom: 42px;
+    }
+  }
+
   &__video-bg {
     min-height: 100%;
     background-color: #ddd;
@@ -40,8 +52,24 @@
     }
   }
 
+  &__slider-wrapper {
+    background-color: #BBDDEC;
+    padding: 55px 0 50px;
+  }
+
+  &__slider-items {
+    max-width: 1280px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__slider-item {
+    text-align: center;
+  }
+
   &__slider-item-pict {
-    min-height: 157px;
+    min-height: 170px;
 
     &--auto {
       svg {
@@ -86,7 +114,8 @@
 
   &__action {
     text-align: center;
-    padding-top: 80px;
+    padding-top: 61px;
+    background-color: #fff;
 
     .main-header {
       margin: 0;
@@ -95,6 +124,6 @@
 
   &__action-smile {
     display: inline-block;
-    padding: 61px 0 33px;
+    padding: 24px 0 32px;
   }
 }

@@ -80,13 +80,19 @@ $( document ).ready(function() {
   });
 
   // Карусель с «фишками»
-  $('#carousel-features').owlCarousel({
-    items: 3,
-    // loop: true,
-    nav: true,
-    mouseDrag: false,
-    touchDrag: false,
-    smartSpeed: 500,
+  // $('#carousel-features').owlCarousel({
+  //   items: 3,
+  //   // loop: true,
+  //   nav: true,
+  //   mouseDrag: false,
+  //   touchDrag: false,
+  //   smartSpeed: 500,
+  // });
+
+  // Клики по пагинаторам слайдеров стилей
+  $('#calculator .owl-dot').on('click', function(){
+    console.log('ddd');
+    $('body,html').animate({'scrollTop':$(this).closest('.calculator__slider-vertical-item').offset().top},100);
   });
 
   // Карусель с «фишками»
@@ -97,6 +103,9 @@ $( document ).ready(function() {
     mouseDrag: false,
     touchDrag: false,
     smartSpeed: 500,
+    onChange: function(event){
+      $('body,html').animate({'scrollTop':$(event.target).closest('.calculator__slider-vertical-item').offset().top},200);
+    }
   });
 
   // Используем плагин для семны цвета фона страницы при прокрутке к определенным блокам
