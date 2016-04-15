@@ -50,7 +50,11 @@
 
       &:hover, &:focus {
         &:before {
-          background-image: url(../img/icon-arr-left--hover.svg);
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
         }
       }
     }
@@ -58,7 +62,8 @@
     .owl-next {
       right: 0;
 
-      &:before {
+      &:before,
+      &:after {
         content: '';
         position: absolute;
         top: 50%;
@@ -77,7 +82,11 @@
 
       &:hover, &:focus {
         &:before {
-          background-image: url(../img/icon-arr-right--hover.svg);
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
         }
       }
     }

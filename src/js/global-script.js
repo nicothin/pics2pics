@@ -133,20 +133,20 @@ $( document ).ready(function() {
     var scrollPosition = $(document).scrollTop();
     var calcPosition = $('#calculator').offset().top;
     if(scrollPosition >= (calcPosition - 50)) {
-      $('#style-selector').fadeIn();
+      $('#style-selector').addClass('calculator__style-selector--shown');
     }
     else {
-      $('#style-selector').fadeOut(50);
+      $('#style-selector').removeClass('calculator__style-selector--shown');
     }
   }
 
   // Следим за скроллом для показа и сокрытия текста калькулятора
-  // var t1;
+  var t1;
   $(window).on('scroll', function(){
-    // clearTimeout(t1);
-    // t1 = setTimeout(function () {
+    clearTimeout(t1);
+    t1 = setTimeout(function () {
       showHideCalculator();
-    // }, 50);
+    }, 100);
   });
   showHideCalculator();
 

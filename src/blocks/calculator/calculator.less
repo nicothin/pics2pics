@@ -151,7 +151,12 @@
     }
 
     .js & {
-      display: none;
+      // display: none;
+      opacity: 0;
+
+      &--shown {
+        opacity: 1;
+      }
     }
   }
 
