@@ -123,7 +123,7 @@
     background-color: #fff;
     cursor: pointer;
 
-    &:before {
+    &:before, &:after {
       content: '';
       position: absolute;
       bottom: 5px;
@@ -132,11 +132,21 @@
       width: 53px;
       height: 36px;
       background-image: url(../img/icon-arr-down.svg);
+      transition: all 0.3s ease-out;
+    }
+
+    &:after {
+      opacity: 0;
+      background-image: url(../img/icon-arr-down--hover.svg);
     }
 
     &:hover, &:focus {
       &:before {
-        background-image: url(../img/icon-arr-down--hover.svg);
+        opacity: 0;
+      }
+
+      &:after {
+        opacity: 1;
       }
     }
   }

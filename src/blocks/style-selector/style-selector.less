@@ -54,13 +54,18 @@
       transition: all 0.3s ease-out 0.1s;
       text-decoration: none;
 
-      &:hover, &:focus {
+      &:hover {
         background-color: #475CFF;
+      }
+
+      &:focus {
+        background-color: #fff;
       }
     }
 
     &--active {
-      a {
+      a,
+      a:focus {
         background-color: #475CFF;
       }
     }
