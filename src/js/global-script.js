@@ -120,13 +120,16 @@ $( document ).ready(function() {
 
   // Функция показа или сокрытия блока текста калькулятора
   function showHideCalculator() {
-    var scrollPosition = $(document).scrollTop();
-    var calcPosition = $('#calculator').offset().top;
-    if(scrollPosition >= (calcPosition - 50)) {
-      $('#style-selector').addClass('calculator__style-selector--shown');
-    }
-    else {
-      $('#style-selector').removeClass('calculator__style-selector--shown');
+    // только если не показана форма
+    if( !$('#style-form').hasClass('style-form calculator__style-form--show') ) {
+      var scrollPosition = $(document).scrollTop();
+      var calcPosition = $('#calculator').offset().top;
+      if(scrollPosition >= (calcPosition - 50)) {
+        $('#style-selector').addClass('calculator__style-selector--shown');
+      }
+      else {
+        $('#style-selector').removeClass('calculator__style-selector--shown');
+      }
     }
   }
 
@@ -163,7 +166,7 @@ $( document ).ready(function() {
       $('#styles li').removeClass('style-selector__style-item--active').eq(calcActiveSlideIndex).addClass('style-selector__style-item--active');
       var bgColor = $('.calculator__slider-vertical-item').eq(calcActiveSlideIndex).data('bg-color');
       $('body').css('background-color', bgColor);
-      console.log(bgColor);
+      // console.log(bgColor);
     }, 50);
   });
 
@@ -181,7 +184,7 @@ $( document ).ready(function() {
   $('#styles a').on('click', function(){
     $('#styles li').removeClass('style-selector__style-item--active');
     $(this).closest('li').addClass('style-selector__style-item--active');
-    // промотка поисзойдет сама, выше есть слежение за локальными ссылками
+    // промотка поизойдёт сама, выше есть слежение за локальными ссылками
   });
 
   // Следим за кликами на размерах холста
@@ -191,12 +194,11 @@ $( document ).ready(function() {
     $('#canvas-sizes-preview').height( $(this).data('y') ).width( $(this).data('x') );
   });
 
-  // Показ и сокрытие формы (временное)
+  // Показ и сокрытие формы
   $('#style-form-show').on('click', function(){
     $('#style-form').addClass('calculator__style-form--show');
     $('#style-selector').removeClass('calculator__style-selector--shown');
   });
-  //
   $('#style-form-hide').on('click', function(){
     $('#style-form').removeClass('calculator__style-form--show');
     showHideCalculator();
