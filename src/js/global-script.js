@@ -1,6 +1,6 @@
 /*!
  * jQuery Scrollie Plugin v1.0.1
- * https://github.com/Funsella/jquery-scrollie
+ * https://github.com/pntrivedy/jquery-scrollie
  *
  * Copyright 2013 JP Nothard
  * Released under the MIT license
@@ -50,7 +50,6 @@ $( document ).ready(function() {
   var carouselReviews = $('#carousel-reviews');
   carouselReviews.owlCarousel({
     items: 1,
-    // loop: true,
     stagePadding: 110,
     nav: true,
     mouseDrag: false,
@@ -79,16 +78,6 @@ $( document ).ready(function() {
     carouselReviews.trigger('prev.owl.carousel');
   });
 
-  // Карусель с «фишками»
-  // $('#carousel-features').owlCarousel({
-  //   items: 3,
-  //   // loop: true,
-  //   nav: true,
-  //   mouseDrag: false,
-  //   touchDrag: false,
-  //   smartSpeed: 500,
-  // });
-
   // Клики по пагинаторам слайдеров стилей
   $('#calculator .owl-dot').on('click', function(){
     console.log('ddd');
@@ -98,7 +87,6 @@ $( document ).ready(function() {
   // Карусель с «фишками»
   $('#style-variant-1, #style-variant-2, #style-variant-3, #style-variant-4').owlCarousel({
     items: 1,
-    // loop: true,
     nav: true,
     mouseDrag: false,
     touchDrag: false,
@@ -108,7 +96,8 @@ $( document ).ready(function() {
     }
   });
 
-  // Используем плагин для семны цвета фона страницы при прокрутке к определенным блокам
+  // Используем плагин для смены цвета фона страницы при прокрутке к определенным блокам
+  // и для переключения подсвеченного пункта в калькуляторе стиля
   var wHeight = $(window).height();
   $('.calculator__slider-vertical-item')
     .height(wHeight)
@@ -117,8 +106,9 @@ $( document ).ready(function() {
       scrollingInView : function(elem) {
         var bgColor = elem.data('bg-color');
         $('body').css('background-color', bgColor);
-        $('#styles li').removeClass('style-selector__style-item--active');
-        $('#styles a[href$="'+elem.attr('id')+'"]').closest('li').addClass('style-selector__style-item--active');
+        // $('#styles li').removeClass('style-selector__style-item--active');
+        // $('#styles a[href$="'+elem.attr('id')+'"]').closest('li').addClass('style-selector__style-item--active');
+        // console.log( elem.attr('id') );
       }
     });
 
@@ -128,7 +118,7 @@ $( document ).ready(function() {
     $('body,html').animate({'scrollTop':targetPosition},300);  // анимируем прокрутку
   });
 
-  // Показываем или скрываем блок текста калькулятора
+  // Функция показа или сокрытия блока текста калькулятора
   function showHideCalculator() {
     var scrollPosition = $(document).scrollTop();
     var calcPosition = $('#calculator').offset().top;
@@ -149,6 +139,24 @@ $( document ).ready(function() {
     }, 100);
   });
   showHideCalculator();
+
+  // Своя реализация подсветки номера
+  var styleBlocks = $('#style-slider .calculator__slider-vertical-item');
+  var t2;
+  $(window).on('scroll', function(){
+    clearTimeout(t2);
+    t2 = setTimeout(function () {
+      var scrollPosition = $(document).scrollTop();
+      // styleBlocks.each(function(){
+      //   if( scrollPosition >= ($(this).offset().top - 150) ) {
+      //     $('#styles li').removeClass('style-selector__style-item--active');
+      //     $('#styles a[href$="'+elem.attr('id')+'"]').closest('li').addClass('style-selector__style-item--active');
+      //     console.log($(this).index());
+      //     return false;
+      //   }
+      // });
+    }, 50);
+  });
 
   // Определим какую ссылку стиля подсвечивать
   var hash = window.location.hash;
@@ -174,7 +182,7 @@ $( document ).ready(function() {
     $('#canvas-sizes-preview').height( $(this).data('y') ).width( $(this).data('x') );
   });
 
-  // Показ и сокрытие формы
+  // Показ и сокрытие формы (временное)
   $('#style-form-show').on('click', function(){
     $('#style-form').addClass('calculator__style-form--show');
     $('#style-selector').removeClass('calculator__style-selector--shown');
