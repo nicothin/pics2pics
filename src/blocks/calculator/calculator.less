@@ -145,17 +145,39 @@
     top: 0;
     left: 0;
     z-index: 9;
+    width: 430px;
+    padding: 63px 0 0 50px;
+    transition: all 0.3s cubic-bezier(0.31, 0.9, 0.41, 0.98);
 
     @media (min-width: @screen-xl) {
       left: 50%;
+      transform: translateX(-630px);
+      width: 450px;
+      padding: 63px 0 0 70px;
+    }
+
+    @media (min-width: @screen-xxl) {
+      transform: translateX(-780px);
     }
 
     .js & {
-      // display: none;
-      opacity: 0;
+      transform: translateX(-450px);
+
+      @media (min-width: @screen-xl) {
+        left: 0;
+      }
 
       &--shown {
-        opacity: 1;
+        transform: translateX(0);
+
+        @media (min-width: @screen-xl) {
+          left: 50%;
+          transform: translateX(-630px);
+        }
+
+        @media (min-width: @screen-xxl) {
+          transform: translateX(-780px);
+        }
       }
     }
   }
