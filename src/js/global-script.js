@@ -174,13 +174,15 @@ $( document ).ready(function() {
     $('#canvas-sizes-preview').height( $(this).data('y') ).width( $(this).data('x') );
   });
 
-  //
+  // Показ и сокрытие формы
   $('#style-form-show').on('click', function(){
     $('#style-form').addClass('calculator__style-form--show');
+    $('#style-selector').removeClass('calculator__style-selector--shown');
   });
   //
   $('#style-form-hide').on('click', function(){
     $('#style-form').removeClass('calculator__style-form--show');
+    showHideCalculator();
   });
 
 });
