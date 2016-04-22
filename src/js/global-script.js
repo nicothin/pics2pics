@@ -124,7 +124,7 @@ $( document ).ready(function() {
     if( !$('#style-form').hasClass('style-form calculator__style-form--show') ) {
       var scrollPosition = $(document).scrollTop();
       var calcPosition = $('#calculator').offset().top;
-      if(scrollPosition >= (calcPosition - 50)) {
+      if(scrollPosition >= (calcPosition - 300)) {
         $('#style-selector').addClass('calculator__style-selector--shown');
       }
       else {
@@ -139,7 +139,7 @@ $( document ).ready(function() {
     clearTimeout(t1);
     t1 = setTimeout(function () {
       showHideCalculator();
-    }, 100);
+    }, 20);
   });
   showHideCalculator();
 
