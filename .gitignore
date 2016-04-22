@@ -2,6 +2,7 @@ build/*
 !build/readme.md
 src/blocks/sprite-svg--localstorage/img/*.svg
 screen_main_3.3.jpg
+screen_add.jpg
 
 .Saved/
 _arc/

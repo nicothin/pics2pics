@@ -299,7 +299,7 @@
     <div class="style-selector__upload">
       <div class="field-file  style-selector__upload-btn">
         <label class="field-file__input-wrap">
-          <input class="field-file__input" type="file">
+          <input class="field-file__input" type="file" form="style-form">
           <div class="field-file__name-text  btn  btn--large">Загрузите фото</div>
         </label>
       </div>
@@ -486,7 +486,79 @@
 
 </section>
 
-<div class="subcalendar" style="background-color: #FDF6AA;min-height:800px">некий блок, название которого еще не определено</div>
+<div class="subcalendar" style="background-color: #FDF6AA;min-height:400px">некий блок, название которого еще не определено</div>
+
+<div class="sofa  subcalendar">
+  <div class="sofa__step-1">
+    <div class="sofa__help">
+      <h1>Наш диван поможет выбрать нужный размер</h1>
+    </div>
+    <div class="sofa__upload">
+      <div class="field-file  style-selector__upload-btn">
+        <label class="field-file__input-wrap">
+          <input class="field-file__input" type="file" form="sofa-form">
+          <div class="field-file__name-text  btn  btn--blue">Загрузите изображение</div>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="sofa__step-2">
+    <div class="sofa__pict">
+      <img src="img/subsofa-pict.jpg" height="101" width="143" alt="">
+    </div>
+    <div class="sofa__sizes" id="supsofa-sizes">
+      <div class="sofa__sizes-column">
+        <div class="sofa__sizes-item">50 × 70 см</div>
+        <div class="sofa__sizes-item">40 × 60 см</div>
+        <div class="sofa__sizes-item">80 × 80 см</div>
+        <div class="sofa__sizes-item">60 × 60 см</div>
+      </div>
+      <div class="sofa__sizes-column  sofa__sizes-column--center">
+        <div class="sofa__sizes-item">50 × 70 см</div>
+        <div class="sofa__sizes-item  sofa__sizes-item--active">40 × 60 см</div>
+        <div class="sofa__sizes-item">80 × 80 см</div>
+        <div class="sofa__sizes-item">60 × 60 см</div>
+      </div>
+      <div class="sofa__sizes-column">
+        <div class="sofa__sizes-item">80 × 80 см</div>
+        <div class="sofa__sizes-item">60 × 60 см</div>
+      </div>
+      <button class="sofa__more-sizes  btn  btn--blue-border">Хочу другой размер</button>
+    </div>
+    <div class="sofa__text">
+      <p class="sofa__price">
+        <s class="sofa__old-price">6370</s>
+        <span class="sofa__new-price">5660</span>
+        <span class="sofa__price-r">Р*</span>
+      </p>
+      <div class="sofa__descr-wrapper">
+        <strong class="sofa__descr-accent">Готовая картина на подрамнике <br>+ защитный лак.</strong>
+        <span class="sofa__descr-text">Останется оплатить только доставку</span>
+      </div>
+    </div>
+  </div>
+  <form class="style-form  style-form--bottom  sofa__form" id="sofa-form">
+    <div class="style-form__fields-wrapper">
+      <div class="style-form__fields">
+        <label class="field-text  field-text--md  field-text--black">
+          <div class="field-text__name">Куда отправить макет</div>
+          <div class="field-text__input-wrap">
+            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
+          </div>
+        </label>
+        <label class="field-text  field-text--sm  field-text--black">
+          <div class="field-text__name">Для оперативной связи с Вами</div>
+          <div class="field-text__input-wrap">
+            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
+          </div>
+        </label>
+        <div class="field-actions">
+          <button class="btn  btn--rect">В работу</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
 
 @@include('_include/page_bottom.html')
 </body>
