@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+<meta charset="utf-8">
+<title>Заголовок</title>
+<meta name="description" content="">
+@@include('_include/page_head.html')
+</head>
+
+<body>
+
+<div class="main" id="main">
+
+  <section class="first-screen">
+
+    <div class="first-screen__video">
+      <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidtop" loop>
+        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
+        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+      </video>
+      <div class="first-screen__sup-video">
+        <div class="first-screen__sup-video-top">
+          @@include('img/icons/icon-auto.svg')
+          <b class="first-screen__">Получите картину вовремя!</b>
+          <p>
+            быстрая доставка курьером от 1 дня<br>
+            175 пунктов выдачи в 64 городах
+          </p>
+        </div>
+        <div class="first-screen__sup-video-bottom">
+          @@include('img/icons/icon-like-money.svg')
+          <b>Платите за результат!</b>
+          <p>
+            без предоплаты<br>
+            оплата при получении
+          </p></div>
+      </div>
+    </div>
+
+    <div class="first-screen__texts">
+
+      <div class="first-screen__synopsis">
+        <div class="first-screen__contact-phone">
+          <div class="first-screen__work-time">с 10:00 до 20:00</div>
+          <div class="first-screen__phone">8 800 333 47 44</div>
+        </div>
+        <div class="first-screen__main-text">
+          <h1 class="first-screen__message">
+            C&nbsp;вас<br>картинки<br>с&nbsp;нас картины
+          </h1>
+          <p class="first-screen__description  first-screen__description--light">
+            За 1 день сделаем картину на холсте<br>
+            и оперативно доставим к вам
+          </p>
+        </div>
+      </div>
+
+      <form class="first-screen__fast-upload">
+        <h2 class="main-header">Хотите быстро получить картину?</h2>
+        <label class="field-text  field-text--md">
+          <div class="field-text__name">Чтобы согласовать с Вами макет</div>
+          <div class="field-text__input-wrap">
+            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
+          </div>
+        </label>
+        <label class="field-text  field-text--sm">
+          <div class="field-text__name">Для оперативной связи с Вами</div>
+          <div class="field-text__input-wrap">
+            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
+          </div>
+        </label>
+        <div class="field-file">
+          <label class="field-file__input-wrap">
+            <input class="field-file__input" type="file" >
+            <div class="field-file__name-text  btn">Загрузить фото</div>
+          </label>
+        </div>
+      </form>
+
+    </div>
+
+    <a href="#carousel-demo" class="first-screen__to-bottom"></a>
+
+  </section>
+
+  <section class="sliders">
+
+    <div class="sliders__top">
+      <div id="carousel-demo" class="owl-carousel  owl-carousel--demo">
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-01.jpg"><img src="img/TEMP-01.jpg" alt=""></a></div>
+        <div><a rel="gallery-demo" href="img/TEMP-02.jpg"><img src="img/TEMP-02.jpg" alt=""></a></div>
+      </div>
+    </div>
+
+    <section class="sliders__pofessionals">
+      <h2 class="sliders__pofessionals-title">Как профессионалы, мы выбираем лучшее</h2>
+      <div class="sliders__pofessionals-col">
+        <p>Благодаря 12-красочной печати<br> цвета на картине будут<br> яркими, насыщенными и глубокими</p>
+      </div>
+      <div class="sliders__pofessionals-col  sliders__pofessionals-col--second">
+        <p>Наши чернила LUCIA EX<br> способны сохранять цвет<br> и насыщенность до 95 лет</p>
+      </div>
+    </section>
+
+  </section>
+
+  <section class="promo">
+    <div class="promo__features">
+      <div class="promo__video-bg">
+        <video autoplay poster="video/product.jpg" id="bgvidcalc" loop>
+          <source src="video/product.webm" type="video/webm">
+          <source src="video/product.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="features  features--v2">
+        <span class="features__icon">@@include('img/icons/icon-flower.svg')</span>
+        <div class="features__item">
+          <h3 class="features__item-header">Только натуральные материалы</h3>
+          <p class="features__item-description">Xлопковый холст, сосновый подрамник, <br>крафтовый скотч, эко чернила</p>
+        </div>
+        <div class="features__item">
+          <h3 class="features__item-header">Безупречное качество отделки</h3>
+          <p class="features__item-description">Для нас нет второстепенных деталей, <br>наша аккуратность радует глаз</p>
+        </div>
+        <div class="features__item">
+          <h3 class="features__item-header">Красивый и простой крепеж</h3>
+          <p class="features__item-description">В комплекте будет все, <br>чтобы очень легко повесить картину </p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="sliders">
+    <div class="sliders__bottom">
+      <h2 class="main-header">Приносим радость</h2>
+      <div id="carousel-reviews" class="owl-carousel  owl-carousel--reviews  owl-carousel--nav-dots">
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_02.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_04.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_02.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_04.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_01.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_05.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Екатерина</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_04.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Гоша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_02.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<div class="subcalendar" style="background-color: #F9B838;min-height:400px">некий блок, контента пока  нет</div>
+
+<section class="submit-photo">
+  <p>
+    Присылайте ваше фото <br>
+    Наш менеджер перезвонит и согласует детали заказа <br>
+    Для наилучшего результата бесплатно сделаем цветокоррекцию  <br>
+    Изготовим, бережно упакуем и доставим вашу картину в кратчайшие сроки
+  </p>
+</section>
+
+@@include('_include/page_bottom.html')
+</body>
+</html>

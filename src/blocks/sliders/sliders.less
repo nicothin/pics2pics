@@ -107,4 +107,45 @@
     }
 
   }
+
+  &__pofessionals {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 173px 50px 50px;
+    background: #fff url(../img/stars.png) 50% 50px no-repeat;
+  }
+
+  &__pofessionals-title {
+    width: 100%;
+    margin: 0 0 45px;
+    color: @color-main;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 26px;
+    letter-spacing: 0.1em;
+  }
+
+  &__pofessionals-col {
+    width: 50%;
+
+    @media (min-width: @screen-xl) {
+      transform: translateX(55px);
+    }
+
+    &--second {
+      @media (min-width: @screen-xl) {
+        transform: translateX(-60px);
+      }
+    }
+
+    p {
+      color: @color-secondary;
+      text-transform: lowercase;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.22em;
+      margin: 0;
+    }
+  }
 }
