@@ -6,6 +6,14 @@
   display: flex;
   width: 100%;
 
+  .field-text__input {
+    border-color: #BBDDEC;
+
+    &::placeholder {
+      color: #475CFF;
+    }
+  }
+
   &__top-line {
     position: absolute;
     z-index: 3;
@@ -199,13 +207,19 @@
 
   &__fast-upload {
     height: 330px;
-    background-color: #fff;
+    background-color: #0A1946;
     text-align: center;
     padding: 15px;
     text-transform: uppercase;
 
     .main-header {
       margin-bottom: 1.25em;
+      color: #fff;
+      font-weight: 400;
+    }
+
+    .field-text__name {
+      color: #BBDDEC;
     }
 
     .field-file {
