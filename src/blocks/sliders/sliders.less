@@ -6,7 +6,13 @@
 
   &__top {
     width: 100%;
+    height: 407px;
     overflow: hidden;
+    background-color: #fff;
+
+    .owl-carousel {
+      height: 407px;
+    }
 
     .owl-item {
       padding: 1px 1px 1px 0;
@@ -21,10 +27,9 @@
     .owl-prev,
     .owl-next {
       position: absolute;
-      top: 50%;
+      bottom: 0;
       width: 77px;
       height: 77px;
-      transform: translateY(-50%);
       background-color: #fff;
       color: #fff;
       cursor: pointer;
@@ -110,42 +115,56 @@
 
   &__pofessionals {
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 173px 50px 50px;
-    background: #fff url(../img/stars.png) 50% 50px no-repeat;
-  }
-
-  &__pofessionals-title {
-    width: 100%;
-    margin: 0 0 45px;
-    color: @color-main;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 26px;
-    letter-spacing: 0.1em;
-  }
-
-  &__pofessionals-col {
-    width: 50%;
-
-    @media (min-width: @screen-xl) {
-      transform: translateX(55px);
-    }
-
-    &--second {
-      @media (min-width: @screen-xl) {
-        transform: translateX(-60px);
-      }
-    }
+    padding: 154px 50px 16px;
+    background: #030C23 url(../img/stars.png) 50% 40px no-repeat;
 
     p {
-      color: @color-secondary;
+      color: #4BC19F;
       text-transform: lowercase;
       font-size: 18px;
       line-height: 26px;
       letter-spacing: 0.22em;
       margin: 0;
+      margin-bottom: 10px;
     }
   }
+
+  &__pofessionals-title {
+    width: 100%;
+    margin: 0 0 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    letter-spacing: 0.1em;
+  }
+
+
+
+  &__prices {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__prices-title {
+    width: 100%;
+    text-align: center;
+    margin-top: 6px;
+    margin-bottom: 20px;
+  }
+
+  &__prices-item {
+    width: 25%;
+    height: 216px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    background-size: cover;
+    background-position: center;
+
+    &:first-of-type {
+      border-left: 1px solid #fff;
+    }
+  }
+
 }

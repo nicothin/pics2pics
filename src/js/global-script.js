@@ -28,6 +28,8 @@ $( document ).ready(function() {
   // Карусель с демками картин
   $('#carousel-demo').owlCarousel({
     items: 5,
+    autoWidth: true,
+    center: true,
     loop: true,
     nav: true,
     responsive : {
@@ -42,8 +44,15 @@ $( document ).ready(function() {
 
   // Галерея «второго экрана», инициализация лайтбокса
   $('[rel="gallery-demo"]').fancybox({
-    openEffect  : 'none',
-    closeEffect : 'none'
+    // openEffect  : 'none',
+    // closeEffect : 'none',
+    helpers : {
+      overlay : {
+        css : {
+          'background' : 'rgba(58, 42, 45, 0.3)'
+        }
+      }
+    }
   });
 
   // Карусель с отзывами
