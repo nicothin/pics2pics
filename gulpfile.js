@@ -359,6 +359,7 @@ function getComponentsFiles() {
   }
   // Добавим глобальные изображения
   сomponentsFilesList.img.unshift(dirs.source + '/img/*.{jpg,jpeg,gif,png,svg}');
+  сomponentsFilesList.img.unshift(dirs.source + '/img/gallery/**/*.{jpg,jpeg}');
   сomponentsFilesList.img = uniqueArray(сomponentsFilesList.img);
   return сomponentsFilesList;
 }
