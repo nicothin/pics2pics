@@ -11,7 +11,7 @@
 
 $( document ).ready(function() {
 
-  // показ/сокрытие стрелки на «первом экране»
+  // // показ/сокрытие стрелки на «первом экране»
   var t0;
   $(window).on('scroll', function(){
     clearTimeout(t0);
@@ -39,19 +39,6 @@ $( document ).ready(function() {
       1920 : {
         items: 7
       },
-    }
-  });
-
-  // Галерея «второго экрана», инициализация лайтбокса
-  $('[rel="gallery-demo"]').fancybox({
-    // openEffect  : 'none',
-    // closeEffect : 'none',
-    helpers : {
-      overlay : {
-        css : {
-          'background' : 'rgba(58, 42, 45, 0.3)'
-        }
-      }
     }
   });
 
@@ -130,7 +117,7 @@ $( document ).ready(function() {
   // Функция показа или сокрытия блока текста калькулятора
   function showHideCalculator() {
     // только если не показана форма
-    if( !$('#style-form').hasClass('style-form calculator__style-form--show') ) {
+    if( !$('#style-form').hasClass('style-form calculator__style-form--show') && $('#calculator').length ) {
       var scrollPosition = $(document).scrollTop();
       var calcPosition = $('#calculator').offset().top;
       if(scrollPosition >= (calcPosition - 300)) {
@@ -211,6 +198,19 @@ $( document ).ready(function() {
   $('#style-form-hide').on('click', function(){
     $('#style-form').removeClass('calculator__style-form--show');
     showHideCalculator();
+  });
+
+  // Галерея «второго экрана», инициализация лайтбокса
+  $('[rel="gallery-demo"]').fancybox({
+    // openEffect  : 'none',
+    // closeEffect : 'none',
+    helpers : {
+      overlay : {
+        css : {
+          'background' : 'rgba(58, 42, 45, 0.3)'
+        }
+      }
+    }
   });
 
 });
