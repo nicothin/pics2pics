@@ -1,0 +1,44 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/style-form/style-form.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.style-form {
+  background-color: rgba(198, 217, 220, 0.87);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: e("calc(50% + 162px)");
+  text-align: center;
+  padding-top: 30px;
+  transform: translateY(101%);
+  transition: transform 0.3s;
+
+  &--shown {
+    transform: translateY(0);
+  }
+
+  &__btn {
+    .btn();
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 32px;
+    background-color: #4AE671;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    min-width: 204px;
+    border-color: #FBC5FF;
+  }
+
+  .field-text__name {
+    color: #212121;
+  }
+
+  .field-text__input::placeholder {
+    color: #0044cc;
+    font-weight: 600;
+  }
+}
