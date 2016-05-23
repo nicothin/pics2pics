@@ -1,0 +1,82 @@
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.promo {
+  min-height: 765px;
+  position: relative;
+
+  &__features {
+    min-height: 800px;
+    position: relative;
+    text-align: center;
+    padding: 64px 0;
+
+    .main-header {
+      margin: 0;
+      margin-bottom: 42px;
+    }
+  }
+
+  &__video-bg {
+    min-height: 100%;
+    background-color: #ddd;
+    flex-grow: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+
+    video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      transform: translateX(-50%) translateY(-50%);
+    }
+  }
+
+  &__features-list {
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      margin: auto;
+      width: 92px;
+      height: 203px;
+      background-image: url(../img/top-pict.svg);
+      margin-bottom: 50px;
+    }
+  }
+
+  &__feature {
+    margin-bottom: 88px;
+  }
+
+  &__feature-header {
+    font-size: 26px;
+    line-height: 120%;
+    color: #fff;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+
+    &--green {
+      color: #4BC19F;
+    }
+  }
+
+  &__feature-description {
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.22em;
+    color: #304ffe;
+    margin: 0;
+  }
+}
