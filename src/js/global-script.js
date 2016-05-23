@@ -46,16 +46,16 @@ $( document ).ready(function() {
   });
 
   // Карусель с отзывами
-  // var carouselReviews = $('#carousel-reviews');
-  // carouselReviews.owlCarousel({
-  //   items: 1,
-  //   stagePadding: 110,
-  //   nav: true,
-  //   mouseDrag: false,
-  //   touchDrag: false,
-  //   smartSpeed: 500,
-  //   onTranslate: changeBegin
-  // });
+  var carouselReviews = $('#carousel-reviews');
+  carouselReviews.owlCarousel({
+    items: 1,
+    stagePadding: 110,
+    nav: true,
+    mouseDrag: false,
+    touchDrag: false,
+    smartSpeed: 500,
+    onTranslate: changeBegin
+  });
 
   // Добавим предыдущему и следующему слайдам классы
   $('#carousel-reviews .active').prev().addClass('prev');

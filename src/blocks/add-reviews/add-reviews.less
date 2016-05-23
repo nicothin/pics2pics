@@ -1,0 +1,35 @@
+// Для импорта в диспетчер подключений: @import './src/blocks/add-reviews/add-reviews.less';
+
+@import '../../less/variables.less';     // только для удобства обращения к переменным
+
+
+.add-reviews {
+  width: 785px;
+  border: 1px solid #4BC19F;
+  margin: auto;
+  padding: 14px 14px 6px;
+  background-color: #FDE4E4;
+
+  .field-text__input {
+    background-color: #F8F8FF;
+    border-color: #F8F8FF;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    text-transform: none;
+    height: 30px;
+    line-height: 30px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #1D46CF;
+
+    &::placeholder {
+      color: #1D46CF;
+    }
+  }
+
+  textarea.field-text__input {
+    border-radius: 0;
+    text-align: left;
+    background-color: #FDF05F;
+  }
+}
