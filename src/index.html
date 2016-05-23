@@ -12,208 +12,125 @@
 
 <div class="main" id="main">
 
+
+
   <section class="first-screen">
 
     <div class="first-screen__video">
-      <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidtop" loop>
-        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
-        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+
+      <video autoplay poster="video/main-teaser.jpg" id="bgvidcalc" loop>
+        <source src="video/main-teaser.webm" type="video/webm">
+        <source src="video/main-teaser.mp4" type="video/mp4">
       </video>
+      <div class="first-screen__sup-video">
+        <img src="img/logo.svg" alt="" class="first-screen__logo">
+        <h1 class="first-screen__main-msg">C вас<br>картинки<br>с&nbsp;нас картины</h1>
+        <p class="first-screen__sub-main-msg">За 1 день делаем картину на холсте<br>и оперативно доставляем вам</p>
+      </div>
+      <div class="first-screen__panda-msg">
+        <span class="first-screen__panda-delir-1">Яркие</span>
+        <span class="first-screen__panda-delir-2">и качественные</span>
+        <span class="first-screen__panda-delir-3">картины</span>
+        <span class="first-screen__panda-delir-4">на холсте</span>,
+        которые можно получить уже завтра
+      </div>
     </div>
 
     <div class="first-screen__texts">
 
-      <div class="first-screen__synopsis">
-        <div class="first-screen__contact-phone">
-          <div class="first-screen__work-time">с 10:00 до 20:00</div>
-          <div class="first-screen__phone">8 800 333 51 16</div>
-        </div>
-        <div class="first-screen__main-text">
-          <h1 class="first-screen__message">
-            C&nbsp;вас<br>картинки<br>с&nbsp;нас картины
-          </h1>
-          <p class="first-screen__description">
-            Уникальная авторская иллюстрация<br>
-            по вашему фото — на холсте :)
-          </p>
-        </div>
+      <div class="first-screen__text-top">
+        <a href="tel:+78003334744" class="first-screen__text-top-phone">8 800 333 4744</a>
+        <a href="#sofa" class="first-screen__text-top-prices">Цены и размеры</a>
       </div>
 
-      <form class="first-screen__fast-upload">
-        <h2 class="main-header">Присылайте ваше фото</h2>
-        <label class="field-text  field-text--md">
-          <div class="field-text__name">Куда отправить Вам портрет</div>
-          <div class="field-text__input-wrap">
-            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
-          </div>
-        </label>
-        <label class="field-text  field-text--sm">
-          <div class="field-text__name">Для оперативной связи с Вами</div>
-          <div class="field-text__input-wrap">
-            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
-          </div>
-        </label>
-        <div class="field-file">
-          <label class="field-file__input-wrap">
-            <input class="field-file__input" type="file" >
-            <div class="field-file__name-text  btn">Загрузить фото</div>
-          </label>
+      <div class="first-screen__text-inner">
+        <div class="first-screen__text-item">
+          <img src="img/car-blue.svg" alt="" width="166" height="128">
+          <b>Получите картину вовремя!</b>
+          <p>
+            быстрая доставка курьером от 1 дня<br>
+            175 пунктов выдачи в 64 городах
+          </p>
         </div>
-      </form>
+        <div class="first-screen__text-item">
+          <img src="img/like-blue.svg" alt="" width="116" height="139">
+          <b>Платите за результат!</b>
+          <p>
+            без предоплаты<br>
+            оплата при получении
+          </p></div>
+      </div>
 
     </div>
 
-    <a href="#carousel-demo" class="first-screen__to-bottom"></a>
+    <a href="#carousel-demo" class="first-screen__to-bottom"><span class="first-screen__to-bottom-text">Дальше больше</span></a>
 
   </section>
 
+<!-- <div class="first-screen__top-line">
+      <a href="" class="first-screen__top-logo"><img src="img/logo.png" alt=""></a>
+      <div class="first-screen__top-message">Вы нашли сервис высокачественной печати на холсте</div>
+      <div class="first-screen__top-contacts">с 10:00 до 20:00 <strong>8 800 333 4744</strong></div>
+    </div> -->
+<!-- <form class="first-screen__fast-upload">
+  <h2 class="main-header">Хотите быстро получить картину.</h2>
+  <label class="field-text  field-text--md">
+    <div class="field-text__name">Чтобы согласовать с Вами макет</div>
+    <div class="field-text__input-wrap">
+      <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
+    </div>
+  </label>
+  <label class="field-text  field-text--sm">
+    <div class="field-text__name">Для оперативной связи с Вами</div>
+    <div class="field-text__input-wrap">
+      <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
+    </div>
+  </label>
+  <div class="field-file">
+    <label class="field-file__input-wrap">
+      <input class="field-file__input" type="file" >
+      <div class="field-file__name-text  btn  btn--sq">Загрузить фото</div>
+    </label>
+  </div>
+</form> -->
+
+
+<!--
   <section class="sliders">
 
     <div class="sliders__top">
       <div id="carousel-demo" class="owl-carousel  owl-carousel--demo">
-        <div><a rel="gallery-demo" href="img/DSC_9334_2.jpg"><img src="img/thumb/DSC_9334_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9336_2.jpg"><img src="img/thumb/DSC_9336_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9337_2.jpg"><img src="img/thumb/DSC_9337_2.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img//DSC_9338_1.jpg"><img src="img/thumb/DSC_9338_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9339_1.jpg"><img src="img/thumb/DSC_9339.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9340.jpg"><img src="img/thumb/DSC_9340.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9343_1.jpg"><img src="img/thumb/DSC_9343_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9344_1.jpg"><img src="img/thumb/DSC_9344.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9346_1.jpg"><img src="img/thumb/DSC_9346.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9348.jpg"><img src="img/thumb/DSC_9348.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9350.jpg"><img src="img/thumb/DSC_9350.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9352.jpg"><img src="img/thumb/DSC_9352.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2366_1.jpg"><img src="img/thumb/I90A2366_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2369_1.jpg"><img src="img/thumb/I90A2369_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2373_3.jpg"><img src="img/thumb/I90A2373_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2381.jpg"><img src="img/thumb/I90A2381_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2384_1.jpg"><img src="img/thumb/I90A2384_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2386.jpg"><img src="img/thumb/I90A2386.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2393.jpg"><img src="img/thumb/I90A2393.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2394.jpg"><img src="img/thumb/I90A2394a.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2396.jpg"><img src="img/thumb/I90A2396.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2400.jpg"><img src="img/thumb/I90A2400.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2413.jpg"><img src="img/thumb/I90A2413a.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9334_2.jpg"><img src="img/thumb/DSC_9334_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9336_2.jpg"><img src="img/thumb/DSC_9336_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9337_2.jpg"><img src="img/thumb/DSC_9337_2.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img//DSC_9338_1.jpg"><img src="img/thumb/DSC_9338_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9339_1.jpg"><img src="img/thumb/DSC_9339.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9340.jpg"><img src="img/thumb/DSC_9340.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9343_1.jpg"><img src="img/thumb/DSC_9343_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9344_1.jpg"><img src="img/thumb/DSC_9344.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9346_1.jpg"><img src="img/thumb/DSC_9346.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9348.jpg"><img src="img/thumb/DSC_9348.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9350.jpg"><img src="img/thumb/DSC_9350.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/DSC_9352.jpg"><img src="img/thumb/DSC_9352.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2366_1.jpg"><img src="img/thumb/I90A2366_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2369_1.jpg"><img src="img/thumb/I90A2369_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2373_3.jpg"><img src="img/thumb/I90A2373_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2381.jpg"><img src="img/thumb/I90A2381_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2384_1.jpg"><img src="img/thumb/I90A2384_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2386.jpg"><img src="img/thumb/I90A2386.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2393.jpg"><img src="img/thumb/I90A2393.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2394.jpg"><img src="img/thumb/I90A2394a.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2396.jpg"><img src="img/thumb/I90A2396.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2400.jpg"><img src="img/thumb/I90A2400.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/I90A2413.jpg"><img src="img/thumb/I90A2413a.jpg" alt=""></a></div>
       </div>
     </div>
 
-    <div class="sliders__bottom">
-      <h2 class="main-header">Приносим радость</h2>
-      <div id="carousel-reviews" class="owl-carousel  owl-carousel--reviews  owl-carousel--nav-dots">
-        <div>
-          <ul class="reviews">
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_02.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-              </div>
-            </li>
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Гоша</b>
-                <div>Москва</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_04.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="reviews">
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_02.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-              </div>
-            </li>
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Гоша</b>
-                <div>Москва</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_04.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="reviews">
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_01.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-              </div>
-            </li>
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Гоша</b>
-                <div>Москва</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_05.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="reviews">
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_04.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-              </div>
-            </li>
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Гоша</b>
-                <div>Москва</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_02.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <section class="sliders__pofessionals">
+      <h2 class="sliders__pofessionals-title">Как профессионалы,<br>мы находим лучшее</h2>
+      <p>Благодаря 12-красочной печати цвета на картине будут яркими, насыщенными и&nbsp;глубокими</p>
+      <p>Наши чернила LUCIA EX способны сохранять цвет и насыщенность до 95 лет</p>
+    </section>
 
   </section>
 
@@ -225,277 +142,165 @@
           <source src="video/product.mp4" type="video/mp4">
         </video>
       </div>
-      <h2 class="main-header">Полезно для здоровья</h2>
-      <div class="features">
+      <div class="features  features--v2">
         <span class="features__icon">@@include('img/icons/icon-flower.svg')</span>
         <div class="features__item">
           <h3 class="features__item-header">Только натуральные материалы</h3>
-          <p class="features__item-description">Прикосновение природы</p>
+          <p class="features__item-description">Xлопковый холст, сосновый подрамник, <br>крафтовый скотч, эко чернила</p>
         </div>
         <div class="features__item">
           <h3 class="features__item-header">Безупречное качество отделки</h3>
-          <p class="features__item-description">Аккуратность радует глаз</p>
+          <p class="features__item-description">Для нас нет второстепенных деталей, <br>наша аккуратность радует глаз</p>
         </div>
         <div class="features__item">
           <h3 class="features__item-header">Красивый и простой крепеж</h3>
-          <p class="features__item-description">Повесить картину неожиданно легко</p>
+          <p class="features__item-description">В комплекте будет все, <br>чтобы очень легко повесить картину </p>
         </div>
       </div>
     </div>
-    <div class="promo__slider-wrapper">
-      <div class="promo__slider-items">
-        <div class="promo__slider-item">
-          <div class="promo__slider-item-pict  promo__slider-item-pict--auto">@@include('img/icons/icon-auto.svg')</div>
-          <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
-          <div class="promo__slider-item-decription">(вы получите картину вовремя)</div>
+
+  </section>
+
+  <section class="sliders">
+
+    <div class="sliders__bottom">
+      <h2 class="main-header">Приносим радость</h2>
+      <div id="carousel-reviews" class="owl-carousel  owl-carousel--reviews  owl-carousel--nav-dots">
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Оля</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_olya.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Неповторимо стильные,  восхитительно уникальные, лучики радости даже в самый скучный день — так должны работать все компании!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Вика</b>
+                <div>Санкт-Петербург</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_vika.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Даже не знаю, что в PICS2PICS мне нравится больше&nbsp;— световая скорость изготовления картин или цветовой охват их легендарного печатного оборудования.»
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="promo__slider-item">
-          <div class="promo__slider-item-pict  promo__slider-item-pict--love">@@include('img/icons/icon-love.svg')</div>
-          <strong class="promo__slider-item-title">Вернем деньги, если не понравится</strong>
-          <div class="promo__slider-item-decription">(да, вы все равно останетесь довольны)</div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Катя</b>
+                <div>Сергиев Посад</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_katya.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «PICS2PICS заставили меня отказаться от укорененных стереотипов и поверить в волшебство. Скорости выполнения качество работ в жертву не приносится — белая... нет, ЦВЕТНАЯ МАГИЯ!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Егор</b>
+                <div>Санкт-Петербург</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_egor.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Все супер. Всем доволен.»
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="promo__slider-item">
-          <div class="promo__slider-item-pict  promo__slider-item-pict--money">@@include('img/icons/icon-like-money.svg')</div>
-          <strong class="promo__slider-item-title">Оплата продукции при получении</strong>
-          <div class="promo__slider-item-decription">(вы платите за результат)</div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Юля</b>
+                <div>Кисловодск</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_julya.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Повесить на стену картину было проще простого, мне даже не пришлось просить об этом мужа — и это был для него двойной сюрприз!»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Маша</b>
+                <div>Москва</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_masha.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Спасибо вам, теперь в моей квартире не останется белых стен. Я теперь маньячка декора — анкор, ещё анкор!»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Андрей</b>
+                <div>Братск</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_andrei.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность... Аккуратность превыше всего! Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях.»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Александра</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_sasha.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Я иногда снимаю картину и вешаю её на другое место. Что мне ещё остаётся делать, если хочется любоваться ей везде, по всему дому?  Узнаю какой праздник следующий и возьму вторую!)»
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-    <div class="promo__action">
-      <h3 class="main-header">Просто выберите свой стиль</h3>
-      <img class="promo__action-smile" src="img/smile.png" height="136" width="135" alt="">
+
+    <div class="sliders__prices">
+      <p class="sliders__prices-title  main-header">Хорошо — не значит дорого</p>
+      <div class="sliders__prices-item" style="background-image: url(img/TEMP_price.jpg);">price temp</div>
+      <div class="sliders__prices-item" style="background-image: url(img/TEMP_price.jpg);">price temp</div>
+      <div class="sliders__prices-item" style="background-image: url(img/TEMP_price.jpg);">price temp</div>
+      <div class="sliders__prices-item" style="background-image: url(img/TEMP_price.jpg);">price temp</div>
     </div>
+
   </section>
 
 </div>
 
-<section class="calculator" id="calculator">
-
-  <div class="style-selector  calculator__style-selector" id="style-selector">
-
-    <div class="style-selector__header">
-      <h1 class="style-selector__title">Калькулятор стиля</h1>
-      <p class="style-selector__message">Выберите стиль, размер и загрузите фото</p>
-    </div>
-
-    <div class="style-selector__selector">
-      <b class="style-selector__subtitle">Стиль</b>
-      <ul class="style-selector__style-list" id="styles">
-        <li class="style-selector__style-item"><a href="#style_1">1</a></li>
-        <li class="style-selector__style-item"><a href="#style_2">2</a></li>
-        <li class="style-selector__style-item"><a href="#style_3">3</a></li>
-        <li class="style-selector__style-item"><a href="#style_4">4</a></li>
-      </ul>
-    </div>
-
-    <div class="style-selector__sizes">
-      <b class="style-selector__subtitle">Размер</b>
-      <ul class="style-selector__sizes-list" id="canvas-sizes">
-        <li class="style-selector__sizes-item" data-x="70" data-y="105">70 × 105</li>
-        <li class="style-selector__sizes-item" data-x="60" data-y="90">60 × 90</li>
-        <li class="style-selector__sizes-item" data-x="50" data-y="70">50 × 70</li>
-        <li class="style-selector__sizes-item" data-x="40" data-y="60">40 × 60</li>
-        <li class="style-selector__sizes-item" data-x="80" data-y="80">80 × 80</li>
-        <li class="style-selector__sizes-item" data-x="60" data-y="60">60 × 60</li>
-        <li class="style-selector__sizes-item  style-selector__sizes-item--active" data-x="50" data-y="50">50 × 50</li>
-        <li class="style-selector__sizes-item" data-x="30" data-y="30">30 × 30</li>
-      </ul>
-      <div class="style-selector__sizes-preview-wrapper">
-        <span class="style-selector__sizes-preview" id="canvas-sizes-preview"></span>
-      </div>
-    </div>
-
-    <div class="style-selector__upload">
-      <div class="field-file  style-selector__upload-btn">
-        <label class="field-file__input-wrap">
-          <input class="field-file__input" type="file" form="style-form">
-          <div class="field-file__name-text  btn  btn--large">Загрузите фото</div>
-        </label>
-      </div>
-      <p class="style-selector__upload-descr">И бесплатно получите эскизы на почту</p>
-      <button class="btn" id="style-form-show">показать форму</button> (временная кнопка)
-    </div>
-
-  </div>
-
-  <form class="calculator__style-form  style-form" id="style-form">
-    <div class="style-form__narrow">
-      <span class="style-form__btn-back" id="style-form-hide">Скрыть форму</span>
-      <span class="style-form__btn-plus">Добавить фото</span>
-      <div class="style-form__upload-photo-list">
-        <!-- Предполагается вставка JS-ом, сделано фоновой картинкой для центрирования и неискажения пропорций внутри квадратного блока -->
-        <span class="style-form__upload-photo" style="background: url('data:image/jpeg;base64,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');"></span>
-        <!-- Если вдруг захочется вставлять тегами IMG (блок будет пропорционален размерам изображения!) -->
-        <img class="style-form__upload-photo" src="data:image/jpeg;base64,/9j/2wCEAAcFBQUFBQcFBQcKBgUGCgsIBwcICw0LCwsLCw0RDAwMDAwMEQ0PEBEQDw0UFBYWFBQdHR0dHSAgICAgICAgICABBwgIDQwNGRERGRwWEhYcICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIP/dAAQACv/uAA5BZG9iZQBkwAAAAAH/wAARCABNAE0DABEAAREBAhEB/8QBogAAAAcBAQEBAQAAAAAAAAAABAUDAgYBAAcICQoLAQACAgMBAQEBAQAAAAAAAAABAAIDBAUGBwgJCgsQAAIBAwMCBAIGBwMEAgYCcwECAxEEAAUhEjFBUQYTYSJxgRQykaEHFbFCI8FS0eEzFmLwJHKC8SVDNFOSorJjc8I1RCeTo7M2F1RkdMPS4ggmgwkKGBmElEVGpLRW01UoGvLj88TU5PRldYWVpbXF1eX1ZnaGlqa2xtbm9jdHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4KTlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+hEAAgIBAgMFBQQFBgQIAwNtAQACEQMEIRIxQQVRE2EiBnGBkTKhsfAUwdHhI0IVUmJy8TMkNEOCFpJTJaJjssIHc9I14kSDF1STCAkKGBkmNkUaJ2R0VTfyo7PDKCnT4/OElKS0xNTk9GV1hZWltcXV5fVGVmZ2hpamtsbW5vZHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6/9oADAMAAAERAhEAPwCSxNU0J6Zc1MM/MvzCdM06PTbZ+Nxeci5U/EsQ2/4Y7ZCZZxDxv7Z9WXZBsB4+y5Bm3z5kFhRV2VcVbMjTCoKoi/tv0r/krgXmuDMdvUq/7DqaA+2KtrP6brKspWRSGINSVYGoIPtir0LTdYi1OxWcf3ooJU/yh/nXJWrKtHuKM1RvTp17ZJCc6bJxs0JG7EnwwKX/0JClFLcum5qewy5qeD+b9YfXddubgN/o8bGKHwEaGgP0nfKSbLaBskBJlbbZF2VfbFebaqXYICOT7V8BhVOrHRJ76VYIPTRSNnk75TLIA5EMJKLPlS9t2YGjgEV9Oh29q5A5g2DTFT1bQbi0/wBJtwfTkAYowqR41xjlB2KzwEbhD6LqZtrr02PFZdnAr26HLnGepaKfUlRuzDr88sYMghYJbxqfA/rxV//RX84ag+meWb+5ibjcMnoxkdQZDxqPoOWk7NYG7weRfRi4H+8k6jwHYZSNy3HYKIGwH7I3PvkmC6M0Yv3FAMBZBnGiQTVTitdhQ5rpl2+KLMdP0ae+bgBTIAEt0iAq3flaUiaKb7QRiKeFO+PCQiwQ8ev7b6lrEtv0MTin0gH+ObCBuIdRkFTIer+SXa6iVWPxRAdf5TuK/LcZbFqkyX7MUe38w+5jih//0in80L0Q6LbwA/HNMHNPBFJ3+lhkpog8gfkx5Hdj3PvkQyLivQDuNzjaqkcRLIijdyKfId/vyJLIBm1vN5n0f0lW3tbxNvgikX1T7AVDV+jMYjHJzwcsfN6H5N80Wl60kc1rLZXsKgyQzIR9Kt3ysjgbQTMcqKB82edxZST2VhEJr+deBd2CRRBj1d2wwHFv0Y5JcGw5vHNTknl1WaS4lSe45qJJIfsFhQEL406ZlxqnXTvi3es/l9CwhnkoQleIr4g0OWQYSZVCOXJH/wB1sQPvOFD/AP/ThH5oX4n1CO1HS2QVPu29Pxxmd0xGzBA0DIiMSsivuw7qR4+xyNFkCKbdaymg5UoAB3xB2UjdNdMspmkEpFZTsKDp8sonMOVixnmzLQ/I8rxTXURImmQoWeNZGUdSyu32Tt1yAzkiqb/y0QbJ3TjRpdTfWxYztWMgRFyKFiopyPueuUcILkcRCYN5HiaPVLyWdy1xT1uXFuSq3IRio2UEDYZaMkhGujUccJSvqXiYQevsKhpWKgbbBjmXezrK3e6+SrJbTR7cuay3P75yfFug+gAZbDk1z5ptJ+6nmNNmc4of/9TkHma/bUdTnuK1Erk/RWgH3ZAGzbM7CklcbA5MMCmVog5xswqZKD5CmUzLkYxuzbR7ZVdGIpvQf1zAkXb4xT1bSbiCy0d+ZG6mo+jJwlUWGSPFJgOlXF3c63JfyTRBA5/cp/usAnjy+juciSGQiU383+alstCnhtHBudQPowlT1JHxMPZRU5ZA8WzTlPAL6vG7OISygE/YYr8gAzH9WZZdbF7p5akrpdp3pGn6hl8OTTPmjr+omJrSpJ/AYlAf/9XiN1QzPTotT/TK48myXNCOKuEHbrlgYFMvU9KSEDbYU+YAGUVYLkXRDOdMnEkCcRRhQ5r5ii7WBsMgub+5i0tmWN5yB/dxU5fPemCNE02HvYlFLeOXWKwuQ8rCp9YAPXajADpmTwDvYCJ7j80o1a9+v6p+6JNrpsfppvUF60dh8ztX2y6EeGLrM0+Ke3IIext25TSU2Dnf5g5IlrAer6HeehBFGNlVQAfEAbZdA7NM+aa3dykrK3iuSLEP/9bhwtrmVySp5E1I/UMr4gGwQJRsGkyLSSUbk7DKzkbo4u9deW3ERvSpRiD8q0wRkmcWZeWIDd25iJImh6N/knx+nMLLsXY4dwyWCZISttPcxWsxB4CRlXkB1K8uuVCJPJu4gOZSPzJq1ppVpNFa6gLrVLsGOOKJw/EtsXbjXjQZk4cRJs8nH1GcCNA7sJ06OgkC71PD6FP9czJOsgn1jY0t39hyJ9yQP65BmyS2kEcLcakgUBGZA5OOU7tP3trEWPxBQDU4UP8A/9fkkOpJPCs0hRJNwwGwB+nKZYa5N8dTex2V1vQjKZt4j0PbKuFyeNXZ7aeAlWBYOSAe4P8Able4LKwQybyzLBbXRQHYq+/T4aAr+rKZ8rciHOmPeb7yC/uFkf44oyyAeGZGAEONqSCWOWM8cFz9bliLxqGEYQAUbsae2ZtbOv6p15djWcSMpDMS3wn7Q2rWmVyBttgRTKbWBTahAN3FNvwrldNiNC8bI9nJA+nLwdnHkE304N6AoK/PCh//0ONDTYiEVmJZiQTtTZOQ2y0xaeMlSMr2qokRokiqzKdwajwOQlEHmzjOQ5FqO4kSAupoGJYLTYUPTIHEG2OUr11u9RzIpUOwArQ7AdhvkPAiQ2fmZArJbt7kRGRQDI1HpXfem2XDCAA0HPKUiEYtgkc72gclEUyEnvTentkiHI8OkTAqWNLxR6lSI+B2FKE9RTK7YmID0DRTFfWgnCekY2I415A/gMjOIG7IFXuYgsckQ2CszAj22pkQWBCN04n0B8hk2L//0f/Z" alt="">
-      </div>
-    </div>
-    <div class="style-form__fields-wrapper">
-      <div class="style-form__fields">
-        <label class="field-text  field-text--md  field-text--black">
-          <div class="field-text__name">Куда отправить Вам портрет</div>
-          <div class="field-text__input-wrap">
-            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
-          </div>
-        </label>
-        <label class="field-text  field-text--sm  field-text--black">
-          <div class="field-text__name">Для оперативной связи с Вами</div>
-          <div class="field-text__input-wrap">
-            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
-          </div>
-        </label>
-        <div class="field-actions">
-          <button class="btn  btn--rect">Прокачать фото</button>
-        </div>
-      </div>
-    </div>
-  </form>
-
-  <div class="calculator__slider-vertical" id="style-slider">
-    <div class="calculator__slider-vertical-inner">
-      <div class="calculator__slider-vertical-item" id="style_1" data-bg-color="#D4EAFF">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-1" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">3270</s>
-            <span class="calculator__slider-style-new-price">2260</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-      <div class="calculator__slider-vertical-item" id="style_2" data-bg-color="#FCE3D0">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-2" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">3870</s>
-            <span class="calculator__slider-style-new-price">2960</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-      <div class="calculator__slider-vertical-item" id="style_3" data-bg-color="#00E676">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-3" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">6370</s>
-            <span class="calculator__slider-style-new-price">5660</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-      <div class="calculator__slider-vertical-item" id="style_4" data-bg-color="#3D5AFE">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-4" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 4">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 4">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 4">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">12070</s>
-            <span class="calculator__slider-style-new-price">9860</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
+<section class="submit-photo">
+  <p>
+    Присылайте ваше фото <br>
+    Наш менеджер перезвонит и согласует детали заказа <br>
+    Для наилучшего результата бесплатно сделаем цветокоррекцию  <br>
+    Изготовим, бережно упакуем и доставим вашу картину в кратчайшие сроки
+  </p>
 </section>
-
-<div class="subcalendar" style="background-color: #FDF6AA;min-height:400px">некий блок, название которого еще не определено</div>
 
 <div class="sofa  subcalendar">
   <div class="sofa__step-1">
@@ -512,9 +317,7 @@
     </div>
   </div>
   <div class="sofa__step-2">
-    <div class="sofa__pict">
-      <img src="img/subsofa-pict.jpg" height="101" width="143" alt="">
-    </div>
+    <div class="sofa__pict" style="width: 120px; height: 180px; background-image: url(img/subsofa-pict.jpg);"></div>
     <div class="sofa__sizes" id="supsofa-sizes">
       <div class="sofa__sizes-column">
         <div class="sofa__sizes-item">50 × 70 см</div>
@@ -568,6 +371,24 @@
     </div>
   </form>
 </div>
+
+<div class="thanx">
+  <div class="thanx__wrapper">
+    <div class="thanx__content">
+      <b class="thanx__title">Спасибо!</b>
+      <p>
+        Мы скоро с вами свяжемся, чтобы обсудить детали заказа.
+      </p>
+      <p>
+        Номер вашей заявки: <br>
+        <span id="">XXXXXXX</span>
+      </p>
+    </div>
+    <span class="thanx__smile"></span>
+  </div>
+  <div class="thanx__backdrop"></div>
+</div>
+-->
 
 @@include('_include/page_bottom.html')
 </body>

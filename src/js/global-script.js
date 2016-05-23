@@ -26,33 +26,33 @@ $( document ).ready(function() {
   });
 
   // Карусель с демками картин
-  $('#carousel-demo').owlCarousel({
-    items: 5,
-    autoWidth: true,
-    center: true,
-    loop: true,
-    nav: true,
-    responsive : {
-      1400 : {
-        items: 6
-      },
-      1920 : {
-        items: 7
-      },
-    }
-  });
+  // $('#carousel-demo').owlCarousel({
+  //   items: 5,
+  //   autoWidth: true,
+  //   center: true,
+  //   loop: true,
+  //   nav: true,
+  //   responsive : {
+  //     1400 : {
+  //       items: 6
+  //     },
+  //     1920 : {
+  //       items: 7
+  //     },
+  //   }
+  // });
 
   // Карусель с отзывами
-  var carouselReviews = $('#carousel-reviews');
-  carouselReviews.owlCarousel({
-    items: 1,
-    stagePadding: 110,
-    nav: true,
-    mouseDrag: false,
-    touchDrag: false,
-    smartSpeed: 500,
-    onTranslate: changeBegin
-  });
+  // var carouselReviews = $('#carousel-reviews');
+  // carouselReviews.owlCarousel({
+  //   items: 1,
+  //   stagePadding: 110,
+  //   nav: true,
+  //   mouseDrag: false,
+  //   touchDrag: false,
+  //   smartSpeed: 500,
+  //   onTranslate: changeBegin
+  // });
 
   // Добавим предыдущему и следующему слайдам классы
   $('#carousel-reviews .active').prev().addClass('prev');
@@ -75,22 +75,22 @@ $( document ).ready(function() {
   });
 
   // Клики по пагинаторам слайдеров стилей
-  $('#calculator .owl-dot').on('click', function(){
-    console.log('ddd');
-    $('body,html').animate({'scrollTop':$(this).closest('.calculator__slider-vertical-item').offset().top},100);
-  });
+  // $('#calculator .owl-dot').on('click', function(){
+  //   console.log('ddd');
+  //   $('body,html').animate({'scrollTop':$(this).closest('.calculator__slider-vertical-item').offset().top},100);
+  // });
 
   // Карусель с «фишками»
-  $('#style-variant-1, #style-variant-2, #style-variant-3, #style-variant-4').owlCarousel({
-    items: 1,
-    nav: true,
-    mouseDrag: false,
-    touchDrag: false,
-    smartSpeed: 500,
-    onChange: function(event){
-      $('body,html').animate({'scrollTop':$(event.target).closest('.calculator__slider-vertical-item').offset().top},200);
-    }
-  });
+  // $('#style-variant-1, #style-variant-2, #style-variant-3, #style-variant-4').owlCarousel({
+  //   items: 1,
+  //   nav: true,
+  //   mouseDrag: false,
+  //   touchDrag: false,
+  //   smartSpeed: 500,
+  //   onChange: function(event){
+  //     $('body,html').animate({'scrollTop':$(event.target).closest('.calculator__slider-vertical-item').offset().top},200);
+  //   }
+  // });
 
   // Используем плагин для смены цвета фона страницы при прокрутке к определенным блокам
   // и для переключения подсвеченного пункта в калькуляторе стиля
@@ -115,102 +115,102 @@ $( document ).ready(function() {
   });
 
   // Функция показа или сокрытия блока текста калькулятора
-  function showHideCalculator() {
-    // только если не показана форма
-    if( !$('#style-form').hasClass('style-form calculator__style-form--show') && $('#calculator').length ) {
-      var scrollPosition = $(document).scrollTop();
-      var calcPosition = $('#calculator').offset().top;
-      if(scrollPosition >= (calcPosition - 300)) {
-        $('#style-selector').addClass('calculator__style-selector--shown');
-      }
-      else {
-        $('#style-selector').removeClass('calculator__style-selector--shown');
-      }
-    }
-  }
+  // function showHideCalculator() {
+  //   // только если не показана форма
+  //   if( !$('#style-form').hasClass('style-form calculator__style-form--show') && $('#calculator').length ) {
+  //     var scrollPosition = $(document).scrollTop();
+  //     var calcPosition = $('#calculator').offset().top;
+  //     if(scrollPosition >= (calcPosition - 300)) {
+  //       $('#style-selector').addClass('calculator__style-selector--shown');
+  //     }
+  //     else {
+  //       $('#style-selector').removeClass('calculator__style-selector--shown');
+  //     }
+  //   }
+  // }
 
   // Следим за скроллом для показа и сокрытия текста калькулятора
-  var t1;
-  $(window).on('scroll', function(){
-    clearTimeout(t1);
-    t1 = setTimeout(function () {
-      showHideCalculator();
-    }, 20);
-  });
-  showHideCalculator();
+  // var t1;
+  // $(window).on('scroll', function(){
+  //   clearTimeout(t1);
+  //   t1 = setTimeout(function () {
+  //     showHideCalculator();
+  //   }, 20);
+  // });
+  // showHideCalculator();
 
   // Своя реализация подсветки номера
-  var t2;
-  var styleNum = $('.calculator__slider-vertical-item').length;
-  var calcItemHeight = $('#calculator').height() / styleNum;
-  var calcActiveSlideIndex;
-  $(window).on('scroll', function(){
-    clearTimeout(t2);
-    t2 = setTimeout(function () {
-      var scrollPosition = $(document).scrollTop();
-      var calcPosition = $('#calculator').offset().top - 1; // -1px поправки
-      if(scrollPosition > calcPosition) {
-        calcActiveSlideIndex = Math.abs(Math.round((scrollPosition - calcPosition) / calcItemHeight - 0.2) ); // 0.2 — коэффициент поправки
-        if (calcActiveSlideIndex > (styleNum - 1)) {
-          calcActiveSlideIndex = styleNum - 1;
-        }
-      }
-      else {
-        calcActiveSlideIndex = 0;
-      }
-      // console.log(calcActiveSlideIndex); // индексный номер слайда, занимающего сейчас экран
-      $('#styles li').removeClass('style-selector__style-item--active').eq(calcActiveSlideIndex).addClass('style-selector__style-item--active');
-      var bgColor = $('.calculator__slider-vertical-item').eq(calcActiveSlideIndex).data('bg-color');
-      $('body').css('background-color', bgColor);
-      // console.log(bgColor);
-    }, 50);
-  });
+  // var t2;
+  // var styleNum = $('.calculator__slider-vertical-item').length;
+  // var calcItemHeight = $('#calculator').height() / styleNum;
+  // var calcActiveSlideIndex;
+  // $(window).on('scroll', function(){
+  //   clearTimeout(t2);
+  //   t2 = setTimeout(function () {
+  //     var scrollPosition = $(document).scrollTop();
+  //     var calcPosition = $('#calculator').offset().top - 1; // -1px поправки
+  //     if(scrollPosition > calcPosition) {
+  //       calcActiveSlideIndex = Math.abs(Math.round((scrollPosition - calcPosition) / calcItemHeight - 0.2) ); // 0.2 — коэффициент поправки
+  //       if (calcActiveSlideIndex > (styleNum - 1)) {
+  //         calcActiveSlideIndex = styleNum - 1;
+  //       }
+  //     }
+  //     else {
+  //       calcActiveSlideIndex = 0;
+  //     }
+  //     // console.log(calcActiveSlideIndex); // индексный номер слайда, занимающего сейчас экран
+  //     $('#styles li').removeClass('style-selector__style-item--active').eq(calcActiveSlideIndex).addClass('style-selector__style-item--active');
+  //     var bgColor = $('.calculator__slider-vertical-item').eq(calcActiveSlideIndex).data('bg-color');
+  //     $('body').css('background-color', bgColor);
+  //     // console.log(bgColor);
+  //   }, 50);
+  // });
 
   // Определим какую ссылку стиля подсвечивать
-  var hash = window.location.hash;
-  var styleLink = $('#calculator a[href="'+hash+'"]');
-  if(styleLink.length) {
-    styleLink.closest('li').addClass('style-selector__style-item--active');
-  }
-  else {
-    $('#styles li:first').addClass('style-selector__style-item--active');
-  }
+  // var hash = window.location.hash;
+  // var styleLink = $('#calculator a[href="'+hash+'"]');
+  // if(styleLink.length) {
+  //   styleLink.closest('li').addClass('style-selector__style-item--active');
+  // }
+  // else {
+  //   $('#styles li:first').addClass('style-selector__style-item--active');
+  // }
 
   // Следим за кликами на ссылках выбора стиля
-  $('#styles a').on('click', function(){
-    $('#styles li').removeClass('style-selector__style-item--active');
-    $(this).closest('li').addClass('style-selector__style-item--active');
-    // промотка поизойдёт сама, выше есть слежение за локальными ссылками
-  });
+  // $('#styles a').on('click', function(){
+  //   $('#styles li').removeClass('style-selector__style-item--active');
+  //   $(this).closest('li').addClass('style-selector__style-item--active');
+  //   // промотка поизойдёт сама, выше есть слежение за локальными ссылками
+  // });
 
   // Следим за кликами на размерах холста
-  $('#canvas-sizes li').on('click', function(){
-    $('#canvas-sizes li').removeClass('style-selector__sizes-item--active');
-    $(this).addClass('style-selector__sizes-item--active');
-    $('#canvas-sizes-preview').height( $(this).data('y') ).width( $(this).data('x') );
-  });
+  // $('#canvas-sizes li').on('click', function(){
+  //   $('#canvas-sizes li').removeClass('style-selector__sizes-item--active');
+  //   $(this).addClass('style-selector__sizes-item--active');
+  //   $('#canvas-sizes-preview').height( $(this).data('y') ).width( $(this).data('x') );
+  // });
 
   // Показ и сокрытие формы
-  $('#style-form-show').on('click', function(){
-    $('#style-form').addClass('calculator__style-form--show');
-    $('#style-selector').removeClass('calculator__style-selector--shown');
-  });
-  $('#style-form-hide').on('click', function(){
-    $('#style-form').removeClass('calculator__style-form--show');
-    showHideCalculator();
-  });
+  // $('#style-form-show').on('click', function(){
+  //   $('#style-form').addClass('calculator__style-form--show');
+  //   $('#style-selector').removeClass('calculator__style-selector--shown');
+  // });
+  // $('#style-form-hide').on('click', function(){
+  //   $('#style-form').removeClass('calculator__style-form--show');
+  //   showHideCalculator();
+  // });
 
   // Галерея «второго экрана», инициализация лайтбокса
-  $('[rel="gallery-demo"]').fancybox({
-    // openEffect  : 'none',
-    // closeEffect : 'none',
-    helpers : {
-      overlay : {
-        css : {
-          'background' : 'rgba(58, 42, 45, 0.3)'
-        }
-      }
-    }
-  });
+  // $('[rel="gallery-demo"]').fancybox({
+  //   // openEffect  : 'none',
+  //   // closeEffect : 'none',
+  //   helpers : {
+  //     overlay : {
+  //       css : {
+  //         'background' : 'rgba(58, 42, 45, 0.3)'
+  //       }
+  //     }
+  //   }
+  // });
 
 });
