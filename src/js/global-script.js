@@ -108,11 +108,11 @@ $( document ).ready(function() {
   //   });
 
   // Следим за кликами на локальных ссылках и мотаем скролл плавно
-  $('a[href^="#"]').on('click', function(){
-    var targetPosition = $(this.hash).offset().top;            // целевая позиция скролла
-    $('body,html').animate({'scrollTop':targetPosition},300);  // анимируем прокрутку
-    // $(window).scroll();
-  });
+  // $('a[href^="#"]').on('click', function(){
+  //   var targetPosition = $(this.hash).offset().top;            // целевая позиция скролла
+  //   $('body,html').animate({'scrollTop':targetPosition},300);  // анимируем прокрутку
+  //   // $(window).scroll();
+  // });
 
   // Функция показа или сокрытия блока текста калькулятора
   // function showHideCalculator() {
