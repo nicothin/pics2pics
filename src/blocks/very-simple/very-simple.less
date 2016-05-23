@@ -4,5 +4,95 @@
 
 
 .very-simple {
-  
+  padding-top: 55px;
+  padding-bottom: 30px;
+
+  &__title {
+    margin: 0;
+    font-size: 26px;
+    line-height: 120%;
+    color: #04c;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__item {
+    width: 220px;
+    padding-top: 253px;
+    position: relative;
+
+    &--01 {
+      &:before {
+        background: url(../img/very-simple-01.svg) 0 0 no-repeat;
+        content: '';
+        position: absolute;
+        top: 46px;
+        left: 0;
+        width: 141px;
+        height: 160px;
+      }
+    }
+
+    &--02 {
+      &:before {
+        background: url(../img/very-simple-02.svg) 0 0 no-repeat;
+        content: '';
+        position: absolute;
+        top: 89px;
+        left: 0;
+        width: 138px;
+        height: 117px;
+      }
+    }
+
+    &--03 {
+      &:before {
+        background: url(../img/very-simple-03.svg) 0 0 no-repeat;
+        content: '';
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 175px;
+        height: 165px;
+      }
+    }
+
+    &--04 {
+      &:before {
+        background: url(../img/very-simple-04.svg) 0 0 no-repeat;
+        content: '';
+        position: absolute;
+        top: 98px;
+        left: -16px;
+        width: 156px;
+        height: 131px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: 0.1em;
+      color: #0044cc;
+      margin: 0;
+    }
+  }
+
+  &__subtitle {
+    margin: 0 0 5px;
+    font-size: 18px;
+    line-height: 24px;
+    color: #00044c;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
 }
