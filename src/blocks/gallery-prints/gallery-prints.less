@@ -4,5 +4,55 @@
 
 
 .gallery-prints {
-  
+
+  .owl-prev {
+    position: absolute;
+    bottom: 0;
+    width: 77px;
+    height: 77px;
+    background-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    left: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 51px;
+      height: 80px;
+      transform: translate(-50%, -47%);
+      background-image: url(../img/icon-arr-left.svg);
+    }
+
+    &:hover:before {
+      background-image: url(../img/icon-arr-left--hover.svg);
+    }
+  }
+  .owl-next {
+    position: absolute;
+    bottom: 0;
+    width: 77px;
+    height: 77px;
+    background-color: #fff;
+    color: #fff;
+    cursor: pointer;
+    right: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 51px;
+      height: 80px;
+      transform: translate(-50%, -47%);
+      background-image: url(../img/icon-arr-right.svg);
+    }
+
+    &:hover:before {
+      background-image: url(../img/icon-arr-right--hover.svg);
+    }
+  }
 }

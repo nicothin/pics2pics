@@ -26,21 +26,24 @@ $( document ).ready(function() {
   });
 
   // Карусель с демками картин
-  // $('#carousel-demo').owlCarousel({
-  //   items: 5,
-  //   autoWidth: true,
-  //   center: true,
-  //   loop: true,
-  //   nav: true,
-  //   responsive : {
-  //     1400 : {
-  //       items: 6
-  //     },
-  //     1920 : {
-  //       items: 7
-  //     },
-  //   }
-  // });
+  $('#gallery').owlCarousel({
+    items: 3,
+    autoWidth: true,
+    center: true,
+    loop: true,
+    nav: true,
+    mouseDrag: false,
+    touchDrag: false,
+    margin: 1,
+    // responsive : {
+    //   1400 : {
+    //     items: 6
+    //   },
+    //   1920 : {
+    //     items: 7
+    //   },
+    // }
+  });
 
   // Карусель с отзывами
   // var carouselReviews = $('#carousel-reviews');

@@ -4,5 +4,51 @@
 
 
 .for-picture {
-  
+  display: flex;
+
+  &__text {
+    width: 550px;
+    min-width: 550px;
+    text-align: center;
+    background-color: #F7E1DB;
+    position: relative;
+    padding-top: 90px;
+
+    &:before {
+      content: '';
+      width: 200px;
+      height: 93px;
+      position: absolute;
+      top: -37px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url(../img/stars-for-picture.svg) 0 0 no-repeat;
+    }
+
+    p {
+      margin: 10px 0 26px;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.22em;
+      color: #2ac1a0;
+
+      &:last-child {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__text-title {
+    margin: 10px 0 28px;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 120%;
+    color: #051945;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__gallery {
+    width: e("calc(100% - 550px)");
+  }
 }
