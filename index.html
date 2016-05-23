@@ -37,118 +37,205 @@
 
 <div class="main" id="main">
 
+
+
   <section class="first-screen">
 
     <div class="first-screen__video">
-      <video autoplay  poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvidtop" loop>
-        <source src="https://demosthenes.info/assets/videos/polina.webm" type="video/webm">
-        <source src="https://demosthenes.info/assets/videos/polina.mp4" type="video/mp4">
+
+      <video autoplay poster="video/main-teaser.jpg" id="bgvidcalc" loop>
+        <source src="video/main-teaser.webm" type="video/webm">
+        <source src="video/main-teaser.mp4" type="video/mp4">
       </video>
+      <div class="first-screen__sup-video">
+        <img src="img/logo.svg" alt="" class="first-screen__logo">
+        <h1 class="first-screen__main-msg">C вас<br>картинки<br>с&nbsp;нас картины</h1>
+        <p class="first-screen__sub-main-msg">За 1 день делаем картину на холсте<br>и оперативно доставляем вам</p>
+      </div>
+      <div class="first-screen__panda-msg">
+        <span class="first-screen__panda-delir-1">Яркие</span>
+        <span class="first-screen__panda-delir-2">и качественные</span>
+        <span class="first-screen__panda-delir-3">картины</span>
+        <span class="first-screen__panda-delir-4">на холсте</span>,
+        которые можно получить уже завтра
+      </div>
     </div>
 
     <div class="first-screen__texts">
 
-      <div class="first-screen__synopsis">
-        <div class="first-screen__contact-phone">
-          <div class="first-screen__work-time">с 10:00 до 20:00</div>
-          <div class="first-screen__phone">8 800 333 51 16</div>
-        </div>
-        <div class="first-screen__main-text">
-          <h1 class="first-screen__message">
-            C&nbsp;вас<br>картинки<br>с&nbsp;нас картины
-          </h1>
-          <p class="first-screen__description">
-            Уникальная авторская иллюстрация<br>
-            по вашему фото — на холсте :)
-          </p>
-        </div>
+      <div class="first-screen__text-top">
+        <a href="tel:+78003334744" class="first-screen__text-top-phone">8 800 333 4744</a>
+        <a href="#sizes" class="first-screen__text-top-prices">Цены и размеры</a>
       </div>
 
-      <form class="first-screen__fast-upload">
-        <h2 class="main-header">Присылайте ваше фото</h2>
-        <label class="field-text  field-text--md">
-          <div class="field-text__name">Куда отправить Вам портрет</div>
-          <div class="field-text__input-wrap">
-            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
-          </div>
-        </label>
-        <label class="field-text  field-text--sm">
-          <div class="field-text__name">Для оперативной связи с Вами</div>
-          <div class="field-text__input-wrap">
-            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
-          </div>
-        </label>
-        <div class="field-file">
-          <label class="field-file__input-wrap">
-            <input class="field-file__input" type="file" >
-            <div class="field-file__name-text  btn">Загрузить фото</div>
-          </label>
+      <div class="first-screen__text-inner">
+        <div class="first-screen__text-item">
+          <img src="img/car-blue.svg" alt="" width="166" height="128">
+          <b>Получите картину вовремя!</b>
+          <p>
+            быстрая доставка курьером от 1 дня<br>
+            175 пунктов выдачи в 64 городах
+          </p>
         </div>
-      </form>
+        <div class="first-screen__text-item">
+          <img src="img/like-blue.svg" alt="" width="116" height="139">
+          <b>Платите за результат!</b>
+          <p>
+            без предоплаты<br>
+            оплата при получении
+          </p></div>
+      </div>
 
     </div>
 
-    <a href="#carousel-demo" class="first-screen__to-bottom"></a>
+    <a href="#carousel-demo" class="first-screen__to-bottom"><span class="first-screen__to-bottom-text">Дальше больше</span></a>
 
   </section>
 
-  <section class="sliders">
 
-    <div class="sliders__top">
-      <div id="carousel-demo" class="owl-carousel  owl-carousel--demo">
-        <div><a rel="gallery-demo" href="img/DSC_9334_2.jpg"><img src="img/thumb/DSC_9334_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9336_2.jpg"><img src="img/thumb/DSC_9336_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9337_2.jpg"><img src="img/thumb/DSC_9337_2.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img//DSC_9338_1.jpg"><img src="img/thumb/DSC_9338_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9339_1.jpg"><img src="img/thumb/DSC_9339.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9340.jpg"><img src="img/thumb/DSC_9340.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9343_1.jpg"><img src="img/thumb/DSC_9343_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9344_1.jpg"><img src="img/thumb/DSC_9344.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9346_1.jpg"><img src="img/thumb/DSC_9346.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9348.jpg"><img src="img/thumb/DSC_9348.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9350.jpg"><img src="img/thumb/DSC_9350.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/DSC_9352.jpg"><img src="img/thumb/DSC_9352.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2366_1.jpg"><img src="img/thumb/I90A2366_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2369_1.jpg"><img src="img/thumb/I90A2369_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2373_3.jpg"><img src="img/thumb/I90A2373_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2381.jpg"><img src="img/thumb/I90A2381_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2384_1.jpg"><img src="img/thumb/I90A2384_1.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2386.jpg"><img src="img/thumb/I90A2386.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2393.jpg"><img src="img/thumb/I90A2393.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2394.jpg"><img src="img/thumb/I90A2394a.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2396.jpg"><img src="img/thumb/I90A2396.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2400.jpg"><img src="img/thumb/I90A2400.jpg" alt=""></a></div>
-        <div><a rel="gallery-demo" href="img/I90A2413.jpg"><img src="img/thumb/I90A2413a.jpg" alt=""></a></div>
+
+  <form class="quickly">
+    <h2 class="quickly__title">Хотите быстро получить картину?</h2>
+    <p class="quickly__descr">Просто заполните форму, и мы с вами свяжемся в течении 15 минут, чтобы обсудить все детали.</p>
+    <label class="field-text  field-text--md">
+      <div class="field-text__name">Чтобы согласовать с Вами макет</div>
+      <div class="field-text__input-wrap">
+        <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
+      </div>
+    </label>
+    <label class="field-text  field-text--sm">
+      <div class="field-text__name">Для оперативной связи с Вами</div>
+      <div class="field-text__input-wrap">
+        <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
+      </div>
+    </label>
+    <div class="field-file">
+      <label class="field-file__input-wrap">
+        <input class="field-file__input" type="file">
+        <div class="field-file__name-text  btn  btn--red">Загрузить фото</div>
+      </label>
+    </div>
+  </form>
+
+
+
+  <section class="for-picture">
+    <div class="for-picture__text">
+      <h2 class="for-picture__text-title">Залог красоты и долголетия вашей картины</h2>
+      <p>Наши чернила LUCIA EX <br>способны сохранять цвет <br>и насыщенность до 94 лет</p>
+      <p>Благодаря 12-красочной печати <br>цвета на картине будут яркими, <br>насыщенными и глубокими</p>
+    </div>
+    <div class="for-picture__gallery">
+      <div id="gallery" class="gallery-prints  owl-carousel">
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9334_2.jpg"><img src="img/thumb-gallery-DSC_9334_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9336_2.jpg"><img src="img/thumb-gallery-DSC_9336_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9337_2.jpg"><img src="img/thumb-gallery-DSC_9337_2.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-/DSC_9338_1.jpg"><img src="img/thumb-gallery-DSC_9338_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9339_1.jpg"><img src="img/thumb-gallery-DSC_9339.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9343_1.jpg"><img src="img/thumb-gallery-DSC_9343_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9344_1.jpg"><img src="img/thumb-gallery-DSC_9344.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9346_1.jpg"><img src="img/thumb-gallery-DSC_9346.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9348.jpg"><img src="img/thumb-gallery-DSC_9348.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9350.jpg"><img src="img/thumb-gallery-DSC_9350.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9352.jpg"><img src="img/thumb-gallery-DSC_9352.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2366_1.jpg"><img src="img/thumb-gallery-I90A2366_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-DSC_9340.jpg"><img src="img/thumb-gallery-DSC_9340.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2369_1.jpg"><img src="img/thumb-gallery-I90A2369_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2373_3.jpg"><img src="img/thumb-gallery-I90A2373_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2381.jpg"><img src="img/thumb-gallery-I90A2381_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2384_1.jpg"><img src="img/thumb-gallery-I90A2384_1.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2386.jpg"><img src="img/thumb-gallery-I90A2386.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2393.jpg"><img src="img/thumb-gallery-I90A2393.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2394.jpg"><img src="img/thumb-gallery-I90A2394a.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2396.jpg"><img src="img/thumb-gallery-I90A2396.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2400.jpg"><img src="img/thumb-gallery-I90A2400.jpg" alt=""></a></div>
+        <div style="width:270px;"><a rel="gallery-demo" href="img/gallery-I90A2413.jpg"><img src="img/thumb-gallery-I90A2413a.jpg" alt=""></a></div>
       </div>
     </div>
+  </section>
+
+
+
+  <section class="promo">
+    <div class="promo__features">
+      <div class="promo__video-bg">
+        <video autoplay="" poster="video/product.jpg" id="bgvidcalc" loop="">
+          <source src="video/product.webm" type="video/webm">
+          <source src="video/product.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="promo__features-list">
+        <div class="promo__feature">
+          <h3 class="promo__feature-header  promo__feature-header--green">Только натуральные материалы</h3>
+          <p class="promo__feature-description">хлопковый холст, сосновый подрамник, <br>крафтовый скотч, эко чернила</p>
+        </div>
+        <div class="promo__feature">
+          <h3 class="promo__feature-header">Безупречное качество отделки</h3>
+          <p class="promo__feature-description">для нас нет второстепенных деталей,<br>наша аккуратность радует глаз</p>
+        </div>
+        <div class="promo__feature">
+          <h3 class="promo__feature-header">Красивый и простой крепеж</h3>
+          <p class="promo__feature-description">в комплекте будет все,<br>чтобы очень легко повесить картину</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="very-simple">
+    <h2 class="very-simple__title">Очень просто<br>получить картинку</h2>
+    <ul class="very-simple__list">
+      <li class="very-simple__item  very-simple__item--01">
+        <h3 class="very-simple__subtitle">Загружайте фото</h3>
+        <p>и выбирайте размер<br>в удобном меню</p>
+      </li>
+      <li class="very-simple__item  very-simple__item--02">
+        <h3 class="very-simple__subtitle">Через 15 минут</h3>
+        <p>мы перезвоним согласовать <br>все детали</p>
+      </li>
+      <li class="very-simple__item  very-simple__item--03">
+        <h3 class="very-simple__subtitle">Для наилучшего <br>результата</h3>
+        <p>бесплатно сделаем цветокоррекцию</p>
+      </li>
+      <li class="very-simple__item  very-simple__item--04">
+        <h3 class="very-simple__subtitle">С любовью изготовим,</h3>
+        <p>бережно упакуем и<br>доставим картину<br>в кратчайшие сроки!</p>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <section class="sliders">
 
     <div class="sliders__bottom">
-      <h2 class="main-header">Приносим радость</h2>
+      <h2 class="sliders__main-header">Приносим радость</h2>
       <div id="carousel-reviews" class="owl-carousel  owl-carousel--reviews  owl-carousel--nav-dots">
         <div>
           <ul class="reviews">
             <li class="reviews__item">
               <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
+                <b>Оля</b>
+                <div>Москва</div>
               </div>
               <div class="reviews__item-avatar">
-                <img src="img/avatar_02.png" height="127" width="127" alt="">
+                <img src="img/avatar_olya.png" height="127" width="127" alt="">
               </div>
               <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+                «Неповторимо стильные,  восхитительно уникальные, лучики радости даже в самый скучный день — так должны работать все компании!»
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews__item-author">
-                <b>Гоша</b>
-                <div>Москва</div>
+                <b>Вика</b>
+                <div>Санкт-Петербург</div>
               </div>
               <div class="reviews__item-avatar">
-                <img src="img/avatar_04.png" height="127" width="127" alt="">
+                <img src="img/avatar_vika.png" height="127" width="127" alt="">
               </div>
               <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+                «Даже не знаю, что в PICS2PICS мне нравится больше&nbsp;— световая скорость изготовления картин или цветовой охват их легендарного печатного оборудования.»
               </div>
             </li>
           </ul>
@@ -157,54 +244,26 @@
           <ul class="reviews">
             <li class="reviews__item">
               <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
+                <b>Катя</b>
+                <div>Сергиев Посад</div>
               </div>
               <div class="reviews__item-avatar">
-                <img src="img/avatar_02.png" height="127" width="127" alt="">
+                <img src="img/avatar_katya.png" height="127" width="127" alt="">
               </div>
               <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+                «PICS2PICS заставили меня отказаться от укорененных стереотипов и поверить в волшебство. Скорости выполнения качество работ в жертву не приносится — белая... нет, ЦВЕТНАЯ МАГИЯ!»
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews__item-author">
-                <b>Гоша</b>
-                <div>Москва</div>
+                <b>Егор</b>
+                <div>Санкт-Петербург</div>
               </div>
               <div class="reviews__item-avatar">
-                <img src="img/avatar_04.png" height="127" width="127" alt="">
+                <img src="img/avatar_egor.png" height="127" width="127" alt="">
               </div>
               <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul class="reviews">
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_01.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
-              </div>
-            </li>
-            <li class="reviews__item">
-              <div class="reviews__item-author">
-                <b>Гоша</b>
-                <div>Москва</div>
-              </div>
-              <div class="reviews__item-avatar">
-                <img src="img/avatar_05.png" height="127" width="127" alt="">
-              </div>
-              <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+                «Все супер. Всем доволен.»
               </div>
             </li>
           </ul>
@@ -213,385 +272,203 @@
           <ul class="reviews">
             <li class="reviews__item">
               <div class="reviews__item-author">
-                <b>Екатерина</b>
-                <div>Суздаль</div>
+                <b>Юля</b>
+                <div>Кисловодск</div>
               </div>
               <div class="reviews__item-avatar">
-                <img src="img/avatar_04.png" height="127" width="127" alt="">
+                <img src="img/avatar_julya.png" height="127" width="127" alt="">
               </div>
               <div class="reviews__item-text">
-                «В поисках дополнительных смыслов знакомый искусствовед посоветовал не упускать из вида даже торцы картин Люблю детали!»
+                «Повесить на стену картину было проще простого, мне даже не пришлось просить об этом мужа — и это был для него двойной сюрприз!»
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews__item-author">
-                <b>Гоша</b>
+                <b>Маша</b>
                 <div>Москва</div>
               </div>
               <div class="reviews__item-avatar">
-                <img src="img/avatar_02.png" height="127" width="127" alt="">
+                <img src="img/avatar_masha.png" height="127" width="127" alt="">
               </div>
               <div class="reviews__item-text">
-                «Аккуратность. Аккуратность превыше всего Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях»
+                «Спасибо вам, теперь в моей квартире не останется белых стен. Я теперь маньячка декора — анкор, ещё анкор!»
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="reviews">
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Андрей</b>
+                <div>Братск</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_andrei.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Аккуратность... Аккуратность превыше всего! Так меня всегда учил отец, и очень приятно, что кто-то воспитан в схожих традициях.»
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__item-author">
+                <b>Александра</b>
+                <div>Суздаль</div>
+              </div>
+              <div class="reviews__item-avatar">
+                <img src="img/avatar_sasha.png" height="127" width="127" alt="">
+              </div>
+              <div class="reviews__item-text">
+                «Я иногда снимаю картину и вешаю её на другое место. Что мне ещё остаётся делать, если хочется любоваться ей везде, по всему дому?  Узнаю какой праздник следующий и возьму вторую!)»
               </div>
             </li>
           </ul>
         </div>
       </div>
+      <form class="add-reviews">
+        <div class="add-reviews__left">
+          <label class="field-text  field-text--sm2">
+            <div class="field-text__input-wrap">
+              <input type="text" class="field-text__input" placeholder="Имя">
+            </div>
+          </label>
+          <label class="field-text  field-text--sm2">
+            <div class="field-text__input-wrap">
+              <input type="email" class="field-text__input" placeholder="Электронная почта">
+            </div>
+          </label>
+        </div>
+        <div class="add-reviews__right">
+          <label class="field-text">
+            <div class="field-text__input-wrap">
+              <textarea class="field-text__input" placeholder="Текст..."></textarea>
+            </div>
+          </label>
+        </div>
+        <div class="add-reviews__bottom">
+          <button class="add-reviews__btn">Прекрасно</button>
+        </div>
+        <div class="add-reviews__close"></div>
+      </form>
     </div>
 
   </section>
 
-  <section class="promo">
-    <div class="promo__features">
-      <div class="promo__video-bg">
-        <video autoplay poster="video/product.jpg" id="bgvidcalc" loop>
-          <source src="video/product.webm" type="video/webm">
-          <source src="video/product.mp4" type="video/mp4">
-        </video>
+  <div class="queen-size" id="sizes">
+    <span class="queen-size__title">Хочешь также?</span>
+    <p class="queen-size__item  queen-size__item--30-30">
+      <span class="queen-size__size">30 × 30 см</span>
+      <span class="queen-size__price">1110 <span class="rub">руб</span></span>
+    </p>
+    <p class="queen-size__item  queen-size__item--60-60">
+      <span class="queen-size__size">60 × 60 см</span>
+      <span class="queen-size__price  queen-size__price--blue">2440 <span class="rub">руб</span></span>
+    </p>
+    <p class="queen-size__item  queen-size__item--80-120">
+      <span class="queen-size__size">80 × 120 см</span>
+      <span class="queen-size__price  queen-size__price--blue">5280 <span class="rub">руб</span></span>
+    </p>
+    <p class="queen-size__item  queen-size__item--50-75">
+      <span class="queen-size__size">50 × 70 см</span>
+      <span class="queen-size__price">1110 <span class="rub">руб</span></span>
+    </p>
+  </div>
+
+
+
+  <div class="sofa">
+    <p class="sofa__take-orders">Принимаем заказы 24/7</p>
+    <div class="sofa__step-1">
+      <div class="sofa__help">
+        <h1>А наш диван поможет выбрать нужный размер</h1>
       </div>
-      <h2 class="main-header">Полезно для здоровья</h2>
-      <div class="features">
-        <span class="features__icon"><svg xmlns="http://www.w3.org/2000/svg" width="91.505" height="202.764" viewBox="0 0 91.504845 202.763504"><g fill="#fff"><path d="M36.012 16.865l1.95-.685-.81-3.674-1.95.686zm-1.189-5.397l1.949-.686-.726-3.293c-.142-.658-.695-1.05-1.237-.878-.542.173-.867.845-.726 1.503l.74 3.354zm2.087 9.469c.142.658.695 1.05 1.237.878.543-.173.868-.845.727-1.503l-.531-2.408-1.95.685.518 2.348zm20.41-8.477l-2.05-.32-.478 3.782 2.052.32zm.583-4.623c.088-.673-.297-1.302-.862-1.407-.564-.106-1.093.353-1.181 1.025l-.368 2.918 2.051.32.36-2.856zm-2.838 14.159c.565.105 1.094-.353 1.182-1.025l.374-2.963-2.051-.32-.366 2.901c-.088.672.297 1.301.86 1.407zm18.732-6.372c.303-.895.13-2.05-.385-2.577-.516-.525-1.178-.226-1.483.67l-.179.53 1.878 1.881.17-.504zm-.689 2.046l-1.878-1.88-.53 1.573 1.878 1.881zm-3.798 7.541c.228.232.485.304.727.233.306-.09.587-.403.756-.903l.29-.86-1.878-1.88-.28.832c-.303.896-.13 2.05.385 2.578zm2.748-4.424l-1.877-1.882-.456 1.353 1.877 1.881zm-54.011 1.816l1.948-2.086-.95-2.015-1.966 2.05zm.287-5.607l-.684-1.45-2.052 1.868.77 1.631zm.726 7.757c.234.487.58.779.935.846.282.054.569-.037.81-.286.545-.56.648-1.723.228-2.594l-.328-.696-1.947 2.087.303.643zm-2.374-11.248c-.415-.871-1.197-1.123-1.744-.56-.545.56-.647 1.722-.228 2.594l.173.366 2.051-1.867-.252-.533zM8.177 31.688l-2.545-.862-2.361 2.496 2.543.862zm1.728.586l-.117-.04-2.354 2.488c.451.14.921.232 1.383.262 1.04.07 2.01-.132 2.494-.58.724-.665.094-1.618-1.406-2.13zM.3 30.66c-.716.659-.104 1.598 1.362 2.114l2.346-2.481c-1.43-.396-3.035-.254-3.709.367zm85.945 3.263l2.071-.678-1.86-2.19-2.071.679zm5.113-3.069c-.47-.609-1.911-.753-3.24-.339l1.85 2.178c1.218-.456 1.841-1.253 1.39-1.839zm-6.771 3.612l-1.861-2.19-.07.024c-1.352.44-2.062 1.297-1.587 1.914.32.414 1.091.614 1.972.569a5.22 5.22 0 0 0 1.335-.248l.211-.07zM7.348 22.54a.891.891 0 1 0 1.077-1.423L4.263 17.97a.892.892 0 1 0-1.077 1.423l4.162 3.147zM25.403 9.86a.894.894 0 0 0 1.667-.642l-1.878-4.866a.897.897 0 0 0-1.154-.513.895.895 0 0 0-.513 1.154l1.878 4.867zm20.279-2.868c.022 0 .043 0 .066-.002a.895.895 0 0 0 .826-.955L46.2.83c-.037-.492-.485-.872-.956-.826a.895.895 0 0 0-.826.955l.374 5.205c.035.47.426.828.89.828zm19.942 3.319a.893.893 0 0 0 1.177-.459l2.101-4.775a.893.893 0 0 0-.459-1.177.9.9 0 0 0-1.177.458l-2.1 4.776a.893.893 0 0 0 .458 1.177zM81.75 22.736c.153-.02.3-.079.429-.179l4.13-3.19a.894.894 0 0 0-1.092-1.413l-4.13 3.19a.894.894 0 0 0 .664 1.592zm6.656 19.489l-3.886-.055c-.423-.015-.67.209-.678.478-.007.27.284.492.652.498l3.887.055h.013c.36 0 .657-.212.665-.478.006-.27-.285-.492-.653-.498zm-78.452-.004l-4.12-.048c-.42.019-.71.21-.717.48-.006.27.305.491.693.496l4.12.049h.012c.384 0 .698-.214.705-.48.007-.27-.305-.492-.693-.497zM54.333 158.67c1.761-1.45 3.28-2.594 4.62-3.603 7.209-5.43 9.49-8.163 8.904-19.793a6.09 6.09 0 0 0-2.858-4.86c1.678-3.928 2.428-8.183 2.239-12.732-.074-1.77.062-3.63.235-5.983l.02-.272a6.117 6.117 0 0 0-1.608-4.6 6.11 6.11 0 0 0-1.019-.878c1.786-4.194 2.54-8.878 2.273-14.017V58.557c-.37.125-.75.248-1.14.367-.906.277-1.87.526-2.86.761V77.96a6.152 6.152 0 0 0-2.606-.456c-.179-2.968-1.095-5.967-2.75-8.985-.538-.982-1.057-1.904-1.558-2.797-.895-1.591-1.704-3.045-2.463-4.536-1.76.163-3.566.273-5.404.326 1.5 3.24 3.149 5.96 5.04 9.41 3.54 6.455 2.555 12.087-1.703 17.582-1.381 1.782-3.263 3.333-4.11 5.332-1.025 2.416-1.44 5.09-2.02 7.695a1.106 1.106 0 0 0 .748 1.29l.338.108c.828-8.986 8.687-13.062 13.266-19.942a1.06 1.06 0 0 1 .897-.49c.573 0 1.14.442 1.125 1.139-.053 2.583-.09 4.883.118 7.161.826 9.055-1.789 16.583-8.892 22.488-1.83 1.521-3.452 3.38-4.85 5.315-.903 1.248-1.563 2.534-1.982 3.878-.262.841.417 1.463 1.093 1.463.364 0 .727-.18.943-.6 2.71-5.28 8.173-8.45 12.2-13.089.23-.266.529-.383.822-.383.594 0 1.167.483 1.115 1.193-.187 2.551-.353 4.695-.264 6.83.293 7.042-2.06 12.985-6.839 18.046-2.066 2.188-4.26 4.258-6.27 6.496-.79.88-1.482 1.794-2.029 2.76-.48.847.258 1.662 1.013 1.662.304 0 .612-.133.843-.45 3.274-4.505 8.525-7.28 11.94-11.511.228-.283.54-.41.849-.41.546 0 1.081.4 1.114 1.042.619 12.276-1.94 11.237-11.708 19.285-1.313 1.081-2.955 3.142-3.322 4.49-.775 2.84-1.228 6.82-1.497 10.534h-2.26c-.005-4.157-.014-8.47-.032-10.53-.02-2.207-4.766-6.243-7.274-9.016-3.43-3.792-7.147-7.346-7.38-13.006-.17-4.104-.494-8.202-.827-12.715-.052-.712.518-1.19 1.112-1.19.296 0 .597.119.83.386 5.39 6.143 13.715 9.597 14.42 19.177.098-3.102.07-6.348-1.372-8.743-2.296-3.814-5.344-7.242-8.425-10.5-3.556-3.76-6.032-7.924-6.213-13.133-.132-3.793-.087-7.593-.056-11.358.006-.673.553-1.102 1.116-1.102.303 0 .61.124.84.402 4.86 5.893 13.837 9.146 13.91 19.216 1.925-6.59-5.412-14.845-6.477-15.981-5.828-6.221-9.823-12.771-8.689-21.762.329-2.598.278-5.243.195-8.118-.02-.704.545-1.144 1.12-1.144.345 0 .693.159.92.514 2.943 4.593 7.557 7.938 10.441 12.422.235.366.571.52.903.52.717 0 1.416-.719 1.04-1.579-.796-1.814-2.002-3.483-3.509-5.037-3.209-3.31-3.37-6.453-1.083-10.526 1.181-2.103 2.17-3.581 3.054-5.539a84.96 84.96 0 0 1-5.422-.359c-.272.488-.56.983-.88 1.528-.352.6-.722 1.228-1.112 1.922-.4.713-.746 1.42-1.036 2.117a6.06 6.06 0 0 0-3.317-.983c-.867 0-1.719.192-2.5.54v-6.571a47.803 47.803 0 0 1-2.868-.763 38.34 38.34 0 0 1-1.133-.365v23.765c0 .073.013.142.018.213a26.677 26.677 0 0 0 2.381 11.48 6.122 6.122 0 0 0-2.912 5.147l-.007.849c-.03 3.495-.06 7.11.066 10.726.106 3.048.829 5.962 2.187 8.786-.331.236-.64.506-.92.808a6.117 6.117 0 0 0-1.61 4.597l.124 1.662c.283 3.796.55 7.382.695 10.896.288 7.003 4.457 11.555 7.807 15.212.287.314.575.628.86.944.713.787 1.522 1.6 2.378 2.462 1.06 1.067 2.94 2.958 3.61 3.949.016 2.388.023 6.55.026 9.78H32.98c-3.9 0-7.06 3.203-7.06 7.156v.538a7.158 7.158 0 0 0 3.953 6.419c-1.579 3.603-.396 8.209 1.357 11.482l.229.428c2.28 4.26 5.881 6.906 9.398 6.906h9.793c3.516 0 7.118-2.647 9.398-6.906l.23-.428c1.752-3.273 2.935-7.878 1.356-11.482a7.158 7.158 0 0 0 3.953-6.419v-.538c0-3.953-3.16-7.156-7.06-7.156h-7.174c.37-4.902.888-7.65 1.274-9.103.222-.454 1.033-1.506 1.707-2.062zm1.535 34.4l-.229.428c-1.407 2.627-3.495 4.266-4.99 4.266h-9.793c-1.495 0-3.584-1.639-4.99-4.266l-.23-.428c-2.068-3.863-2.162-8.385.71-8.385h18.813c2.872 0 2.778 4.522.71 8.385zm4.718-16.08v.54c0 1.188-.924 2.155-2.06 2.155H32.98c-1.136 0-2.06-.967-2.06-2.156v-.538c0-1.19.924-2.156 2.06-2.156h25.547c1.136 0 2.06.967 2.06 2.156zM64.54 33.228c-3.228-.985-7.096-1.688-11.285-2.071v5.02c9.862.968 17.001 3.79 17.001 7.124 0 4.132-10.97 7.482-24.504 7.482s-24.504-3.35-24.504-7.482c0-3.334 7.142-6.157 17.007-7.124v-5.02c-4.19.383-8.06 1.085-11.29 2.071-8.857 2.705-10.717 6.97-10.717 10.073s1.86 7.368 10.717 10.072c5.089 1.554 11.76 2.41 18.787 2.41 7.027 0 13.699-.856 18.788-2.41 8.857-2.704 10.716-6.97 10.716-10.072s-1.859-7.368-10.716-10.073z"/><path d="M48.255 28.055a2.5 2.5 0 1 0-5 0v15.527h5V28.055z"/></g></svg></span>
-        <div class="features__item">
-          <h3 class="features__item-header">Только натуральные материалы</h3>
-          <p class="features__item-description">Прикосновение природы</p>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item-header">Безупречное качество отделки</h3>
-          <p class="features__item-description">Аккуратность радует глаз</p>
-        </div>
-        <div class="features__item">
-          <h3 class="features__item-header">Красивый и простой крепеж</h3>
-          <p class="features__item-description">Повесить картину неожиданно легко</p>
-        </div>
-      </div>
-    </div>
-    <div class="promo__slider-wrapper">
-      <div class="promo__slider-items">
-        <div class="promo__slider-item">
-          <div class="promo__slider-item-pict  promo__slider-item-pict--auto"><svg xmlns="http://www.w3.org/2000/svg" width="165.092" height="127.726" viewBox="0 0 165.091797 127.726074"><g fill="#fff"><path d="M10.202 65.803c-1.574 1.616-1.99 3.93-1.11 6.187 2.782 7.146 14.747 20.66 40.125 20.658 1.762 0 3.524-.12 5.39-.247.742-.05 1.495-.102 2.26-.146 2.037-.118 4.556-.501 5.948-2.439.612-.85 1.215-2.326.615-4.526a2.506 2.506 0 0 0-3.07-1.753 2.5 2.5 0 0 0-1.755 3.07c.038.133.056.234.065.308-.234.105-.8.273-2.09.348-.784.045-1.555.098-2.313.15-1.779.12-3.458.235-5.05.235h-.004c-23.512 0-33.57-12.611-35.461-17.472-.213-.545-.083-.766.033-.885.06-.062.203-.209.645-.21l4.873.129-2.74-4.033c-3.305-4.864-4.737-9.974-3.955-11.52.227-.449.628-.624 1.197-.493.532.12 1.217.398 2.094.847l6.218 3.187-2.784-6.407c-3.28-7.551-3.663-12.876-2.676-13.82a.804.804 0 0 1 .568-.242c.243 0 .934.112 2.084 1.151 1.098.994 2.397 2.38 3.968 4.235l6.588 7.778-2.241-9.943c-2.361-10.48-1.218-15.137-.297-15.748a.86.86 0 0 1 .472-.141c.44 0 .88.335 1.173.614.702.674 1.513 1.715 2.412 3.094l4.976 7.633-.383-9.104c-.415-9.82 1.518-14.865 3.01-15.307.072-.021.186-.047.315-.047.818 0 1.456 1.241 1.763 1.981.414.994 1.053 3.256 1.729 5.684l3.734 13.436 1.165-13.896c.8-9.527 3.002-13.04 4.762-13.147l.1-.002c1.324 0 2.41 1.652 2.699 4.085 3.316 30.524 17.338 53.114 23.213 61.41.137.192.23.324.275.392.698 1.049 2.867 4.606 1.464 6.359a.063.063 0 0 1-.055.025 2.5 2.5 0 1 0 0 5c1.548 0 2.99-.692 3.957-1.9 2.45-3.059 2.022-7.41-1.209-12.262-.063-.094-.18-.262-.352-.505-5.649-7.977-19.132-29.7-22.325-59.084C59.616 3.424 56.535 0 52.556 0c-.11 0-.221.003-.37.01-4.372.266-6.685 4.23-7.944 8.476-1.7-2.156-3.718-2.542-4.94-2.542a6.18 6.18 0 0 0-1.724.249c-4.61 1.367-6.15 7.782-6.544 13.794-1.234-.741-2.39-.926-3.235-.926a5.84 5.84 0 0 0-3.235.974c-3.211 2.133-3.712 7.472-3.144 13.146-1.392-.965-2.798-1.452-4.195-1.452a5.8 5.8 0 0 0-4.024 1.63c-3.228 3.084-1.922 9.72-.235 14.785a5.935 5.935 0 0 0-4.82 3.256c-1.829 3.613.02 9.26 2.619 13.897a5.603 5.603 0 0 0-.563.506zm113.394 18.953c4.058 0 5.31-1.851 5.693-2.955.385-1.103.556-3.331-2.624-5.853l-9.963-7.9c-3.458-2.743-9.624-4.891-14.038-4.891h-2.352c-5.238 0-9.5 4.261-9.5 9.5v2.6c0 5.238 4.262 9.5 9.5 9.5h23.284zm-27.784-9.5v-2.6c0-2.48 2.02-4.5 4.5-4.5h2.352c3.265 0 8.373 1.78 10.93 3.81l9.826 7.79h-23.108a4.505 4.505 0 0 1-4.5-4.5z"/><path d="M158.15 84.43l-40.449-26.935c-3.619-2.41-9.862-4.298-14.212-4.298H81.668a2.5 2.5 0 1 0 0 5h21.821c3.385 0 8.624 1.584 11.44 3.46l40.45 26.935c2.51 1.671 4.713 5.783 4.713 8.798v6.876c0 2.481-2.019 4.5-4.5 4.5h-6.626c-1.21-7.891-8.025-13.96-16.25-13.96s-15.039 6.069-16.25 13.96H49.43c-1.21-7.891-8.025-13.96-16.25-13.96s-15.039 6.069-16.25 13.96H9.5a4.505 4.505 0 0 1-4.5-4.5v-43.57a2.5 2.5 0 1 0-5 0v43.57c0 5.238 4.262 9.5 9.5 9.5h7.43c1.211 7.89 8.027 13.96 16.25 13.96s15.04-6.07 16.25-13.96h67.036c1.211 7.89 8.027 13.96 16.25 13.96s15.04-6.07 16.25-13.96h6.626c5.238 0 9.5-4.262 9.5-9.5V97.39c0-4.676-3.049-10.369-6.942-12.96zM33.18 122.726c-6.319 0-11.46-5.141-11.46-11.46s5.141-11.46 11.46-11.46 11.46 5.14 11.46 11.46-5.14 11.46-11.46 11.46zm99.537 0c-6.32 0-11.461-5.141-11.461-11.46s5.141-11.46 11.46-11.46 11.46 5.14 11.46 11.46-5.14 11.46-11.46 11.46z"/></g></svg></div>
-          <strong class="promo__slider-item-title">Быстрая доставка курьером в руки</strong>
-          <div class="promo__slider-item-decription">(вы получите картину вовремя)</div>
-        </div>
-        <div class="promo__slider-item">
-          <div class="promo__slider-item-pict  promo__slider-item-pict--love"><svg xmlns="http://www.w3.org/2000/svg" width="163.258" height="123.893" viewBox="0 0 163.257721 123.892517"><g fill="#fff"><path d="M68.27 99.114c-5.819 5.603-10.446 9.064-10.91 9.408l-.795.562-2.068-.944 7.757-26.539-19.858-14.934 6.746-20.818.04-.107c1.66-4.053 6.85-13.631 19.142-15.052a15.457 15.457 0 0 1 2.078-.09c5.002.116 10.297 2.44 13.487 5.92l.246.28a2.5 2.5 0 1 0 3.709-3.353l-.267-.304c-4.066-4.435-10.763-7.396-17.059-7.542a20.07 20.07 0 0 0-2.767.122c-14.94 1.727-21.2 13.25-23.197 18.126L36.54 68.52l19.943 14.999-8 27.374 8.62 3.934 3.186-2.253c.535-.396 5.402-4.036 11.448-9.858a2.5 2.5 0 1 0-3.469-3.601zM34.217 17.592c3.501.395 6.806.723 10.187.992-4.008 4.098-6.727 8.51-8.141 13.141-.164.547-.045 1.249.269 1.822.306.565.731.919 1.138.934h.026c1.481.006 2.93.007 4.393.003-1.638 3.095-2.628 6.285-3.048 9.499.381.597.706 1.19.975 1.78.766-4.113 2.453-8.18 5.326-12.072.383-.518.61-1.171.53-1.709-.072-.53-.44-.869-.925-.886h-.022c-1.76-.026-3.474-.06-5.204-.102 2.164-4.508 5.636-8.767 10.572-12.773.583-.473.81-1.101.546-1.644-.263-.543-.978-.92-1.83-.986a239.18 239.18 0 0 1-11.086-1.1c3.801-4.421 9.07-8.36 15.108-12.16A199.039 199.039 0 0 1 48.287 0c-6.91 4.323-12.573 9.048-16.43 14.53-.363.509-.245 1.237.264 1.878.506.644 1.313 1.094 2.096 1.184z"/><path d="M32.958 69.769c-.203-.153-.35-.542-.233-.906l5.888-18.173a2.5 2.5 0 1 0-4.756-1.54L27.97 67.321c-.76 2.343.054 4.993 1.982 6.443L46.67 86.337l-4.86 16.628c-10.965-6.124-31.236-19.331-35.862-35.4-1.851-6.433-1.026-12.552 2.523-18.708 2.744-4.76 7.551-6.907 11.134-7.33a19.71 19.71 0 0 1 2.778-.135c3.416.079 6.652 1.102 9.62 3.04a2.5 2.5 0 1 0 2.733-4.187c-3.76-2.455-7.877-3.75-12.236-3.852a25.23 25.23 0 0 0-3.48.167c-6.11.722-11.812 4.477-14.881 9.8-4.204 7.29-5.211 14.89-2.996 22.588C6.713 88.296 31.69 103.3 42.17 108.852l2.71 1.436 7.56-25.868-19.482-14.65zm83.688-39.099c-25.702 0-46.612 20.909-46.612 46.61s20.91 46.613 46.612 46.613 46.612-20.91 46.612-46.612-20.91-46.612-46.612-46.612zm0 88.223c-22.945 0-41.612-18.667-41.612-41.612s18.667-41.612 41.612-41.612 41.612 18.667 41.612 41.612-18.667 41.612-41.612 41.612z"/><path d="M138.499 74.488a2.5 2.5 0 0 0-2.5 2.5c0 12.894-10.49 23.384-23.384 23.384a23.41 23.41 0 0 1-17.478-7.85 2.5 2.5 0 0 0-3.737 3.323 28.416 28.416 0 0 0 21.215 9.527c15.65 0 28.384-12.733 28.384-28.384a2.5 2.5 0 0 0-2.5-2.5zm2.362-9.764l-9.756-4.48-9.756 4.48a2.5 2.5 0 0 0 2.085 4.544l7.671-3.521 7.67 3.52a2.5 2.5 0 0 0 2.086-4.544zm-37.228.988c0-4.561-3.711-8.272-8.272-8.272s-8.272 3.71-8.272 8.272 3.71 8.271 8.272 8.271c4.56 0 8.272-3.71 8.272-8.271zm-11.544 0a3.276 3.276 0 0 1 3.272-3.272 3.276 3.276 0 0 1 3.272 3.272 3.275 3.275 0 0 1-3.272 3.271 3.276 3.276 0 0 1-3.272-3.271z"/></g></svg></div>
-          <strong class="promo__slider-item-title">Вернем деньги, если не понравится</strong>
-          <div class="promo__slider-item-decription">(да, вы все равно останетесь довольны)</div>
-        </div>
-        <div class="promo__slider-item">
-          <div class="promo__slider-item-pict  promo__slider-item-pict--money"><svg xmlns="http://www.w3.org/2000/svg" width="115.601" height="138.586" viewBox="0 0 115.600761 138.585739"><path d="M114.422 94.57c1.943-4.384 1.473-8.746-1.327-12.276-1.687-2.105-3.706-3.414-5.46-4.42-1.7-.977-3.601-1.453-5.807-1.453h-.055c-6.885.02-13.88.02-20.645.02H80.01c1.167-4.175 1.843-8.3 2.05-12.482.234-4.584-.288-8.588-1.597-12.236-1.42-3.947-3.732-7.16-6.874-9.557-1.802-1.362-3.718-2.045-5.712-2.045-2.088 0-4.096.747-5.97 2.219-1.621 1.278-2.436 3.133-2.3 5.227l.064.848c.143 1.707.24 3.094.266 4.46.067 3.604-.33 6.233-1.291 8.522-2.228 5.344-4.649 9.731-7.405 13.422-2.82 3.796-5.854 6.852-9.229 9.31-.472-3.445-3.063-5.688-6.755-5.688H6.898c-4.121 0-6.89 2.757-6.89 6.86-.01 15.5-.01 31.001 0 46.494 0 3.863 2.802 6.718 6.663 6.785.252.004.493.006.734.006l.67-.003.623-.002h26.61c3.527 0 6.18-2.301 6.693-5.616 1.85 1.34 4.333 2.377 7.657 2.55.256.014.535.021.814.021.61 0 1.176-.033 1.677-.062l.184-.01.303-.019c.37-.022.72-.044 1.002-.044h2.07c5.463-.004 11.004-.009 16.575-.009 7.975 0 14.542.01 20.669.03 2.292 0 4.475-.465 6.721-1.419 4.444-1.917 6.04-5.142 6.6-7.51.326-1.345.456-2.667.39-3.951 1.594-1.169 3.078-3.025 3.865-5.97.6-2.272.773-4.608.525-7.242 1.925-1.654 3.101-3.857 3.45-6.478.31-2.35.086-4.722-.663-7.076.206-.39.4-.794.582-1.206zm-77.324 7.321v29.89c0 1.18-.62 1.8-1.79 1.8H8.698c-.434 0-.863.005-1.293.005-.215 0-.43-.001-.647-.005-1.15-.02-1.75-.64-1.75-1.79-.01-15.49-.01-30.99 0-46.49 0-1.36.51-1.86 1.89-1.86h28.36c1.31 0 1.84.53 1.84 1.84v16.61zm72.75-9.34c-.3.68-.66 1.36-1.08 2-.34.52-.37.98-.12 1.58.86 2.05 1.16 4.08.9 6.06-.24 1.8-1.13 3.12-2.74 4.04-.16.09-.31.17-.43.24-.7.38-.77.45-.62 1.14.03.16.08.37.12.64.43 2.72.37 4.95-.18 7.03-.58 2.17-1.71 3.44-3.56 3.99-.56.16-.84.27-.97.51-.14.26-.02.6.16 1.17.44 1.34.47 2.78.08 4.39-.44 1.86-1.65 3.18-3.69 4.06-1.6.68-3.14 1.02-4.72 1.02h-.03a6428.19 6428.19 0 0 0-20.685-.029c-5.572 0-11.115.005-16.575.01h-2.07c-.53 0-1.07.04-1.59.07-.519.029-1.048.064-1.576.064a9.29 9.29 0 0 1-.554-.015c-3.27-.17-5.62-1.47-7.16-3.98-.16-.25-.25-.57-.25-.83-.01-5.89-.01-11.78-.02-17.67 0-5.89 0-11.78-.01-17.67 0-.39.12-.59.49-.83 4.59-2.96 8.61-6.79 12.28-11.73 3.01-4.03 5.63-8.77 8.01-14.48 1.25-2.98 1.76-6.24 1.68-10.55-.03-1.59-.15-3.19-.28-4.74l-.06-.8c-.03-.46.07-.71.4-.97.98-.77 1.93-1.15 2.88-1.15.89 0 1.78.34 2.68 1.02 2.36 1.8 4.11 4.24 5.2 7.27 1.08 3.01 1.51 6.38 1.31 10.3-.28 5.64-1.5 11.18-3.73 16.95-.04.11-.07.21-.11.34l-.13.44h8.03c6.77 0 13.77 0 20.66-.02h.04c1.32 0 2.38.25 3.32.79 1.43.82 2.9 1.78 4.03 3.19 1.65 2.08 1.88 4.42.67 7.15zM54.18 22.13l.018-.017c2.707 2.338 8.54.267 13.754-4.948 5.214-5.214 7.285-11.047 4.948-13.754l.017-.017-2.263-2.264C68.039-1.484 62.04.572 56.699 5.913c-5.341 5.34-7.397 11.34-4.783 13.954l2.264 2.264zm4.4-14.336c4.57-4.57 9.09-5.885 10.192-4.782 1.103 1.102-.212 5.62-4.782 10.191-4.57 4.57-9.09 5.885-10.192 4.783-1.103-1.103.212-5.621 4.783-10.192z" fill="#fff"/></svg></div>
-          <strong class="promo__slider-item-title">Оплата продукции при получении</strong>
-          <div class="promo__slider-item-decription">(вы платите за результат)</div>
+      <div class="sofa__upload">
+        <p class="sofa__upload-msg">Для заказа загрузите изображение</p>
+        <div class="field-file  style-selector__upload-btn">
+          <label class="field-file__input-wrap">
+            <input class="field-file__input" type="file" form="sofa-form">
+            <div class="field-file__name-text  sofa__upload-btn">Загрузите изображение</div>
+          </label>
         </div>
       </div>
     </div>
-    <div class="promo__action">
-      <h3 class="main-header">Просто выберите свой стиль</h3>
-      <img class="promo__action-smile" src="img/smile.png" height="136" width="135" alt="">
+    <div class="sofa__step-2">
+      <div class="sofa__pict">
+        <img src="img/subsofa-pict.jpg" height="101" width="143" alt="">
+      </div>
+      <button class="sofa__change-pict">Поменять изображение</button>
+      <div class="sofa__sizes" id="supsofa-sizes">
+        <div class="sofa__sizes-column"> <!-- Добавлять класс sofa__sizes-column--visible для анимации появления -->
+          <div class="sofa__sizes-item">50 × 70 см</div>
+          <div class="sofa__sizes-item">40 × 60 см</div>
+          <div class="sofa__sizes-item">80 × 80 см</div>
+          <div class="sofa__sizes-item">60 × 60 см</div>
+        </div>
+        <div class="sofa__sizes-column  sofa__sizes-column--visible">
+          <div class="sofa__sizes-item">50 × 70 см</div>
+          <div class="sofa__sizes-item  sofa__sizes-item--active">40 × 60 см</div>
+          <div class="sofa__sizes-item">80 × 80 см</div>
+          <div class="sofa__sizes-item">60 × 60 см</div>
+        </div>
+        <div class="sofa__sizes-column"> <!-- Добавлять класс sofa__sizes-column--visible для анимации появления -->
+          <div class="sofa__sizes-item">80 × 80 см</div>
+          <div class="sofa__sizes-item">60 × 60 см</div>
+        </div>
+        <button class="sofa__more-sizes">Хочу другой размер</button>
+      </div>
+      <div class="sofa__text">
+        <p class="sofa__price">
+          <s class="sofa__old-price">6370</s>
+          <span class="sofa__new-price">5660</span>
+          <span class="sofa__price-r"><span class="rub rub--big">Р</span>*</span>
+        </p>
+        <div class="sofa__descr-wrapper">
+          <strong class="sofa__descr-accent">Готовая картина на подрамнике <br>+ защитный лак.</strong>
+          <span class="sofa__descr-text">Останется оплатить только доставку</span>
+        </div>
+      </div>
     </div>
-  </section>
+    <!-- Добавить класс style-form--shown для анимационного появления -->
+    <form class="style-form  sofa__form" id="sofa-form">
+      <div class="style-form__fields-wrapper">
+        <div class="style-form__fields">
+          <label class="field-text  field-text--md">
+            <div class="field-text__name">Куда отправить макет?</div>
+            <div class="field-text__input-wrap">
+              <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
+            </div>
+          </label>
+          <label class="field-text  field-text--sm">
+            <div class="field-text__name">Для оперативной связи с Вами</div>
+            <div class="field-text__input-wrap">
+              <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
+            </div>
+          </label>
+          <button class="style-form__btn">Вперед!</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
 </div>
 
-<section class="calculator" id="calculator">
 
-  <div class="style-selector  calculator__style-selector" id="style-selector">
 
-    <div class="style-selector__header">
-      <h1 class="style-selector__title">Калькулятор стиля</h1>
-      <p class="style-selector__message">Выберите стиль, размер и загрузите фото</p>
-    </div>
-
-    <div class="style-selector__selector">
-      <b class="style-selector__subtitle">Стиль</b>
-      <ul class="style-selector__style-list" id="styles">
-        <li class="style-selector__style-item"><a href="#style_1">1</a></li>
-        <li class="style-selector__style-item"><a href="#style_2">2</a></li>
-        <li class="style-selector__style-item"><a href="#style_3">3</a></li>
-        <li class="style-selector__style-item"><a href="#style_4">4</a></li>
-      </ul>
-    </div>
-
-    <div class="style-selector__sizes">
-      <b class="style-selector__subtitle">Размер</b>
-      <ul class="style-selector__sizes-list" id="canvas-sizes">
-        <li class="style-selector__sizes-item" data-x="70" data-y="105">70 × 105</li>
-        <li class="style-selector__sizes-item" data-x="60" data-y="90">60 × 90</li>
-        <li class="style-selector__sizes-item" data-x="50" data-y="70">50 × 70</li>
-        <li class="style-selector__sizes-item" data-x="40" data-y="60">40 × 60</li>
-        <li class="style-selector__sizes-item" data-x="80" data-y="80">80 × 80</li>
-        <li class="style-selector__sizes-item" data-x="60" data-y="60">60 × 60</li>
-        <li class="style-selector__sizes-item  style-selector__sizes-item--active" data-x="50" data-y="50">50 × 50</li>
-        <li class="style-selector__sizes-item" data-x="30" data-y="30">30 × 30</li>
-      </ul>
-      <div class="style-selector__sizes-preview-wrapper">
-        <span class="style-selector__sizes-preview" id="canvas-sizes-preview"></span>
-      </div>
-    </div>
-
-    <div class="style-selector__upload">
-      <div class="field-file  style-selector__upload-btn">
-        <label class="field-file__input-wrap">
-          <input class="field-file__input" type="file" form="style-form">
-          <div class="field-file__name-text  btn  btn--large">Загрузите фото</div>
-        </label>
-      </div>
-      <p class="style-selector__upload-descr">И бесплатно получите эскизы на почту</p>
-      <button class="btn" id="style-form-show">показать форму</button> (временная кнопка)
-    </div>
-
-  </div>
-
-  <form class="calculator__style-form  style-form" id="style-form">
-    <div class="style-form__narrow">
-      <span class="style-form__btn-back" id="style-form-hide">Скрыть форму</span>
-      <span class="style-form__btn-plus">Добавить фото</span>
-      <div class="style-form__upload-photo-list">
-        <!-- Предполагается вставка JS-ом, сделано фоновой картинкой для центрирования и неискажения пропорций внутри квадратного блока -->
-        <span class="style-form__upload-photo" style="background: url('data:image/jpeg;base64,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');"></span>
-        <!-- Если вдруг захочется вставлять тегами IMG (блок будет пропорционален размерам изображения!) -->
-        <img class="style-form__upload-photo" src="data:image/jpeg;base64,/9j/2wCEAAcFBQUFBQcFBQcKBgUGCgsIBwcICw0LCwsLCw0RDAwMDAwMEQ0PEBEQDw0UFBYWFBQdHR0dHSAgICAgICAgICABBwgIDQwNGRERGRwWEhYcICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIP/dAAQACv/uAA5BZG9iZQBkwAAAAAH/wAARCABNAE0DABEAAREBAhEB/8QBogAAAAcBAQEBAQAAAAAAAAAABAUDAgYBAAcICQoLAQACAgMBAQEBAQAAAAAAAAABAAIDBAUGBwgJCgsQAAIBAwMCBAIGBwMEAgYCcwECAxEEAAUhEjFBUQYTYSJxgRQykaEHFbFCI8FS0eEzFmLwJHKC8SVDNFOSorJjc8I1RCeTo7M2F1RkdMPS4ggmgwkKGBmElEVGpLRW01UoGvLj88TU5PRldYWVpbXF1eX1ZnaGlqa2xtbm9jdHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4KTlJWWl5iZmpucnZ6fkqOkpaanqKmqq6ytrq+hEAAgIBAgMFBQQFBgQIAwNtAQACEQMEIRIxQQVRE2EiBnGBkTKhsfAUwdHhI0IVUmJy8TMkNEOCFpJTJaJjssIHc9I14kSDF1STCAkKGBkmNkUaJ2R0VTfyo7PDKCnT4/OElKS0xNTk9GV1hZWltcXV5fVGVmZ2hpamtsbW5vZHV2d3h5ent8fX5/c4SFhoeIiYqLjI2Oj4OUlZaXmJmam5ydnp+So6SlpqeoqaqrrK2ur6/9oADAMAAAERAhEAPwCSxNU0J6Zc1MM/MvzCdM06PTbZ+Nxeci5U/EsQ2/4Y7ZCZZxDxv7Z9WXZBsB4+y5Bm3z5kFhRV2VcVbMjTCoKoi/tv0r/krgXmuDMdvUq/7DqaA+2KtrP6brKspWRSGINSVYGoIPtir0LTdYi1OxWcf3ooJU/yh/nXJWrKtHuKM1RvTp17ZJCc6bJxs0JG7EnwwKX/0JClFLcum5qewy5qeD+b9YfXddubgN/o8bGKHwEaGgP0nfKSbLaBskBJlbbZF2VfbFebaqXYICOT7V8BhVOrHRJ76VYIPTRSNnk75TLIA5EMJKLPlS9t2YGjgEV9Oh29q5A5g2DTFT1bQbi0/wBJtwfTkAYowqR41xjlB2KzwEbhD6LqZtrr02PFZdnAr26HLnGepaKfUlRuzDr88sYMghYJbxqfA/rxV//RX84ag+meWb+5ibjcMnoxkdQZDxqPoOWk7NYG7weRfRi4H+8k6jwHYZSNy3HYKIGwH7I3PvkmC6M0Yv3FAMBZBnGiQTVTitdhQ5rpl2+KLMdP0ae+bgBTIAEt0iAq3flaUiaKb7QRiKeFO+PCQiwQ8ev7b6lrEtv0MTin0gH+ObCBuIdRkFTIer+SXa6iVWPxRAdf5TuK/LcZbFqkyX7MUe38w+5jih//0in80L0Q6LbwA/HNMHNPBFJ3+lhkpog8gfkx5Hdj3PvkQyLivQDuNzjaqkcRLIijdyKfId/vyJLIBm1vN5n0f0lW3tbxNvgikX1T7AVDV+jMYjHJzwcsfN6H5N80Wl60kc1rLZXsKgyQzIR9Kt3ysjgbQTMcqKB82edxZST2VhEJr+deBd2CRRBj1d2wwHFv0Y5JcGw5vHNTknl1WaS4lSe45qJJIfsFhQEL406ZlxqnXTvi3es/l9CwhnkoQleIr4g0OWQYSZVCOXJH/wB1sQPvOFD/AP/ThH5oX4n1CO1HS2QVPu29Pxxmd0xGzBA0DIiMSsivuw7qR4+xyNFkCKbdaymg5UoAB3xB2UjdNdMspmkEpFZTsKDp8sonMOVixnmzLQ/I8rxTXURImmQoWeNZGUdSyu32Tt1yAzkiqb/y0QbJ3TjRpdTfWxYztWMgRFyKFiopyPueuUcILkcRCYN5HiaPVLyWdy1xT1uXFuSq3IRio2UEDYZaMkhGujUccJSvqXiYQevsKhpWKgbbBjmXezrK3e6+SrJbTR7cuay3P75yfFug+gAZbDk1z5ptJ+6nmNNmc4of/9TkHma/bUdTnuK1Erk/RWgH3ZAGzbM7CklcbA5MMCmVog5xswqZKD5CmUzLkYxuzbR7ZVdGIpvQf1zAkXb4xT1bSbiCy0d+ZG6mo+jJwlUWGSPFJgOlXF3c63JfyTRBA5/cp/usAnjy+juciSGQiU383+alstCnhtHBudQPowlT1JHxMPZRU5ZA8WzTlPAL6vG7OISygE/YYr8gAzH9WZZdbF7p5akrpdp3pGn6hl8OTTPmjr+omJrSpJ/AYlAf/9XiN1QzPTotT/TK48myXNCOKuEHbrlgYFMvU9KSEDbYU+YAGUVYLkXRDOdMnEkCcRRhQ5r5ii7WBsMgub+5i0tmWN5yB/dxU5fPemCNE02HvYlFLeOXWKwuQ8rCp9YAPXajADpmTwDvYCJ7j80o1a9+v6p+6JNrpsfppvUF60dh8ztX2y6EeGLrM0+Ke3IIext25TSU2Dnf5g5IlrAer6HeehBFGNlVQAfEAbZdA7NM+aa3dykrK3iuSLEP/9bhwtrmVySp5E1I/UMr4gGwQJRsGkyLSSUbk7DKzkbo4u9deW3ERvSpRiD8q0wRkmcWZeWIDd25iJImh6N/knx+nMLLsXY4dwyWCZISttPcxWsxB4CRlXkB1K8uuVCJPJu4gOZSPzJq1ppVpNFa6gLrVLsGOOKJw/EtsXbjXjQZk4cRJs8nH1GcCNA7sJ06OgkC71PD6FP9czJOsgn1jY0t39hyJ9yQP65BmyS2kEcLcakgUBGZA5OOU7tP3trEWPxBQDU4UP8A/9fkkOpJPCs0hRJNwwGwB+nKZYa5N8dTex2V1vQjKZt4j0PbKuFyeNXZ7aeAlWBYOSAe4P8Able4LKwQybyzLBbXRQHYq+/T4aAr+rKZ8rciHOmPeb7yC/uFkf44oyyAeGZGAEONqSCWOWM8cFz9bliLxqGEYQAUbsae2ZtbOv6p15djWcSMpDMS3wn7Q2rWmVyBttgRTKbWBTahAN3FNvwrldNiNC8bI9nJA+nLwdnHkE304N6AoK/PCh//0ONDTYiEVmJZiQTtTZOQ2y0xaeMlSMr2qokRokiqzKdwajwOQlEHmzjOQ5FqO4kSAupoGJYLTYUPTIHEG2OUr11u9RzIpUOwArQ7AdhvkPAiQ2fmZArJbt7kRGRQDI1HpXfem2XDCAA0HPKUiEYtgkc72gclEUyEnvTentkiHI8OkTAqWNLxR6lSI+B2FKE9RTK7YmID0DRTFfWgnCekY2I415A/gMjOIG7IFXuYgsckQ2CszAj22pkQWBCN04n0B8hk2L//0f/Z" alt="">
-      </div>
-    </div>
-    <div class="style-form__fields-wrapper">
-      <div class="style-form__fields">
-        <label class="field-text  field-text--md  field-text--black">
-          <div class="field-text__name">Куда отправить Вам портрет</div>
-          <div class="field-text__input-wrap">
-            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
-          </div>
-        </label>
-        <label class="field-text  field-text--sm  field-text--black">
-          <div class="field-text__name">Для оперативной связи с Вами</div>
-          <div class="field-text__input-wrap">
-            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
-          </div>
-        </label>
-        <div class="field-actions">
-          <button class="btn  btn--rect">Прокачать фото</button>
-        </div>
-      </div>
-    </div>
-  </form>
-
-  <div class="calculator__slider-vertical" id="style-slider">
-    <div class="calculator__slider-vertical-inner">
-      <div class="calculator__slider-vertical-item" id="style_1" data-bg-color="#D4EAFF">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-1" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 1">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">3270</s>
-            <span class="calculator__slider-style-new-price">2260</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-      <div class="calculator__slider-vertical-item" id="style_2" data-bg-color="#FCE3D0">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-2" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 2">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">3870</s>
-            <span class="calculator__slider-style-new-price">2960</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-      <div class="calculator__slider-vertical-item" id="style_3" data-bg-color="#00E676">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-3" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 3">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">6370</s>
-            <span class="calculator__slider-style-new-price">5660</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-      <div class="calculator__slider-vertical-item" id="style_4" data-bg-color="#3D5AFE">
-
-        <div class="calculator__slider-item-style-variants">
-          <div id="style-variant-4" class="owl-carousel  owl-carousel--style-variants  owl-carousel--nav-dots">
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 4">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 4">
-            </div>
-            <div>
-              <img class="calculator__slider-style-picture" src="img/style-01-demo-01.png" alt="Вариант стиля 4">
-            </div>
-          </div>
-        </div>
-
-        <div class="calculator__slider-style-text">
-          <p class="calculator__slider-style-price">
-            <s class="calculator__slider-style-old-price">12070</s>
-            <span class="calculator__slider-style-new-price">9860</span>
-            <span class="calculator__slider-style-price-r">Р*</span>
-            <img class="calculator__slider-style-price-logo" src="img/style-01-icon.png" height="116" width="111" alt="">
-          </p>
-          <div class="calculator__slider-style-descr-wrapper">
-            <strong class="calculator__slider-style-descr-accent">Портрет на подрамнике + защитный лак.</strong>
-            <span class="calculator__slider-style-descr-text">Останется оплатить только доставку.</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-</section>
-
-<div class="subcalendar" style="background-color: #FDF6AA;min-height:400px">некий блок, название которого еще не определено</div>
-
-<div class="sofa  subcalendar">
-  <div class="sofa__step-1">
-    <div class="sofa__help">
-      <h1>Наш диван поможет выбрать нужный размер</h1>
-    </div>
-    <div class="sofa__upload">
-      <div class="field-file  style-selector__upload-btn">
-        <label class="field-file__input-wrap">
-          <input class="field-file__input" type="file" form="sofa-form">
-          <div class="field-file__name-text  btn  btn--blue">Загрузите изображение</div>
-        </label>
-      </div>
-    </div>
-  </div>
-  <div class="sofa__step-2">
-    <div class="sofa__pict">
-      <img src="img/subsofa-pict.jpg" height="101" width="143" alt="">
-    </div>
-    <div class="sofa__sizes" id="supsofa-sizes">
-      <div class="sofa__sizes-column">
-        <div class="sofa__sizes-item">50 × 70 см</div>
-        <div class="sofa__sizes-item">40 × 60 см</div>
-        <div class="sofa__sizes-item">80 × 80 см</div>
-        <div class="sofa__sizes-item">60 × 60 см</div>
-      </div>
-      <div class="sofa__sizes-column  sofa__sizes-column--center">
-        <div class="sofa__sizes-item">50 × 70 см</div>
-        <div class="sofa__sizes-item  sofa__sizes-item--active">40 × 60 см</div>
-        <div class="sofa__sizes-item">80 × 80 см</div>
-        <div class="sofa__sizes-item">60 × 60 см</div>
-      </div>
-      <div class="sofa__sizes-column">
-        <div class="sofa__sizes-item">80 × 80 см</div>
-        <div class="sofa__sizes-item">60 × 60 см</div>
-      </div>
-      <button class="sofa__more-sizes  btn  btn--blue-border">Хочу другой размер</button>
-    </div>
-    <div class="sofa__text">
-      <p class="sofa__price">
-        <s class="sofa__old-price">6370</s>
-        <span class="sofa__new-price">5660</span>
-        <span class="sofa__price-r">Р*</span>
+<div class="thanx">
+  <div class="thanx__wrapper">
+    <div class="thanx__content">
+      <b class="thanx__title">Спасибо!</b>
+      <p>
+        Мы скоро с вами свяжемся, чтобы обсудить детали заказа.
       </p>
-      <div class="sofa__descr-wrapper">
-        <strong class="sofa__descr-accent">Готовая картина на подрамнике <br>+ защитный лак.</strong>
-        <span class="sofa__descr-text">Останется оплатить только доставку</span>
-      </div>
+      <p>
+        Номер вашей заявки: <br>
+        <span id="">XXXXXXX</span>
+      </p>
     </div>
+    <span class="thanx__smile"></span>
   </div>
-  <form class="style-form  style-form--bottom  sofa__form" id="sofa-form">
-    <div class="style-form__fields-wrapper">
-      <div class="style-form__fields">
-        <label class="field-text  field-text--md  field-text--black">
-          <div class="field-text__name">Куда отправить макет</div>
-          <div class="field-text__input-wrap">
-            <input type="email" class="field-text__input" placeholder="Введите Ваш e-mail">
-          </div>
-        </label>
-        <label class="field-text  field-text--sm  field-text--black">
-          <div class="field-text__name">Для оперативной связи с Вами</div>
-          <div class="field-text__input-wrap">
-            <input type="tel" class="field-text__input" placeholder="Введите номер телефона">
-          </div>
-        </label>
-        <div class="field-actions">
-          <button class="btn  btn--rect">В работу</button>
-        </div>
-      </div>
-    </div>
-  </form>
+  <div class="thanx__backdrop"></div>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
