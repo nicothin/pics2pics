@@ -204,16 +204,16 @@ $( document ).ready(function() {
   // });
 
   // Галерея «второго экрана», инициализация лайтбокса
-  // $('[rel="gallery-demo"]').fancybox({
-  //   // openEffect  : 'none',
-  //   // closeEffect : 'none',
-  //   helpers : {
-  //     overlay : {
-  //       css : {
-  //         'background' : 'rgba(58, 42, 45, 0.3)'
-  //       }
-  //     }
-  //   }
-  // });
+  $('[rel="gallery-demo"]').fancybox({
+    // openEffect  : 'none',
+    // closeEffect : 'none',
+    helpers : {
+      overlay : {
+        css : {
+          'background' : 'rgba(58, 42, 45, 0.3)'
+        }
+      }
+    }
+  });
 
 });
