@@ -9,6 +9,39 @@
   margin: auto;
   padding: 14px 14px 6px;
   background-color: #FDE4E4;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  position: relative;
+
+  &__right {
+    flex-grow: 1;
+    padding-left: 24px;
+
+    .field-text__input {
+      min-height: 81px;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    text-align: center;
+    padding-top: 6px;
+  }
+
+  &__btn {
+    color: #0044cc;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.24em;
+    border: 0;
+    background: transparent;
+    text-transform: lowercase;
+    padding: 5px 10px;
+  }
 
   .field-text__input {
     background-color: #F8F8FF;
@@ -31,5 +64,37 @@
     border-radius: 0;
     text-align: left;
     background-color: #FDF05F;
+  }
+
+  .field-text:last-child {
+    margin-bottom: 0;
+  }
+
+  &__close {
+    width: 20px;
+    height: 20px;
+    background-color: #6FCFB8;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 25px;
+      height: 2px;
+      background-color: #fff;
+    }
+    &:before {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    &:after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
   }
 }
