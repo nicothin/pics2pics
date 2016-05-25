@@ -117,6 +117,12 @@ $( document ).ready(function() {
   //   // $(window).scroll();
   // });
 
+  $('#to-quickly').on('click', function(e){
+    e.preventDefault();
+    var targetPosition = $(this.hash).offset().top + ($(this.hash).height() / 2) - ($(window).height() / 2);
+    $('body,html').animate({'scrollTop':targetPosition},300);
+  });
+
   // Функция показа или сокрытия блока текста калькулятора
   // function showHideCalculator() {
   //   // только если не показана форма

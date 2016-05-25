@@ -336,7 +336,7 @@ function getComponentsFiles() {
       }
       // Если есть папка с изображениями, добавляем её в массив с результатом
       if(fileExist(imagesDir) !== false) {
-        сomponentsFilesList.img.push(imagesDir + '/*.{jpg,jpeg,gif,png,svg}');
+        сomponentsFilesList.img.push(imagesDir + '/*.{jpg,jpeg,gif,png,svg,bpg}');
       }
     }
   });
