@@ -123,6 +123,14 @@ $( document ).ready(function() {
     $('body,html').animate({'scrollTop':targetPosition},300);
   });
 
+  $('#shown-add-reviews').on('click', function(e){
+    e.preventDefault();
+    $('#add-reviews').addClass('add-reviews--shown');
+  });
+  $('.add-reviews__close').on('click', function(){
+    $('#add-reviews').removeClass('add-reviews--shown');
+  });
+
   // Функция показа или сокрытия блока текста калькулятора
   // function showHideCalculator() {
   //   // только если не показана форма

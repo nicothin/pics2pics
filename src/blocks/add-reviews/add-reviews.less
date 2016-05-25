@@ -12,7 +12,18 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  position: relative;
+  position: absolute;
+  left: 50%;
+  bottom: 9px;
+  transform: translateX(-50%);
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.4s;
+
+  &--shown {
+    z-index: 1;
+    opacity: 1;
+  }
 
   &__right {
     flex-grow: 1;
