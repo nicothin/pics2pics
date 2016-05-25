@@ -105,6 +105,28 @@
   height: 36px;
   cursor: pointer;
   z-index: 8040;
+
+
+  background-color: #6FCFB8;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+  }
+  &:before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &:after {
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
 }
 
 .fancybox-nav {

@@ -118,7 +118,7 @@ jQuery( document ).ready(function($) {
     $('#add-reviews').addClass('add-reviews--shown');
   });
   $('.add-reviews__close').on('click', function(){
-    $('#add-reviews').addClass('add-reviews--shown');
+    $('#add-reviews').removeClass('add-reviews--shown');
   });
 
   // Функция показа или сокрытия блока текста калькулятора
