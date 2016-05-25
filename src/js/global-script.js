@@ -32,8 +32,8 @@ $( document ).ready(function() {
     center: true,
     loop: true,
     nav: true,
-    mouseDrag: false,
-    touchDrag: false,
+    // mouseDrag: false,
+    // touchDrag: false,
     margin: 1,
     // responsive : {
     //   1400 : {
