@@ -121,6 +121,12 @@ jQuery( document ).ready(function($) {
     $('#add-reviews').removeClass('add-reviews--shown');
   });
 
+  $('.js-local-link').on('click', function(e){
+    e.preventDefault();
+    var targetPosition = $(this.hash).offset().top;
+    $('body,html').animate({'scrollTop':targetPosition},300);
+  });
+
   // Функция показа или сокрытия блока текста калькулятора
   // function showHideCalculator() {
   //   // только если не показана форма
