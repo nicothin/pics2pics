@@ -199,9 +199,9 @@ gulp.task('js:copy', function (callback) {
   if(fileExistAndHasContent(dirs.source + '/js/jquery.js')) {
     jsLibs.push(dirs.source + '/js/jquery.js');
   }
-  if(fileExistAndHasContent(dirs.source + '/js/bpgdec.js')) {
-    jsLibs.push(dirs.source + '/js/bpgdec.js');
-  }
+  // if(fileExistAndHasContent(dirs.source + '/js/bpgdec.js')) {
+  //   jsLibs.push(dirs.source + '/js/bpgdec.js');
+  // }
   if(jsLibs){
     console.log('---------- Копирование JS-библиотек');
     return gulp.src(jsLibs)
